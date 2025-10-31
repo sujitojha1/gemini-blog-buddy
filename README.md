@@ -1,7 +1,7 @@
 # RAG Application – Chrome Extension
 
 ## Objective
-Deliver Gemini Blog Buddy: a retrieval-augmented Chrome extension that curates standout content on AI, LLMs, and agentic systems from trusted tech sources, captures what you read, and resurfaces it on demand for learning, research, or project inspiration.
+Deliver Gemini Blog Buddy: a retrieval-augmented Chrome extension that curates standout content on AI, LLMs, and agentic systems from read blog posts, captures what you read, and resurfaces it on demand for learning, research, or project inspiration.
 
 ## Requirements
 - Incorporate an MCP-based orchestration layer featuring the Agent, Perception, Memory, Action, and Decision components.
