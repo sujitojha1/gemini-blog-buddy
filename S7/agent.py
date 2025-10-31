@@ -27,7 +27,7 @@ async def main(user_input: str):
         server_params = StdioServerParameters(
             command="python",
             args=["example3.py"],
-            cwd="I:/TSAI/2025/EAG/Session 7/S7"
+            cwd="/Users/payalchakraborty/Dev/EAG2/gemini-blog-buddy/S7"
         )
 
         try:
