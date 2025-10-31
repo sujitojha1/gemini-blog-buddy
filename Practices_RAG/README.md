@@ -20,3 +20,15 @@ Converts cosine distance to cosine similarity (1 = identical meaning, 0 = no rel
 "How do proteins fold?" ↔ "Explain how neural networks learn." → similarity = 0.806  
 "What is the capital of France?" ↔ "Explain how neural networks learn." → similarity = 0.754  
   
+## faiss_simple.py
+**One-to-two-line explanation:**
+
+> This example shows how to use **Google Gemini embeddings** with **FAISS** to build a simple local semantic search engine — converting sentences into vectors, storing them, and retrieving the most meaning-similar one for a given query.
+
+    "The early bird catches the worm.",
+    "A stitch in time saves nine.",
+    "Better late than never.",
+    "Birds of a feather flock together."
+
+losest match to: "People with similar traits stick together."
+>>> Birds of a feather flock together.
