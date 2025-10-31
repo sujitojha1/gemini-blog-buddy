@@ -8,4 +8,5 @@ dependencies = [
     "dotenv>=0.9.9",
     "google-genai>=1.47.0",
     "numpy>=2.3.4",
+    "scipy>=1.16.3",
 ]
