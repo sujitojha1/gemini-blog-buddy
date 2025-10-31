@@ -1,3 +1,7 @@
 Practices_RAG/.env
 Practices_RAG/uv.lock
 Practices_RAG/.python-version
+S7/.env
+S7/faiss_index/doc_index_cache.json
+S7/faiss_index/index.bin
+S7/faiss_index/metadata.json
