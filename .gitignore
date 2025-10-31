@@ -5,3 +5,4 @@ S7/.env
 S7/faiss_index/doc_index_cache.json
 S7/faiss_index/index.bin
 S7/faiss_index/metadata.json
+S7/uv.lock
