@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Document Indexer",
+  "name": "gemini-blog-buddy",
   "version": "1.0.0",
   "description": "Index packaged documents and search for relevant passages directly from the toolbar.",
   "permissions": [

@@ -2,22 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document Indexer</title>
+    <title>gemini-blog-buddy</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <main>
-      <h1>Document Indexer</h1>
-      <button id="indexBtn" type="button">Index Documents</button>
-      <p id="status" role="status">Not indexed yet.</p>
+    <main class="card">
+      <header class="card__header">
+        <div class="badge">gemini-blog-buddy</div>
+        <h1>Document Insights</h1>
+        <p class="subtitle">
+          Index bundled docs once, then surface the most relevant passages with a quick search.
+        </p>
+      </header>
 
-      <label for="query">Search text</label>
-      <div class="search-row">
-        <input id="query" type="text" placeholder="Enter search text" />
-        <button id="searchBtn" type="button">Search</button>
+      <div class="actions">
+        <button id="indexBtn" type="button" class="btn btn-primary">Index Documents</button>
+        <p id="status" role="status" class="status">Not indexed yet.</p>
       </div>
 
-      <section id="results" aria-live="polite"></section>
+      <section class="search">
+        <label for="query">Search text</label>
+        <div class="search-row">
+          <input
+            id="query"
+            type="text"
+            placeholder="Find something…"
+            autocomplete="off"
+          />
+          <button id="searchBtn" type="button" class="btn btn-ghost">Search</button>
+        </div>
+      </section>
+
+      <section id="results" class="results" aria-live="polite"></section>
     </main>
 
     <script src="popup.js"></script>
