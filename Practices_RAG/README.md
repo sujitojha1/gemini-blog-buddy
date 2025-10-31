@@ -32,3 +32,6 @@ Converts cosine distance to cosine similarity (1 = identical meaning, 0 = no rel
 
 losest match to: "People with similar traits stick together."
 >>> Birds of a feather flock together.
+
+## faiss_advanced.py
+Demonstrates how to build a local **Retrieval-Augmented Generation (RAG) pipeline** using **Google Gemini embeddings** and **FAISS**, where text files are chunked, embedded, indexed, and semantically searched to find the most relevant document passages for a given query.
