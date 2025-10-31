@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Document Indexer",
+  "version": "1.0.0",
+  "description": "Index packaged documents and search for relevant passages directly from the toolbar.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Document Indexer"
+  }
+}

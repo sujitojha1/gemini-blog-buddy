@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document Indexer</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Document Indexer</h1>
+      <button id="indexBtn" type="button">Index Documents</button>
+      <p id="status" role="status">Not indexed yet.</p>
+
+      <label for="query">Search text</label>
+      <div class="search-row">
+        <input id="query" type="text" placeholder="Enter search text" />
+        <button id="searchBtn" type="button">Search</button>
+      </div>
+
+      <section id="results" aria-live="polite"></section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
