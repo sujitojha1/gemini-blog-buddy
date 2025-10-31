@@ -1,7 +1,7 @@
 # RAG Application – Chrome Extension
 
 ## Objective
-Develop a retrieval-augmented generation (RAG) assistant delivered through a Chrome extension, enabling users to access contextual insights without leaving their current browsing session.
+Deliver Gemini Blog Buddy: a retrieval-augmented Chrome extension that curates standout content on AI, LLMs, and agentic systems from trusted tech sources, captures what you read, and resurfaces it on demand for learning, research, or project inspiration.
 
 ## Requirements
 - Incorporate an MCP-based orchestration layer featuring the Agent, Perception, Memory, Action, and Decision components.
@@ -15,4 +15,3 @@ Develop a retrieval-augmented generation (RAG) assistant delivered through a Chr
 - [ ] Implement the Chrome extension UI and background services.
 - [ ] Integrate the extension with the backend and validate end-to-end behaviors.
 - [ ] Add automated tests, deployment scripts, and user-facing documentation.
-
