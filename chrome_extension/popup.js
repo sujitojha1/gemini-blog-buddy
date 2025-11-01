@@ -1,105 +1,103 @@
-const documents = [
-  {
-    name: "Sample Document",
-    path: "documents/sample.txt"
-  }
-];
+const API_BASE_URL = "http://localhost:8000";
 
-let currentIndex = [];
-
-async function indexDocuments() {
-  const indexBtn = document.getElementById("indexBtn");
+function setStatus(message) {
   const status = document.getElementById("status");
+  if (status) {
+    status.textContent = message;
+  }
+}
 
-  indexBtn.disabled = true;
-  status.textContent = "Indexing documents...";
+async function callApi(path, options = {}) {
+  const config = {
+    method: "GET",
+    headers: {},
+    ...options
+  };
 
-  try {
-    const indexed = [];
+  if (config.body && !config.headers["Content-Type"]) {
+    config.headers["Content-Type"] = "application/json";
+  }
 
-    for (const doc of documents) {
-      const url = chrome.runtime.getURL(doc.path);
-      const response = await fetch(url);
+  const response = await fetch(`${API_BASE_URL}${path}`, config);
 
-      if (!response.ok) {
-        throw new Error(`Failed to load ${doc.name}`);
-      }
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(text || `Request failed with status ${response.status}`);
+  }
 
-      const text = await response.text();
-      const snippets = text
-        .split(/\n+/)
-        .map((chunk) => chunk.trim())
-        .filter(Boolean);
+  return response.json();
+}
 
-      snippets.forEach((snippet, idx) => {
-        indexed.push({
-          doc: doc.name,
-          id: `${doc.name}-${idx}`,
-          snippet,
-          lowerSnippet: snippet.toLowerCase()
-        });
+function openTab(url) {
+  if (!chrome?.tabs?.create) {
+    return Promise.resolve();
+  }
+
+  return new Promise((resolve, reject) => {
+    try {
+      chrome.tabs.create({ url }, () => {
+        if (chrome.runtime.lastError) {
+          reject(new Error(chrome.runtime.lastError.message));
+        } else {
+          resolve();
+        }
       });
+    } catch (error) {
+      reject(error);
     }
-
-    currentIndex = indexed;
-    await chrome.storage.local.set({ docIndex: indexed });
-
-    status.textContent = `Indexed ${indexed.length} passages from ${documents.length} document(s).`;
-  } catch (error) {
-    console.error(error);
-    status.textContent = `Indexing failed: ${error.message}`;
-  } finally {
-    indexBtn.disabled = false;
-  }
+  });
 }
 
-async function restoreIndex() {
-  const stored = await chrome.storage.local.get("docIndex");
-
-  if (stored.docIndex && Array.isArray(stored.docIndex)) {
-    currentIndex = stored.docIndex;
-  }
-}
-
-async function openRandomBlog() {
-  const status = document.getElementById("status");
+async function handleIndexClick(event) {
+  const button = event.currentTarget;
+  button.disabled = true;
+  setStatus("Sending page to be indexed...");
 
   try {
-    const stored = await chrome.storage.local.get("recentBlogs");
-    const recentBlogs = Array.isArray(stored.recentBlogs)
-      ? stored.recentBlogs
-      : [];
-
-    if (!recentBlogs.length) {
-      status.textContent = "No recent blogs available yet.";
-      return;
-    }
-
-    const randomEntry =
-      recentBlogs[Math.floor(Math.random() * recentBlogs.length)];
-    const candidateUrl =
-      typeof randomEntry === "string" ? randomEntry : randomEntry?.url;
-
-    if (!candidateUrl) {
-      status.textContent = "Recent blog entry is missing a URL.";
-      return;
-    }
-
-    await chrome.tabs.create({ url: candidateUrl });
-    status.textContent = "Opened a recent blog in a new tab.";
+    const data = await callApi("/index", {
+      method: "POST",
+      body: JSON.stringify({})
+    });
+    setStatus(data.message || "Index request processed.");
   } catch (error) {
     console.error(error);
-    status.textContent = `Unable to open a recent blog: ${error.message}`;
+    setStatus(`Index request failed: ${error.message}`);
+  } finally {
+    button.disabled = false;
   }
 }
 
-function renderResults(results, query) {
+async function handleRandomBlogClick(event) {
+  const button = event.currentTarget;
+  button.disabled = true;
+  setStatus("Fetching a random blog...");
+
+  try {
+    const data = await callApi("/random-blog");
+    setStatus(data.message || "Random blog retrieved.");
+
+    if (data.url) {
+      await openTab(data.url);
+    }
+  } catch (error) {
+    console.error(error);
+    setStatus(`Unable to fetch a random blog: ${error.message}`);
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function renderResults(results = []) {
   const container = document.getElementById("results");
+  if (!container) {
+    return;
+  }
+
   container.innerHTML = "";
 
   if (!results.length) {
     const empty = document.createElement("p");
-    empty.textContent = "No matching passages. Try a different search.";
+    empty.textContent = "No results yet.";
     container.appendChild(empty);
     return;
   }
@@ -109,61 +107,73 @@ function renderResults(results, query) {
     result.className = "result";
 
     const title = document.createElement("h2");
-    title.textContent = item.doc;
+    title.textContent = item.title || "Result";
     result.appendChild(title);
 
     const snippet = document.createElement("p");
     snippet.className = "snippet";
-    snippet.innerHTML = highlightQuery(item.snippet, query);
+    snippet.textContent =
+      item.snippet ||
+      "This is a placeholder snippet returned by the FastAPI backend.";
     result.appendChild(snippet);
 
     container.appendChild(result);
   });
 }
 
-function highlightQuery(text, query) {
-  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const pattern = new RegExp(`(${escaped})`, "ig");
-  return text.replace(pattern, "<mark>$1</mark>");
-}
-
-function onSearch() {
+async function handleSearchClick() {
   const queryInput = document.getElementById("query");
-  const query = queryInput.value.trim();
-  const status = document.getElementById("status");
+  const button = document.getElementById("searchBtn");
 
-  if (!currentIndex.length) {
-    status.textContent = "Please index the documents first.";
+  if (!queryInput || !button) {
     return;
   }
+
+  const query = queryInput.value.trim();
 
   if (!query) {
-    status.textContent = "Enter text to search for.";
+    setStatus("Enter text to search for.");
     return;
   }
 
-  const lowered = query.toLowerCase();
-  const results = currentIndex.filter((item) =>
-    item.lowerSnippet.includes(lowered)
-  );
+  button.disabled = true;
+  setStatus("Searching your index...");
 
-  status.textContent = `Found ${results.length} matching passage(s).`;
-  renderResults(results, query);
+  try {
+    const data = await callApi("/search", {
+      method: "POST",
+      body: JSON.stringify({ query })
+    });
+
+    setStatus(
+      data.message ||
+        `Search completed with ${data.results?.length ?? 0} placeholder result(s).`
+    );
+    renderResults(data.results || []);
+  } catch (error) {
+    console.error(error);
+    setStatus(`Search request failed: ${error.message}`);
+  } finally {
+    button.disabled = false;
+  }
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
-  await restoreIndex();
+document.addEventListener("DOMContentLoaded", () => {
+  document
+    .getElementById("indexBtn")
+    .addEventListener("click", handleIndexClick);
 
-  document.getElementById("indexBtn").addEventListener("click", indexDocuments);
   document
     .getElementById("randomBlogBtn")
-    .addEventListener("click", openRandomBlog);
-  document.getElementById("searchBtn").addEventListener("click", onSearch);
-  document
-    .getElementById("query")
-    .addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        onSearch();
-      }
-    });
+    .addEventListener("click", handleRandomBlogClick);
+
+  document.getElementById("searchBtn").addEventListener("click", handleSearchClick);
+
+  document.getElementById("query").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      handleSearchClick();
+    }
+  });
+
+  renderResults([]);
 });

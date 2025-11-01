@@ -20,9 +20,24 @@ Deliver Gemini Blog Buddy: a retrieval-augmented Chrome extension that curates s
 
 ## High-Level Plan
 - [x] Practice RAG basics in the practice folder and learn UV, install ollama, FAISS, and embeddings
-- [ ] Create a chrome extension in new folder and basic extension with button index the document and find the document with search text
+- [x] Create a chrome extension in new folder and basic extension with button index the document and find the document with search text
+- [x] Set up a FastAPI backend scaffold (server folder) that returns placeholder responses for extension actions
 - [ ] Define data contracts and interaction flows for the MCP components.
 - [ ] Build the FastAPI backend, including retrieval pipelines and orchestration logic.
 - [ ] Implement the Chrome extension UI and background services.
 - [ ] Integrate the extension with the backend and validate end-to-end behaviors.
 - [ ] Add automated tests, deployment scripts, and user-facing documentation.
+
+## Backend Server (placeholder)
+1. Create a virtual environment and install dependencies:
+   ```bash
+   cd server
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+2. Start the FastAPI app with reload:
+   ```bash
+   uvicorn main:app --reload
+   ```
+3. The Chrome extension calls `http://localhost:8000/index`, `/random-blog`, and `/search`, each of which returns static JSON used to update the popup status.
