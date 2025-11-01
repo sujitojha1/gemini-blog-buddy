@@ -10,6 +10,7 @@ Deliver Gemini Blog Buddy: a retrieval-augmented Chrome extension that curates s
 [Apple Research Blog](https://machinelearning.apple.com/research)
 [Anthropic Engineering Blog](https://www.anthropic.com/engineering)
 [Anthropic Research Blog](https://www.anthropic.com/research)
+[Anthropic Transformer Circuti](https://transformer-circuits.pub/)
 
 
 ## Requirements
