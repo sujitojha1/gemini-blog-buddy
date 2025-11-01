@@ -8,3 +8,4 @@ S7/faiss_index/metadata.json
 S7/uv.lock
 S7/__pycache__/*
 server/__pycache__/*
+server/.python-version
