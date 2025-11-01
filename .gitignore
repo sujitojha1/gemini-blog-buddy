@@ -9,3 +9,5 @@ S7/uv.lock
 S7/__pycache__/*
 server/__pycache__/*
 server/.python-version
+server/documents/*
+server/faiss_index/*
