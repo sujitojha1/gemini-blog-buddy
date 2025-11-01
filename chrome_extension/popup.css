@@ -25,14 +25,14 @@ body {
 
 .badge {
   align-self: flex-start;
-  padding: 4px 10px;
+  padding: 6px 14px;
   border-radius: 999px;
   background-color: #e0f2fe;
   color: #1d4ed8;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
 }
 
 h1 {
@@ -71,6 +71,37 @@ h1 {
   flex: 1;
 }
 
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+.btn-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.btn-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  flex: 1;
+}
+
 .btn-primary {
   background: linear-gradient(135deg, #2563eb, #38bdf8);
   color: #ffffff;
@@ -80,6 +111,25 @@ h1 {
 .btn-ghost {
   background-color: #e2e8f0;
   color: #0f172a;
+}
+
+.btn-icon-only {
+  padding: 10px;
+  width: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon-only svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.btn-ghost .btn-icon {
+  background: rgba(15, 23, 42, 0.06);
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
 }
 
 .btn:hover:not(:disabled) {

@@ -54,12 +54,10 @@ async function indexDocuments() {
 }
 
 async function restoreIndex() {
-  const status = document.getElementById("status");
   const stored = await chrome.storage.local.get("docIndex");
 
   if (stored.docIndex && Array.isArray(stored.docIndex)) {
     currentIndex = stored.docIndex;
-    status.textContent = `Loaded ${currentIndex.length} indexed passages from storage.`;
   }
 }
 

@@ -9,35 +9,69 @@
     <main class="card">
       <header class="card__header">
         <div class="badge">gemini-blog-buddy</div>
-        <h1>Document Insights</h1>
       </header>
 
       <div class="actions">
         <div class="action-buttons">
-          <button id="indexBtn" type="button" class="btn btn-primary">
-            Process the current web page for indexing
+          <button
+            id="indexBtn"
+            type="button"
+            class="btn btn-primary btn-with-icon"
+            title="Index the current page to your processed blogs"
+          >
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="M12 2a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 11.586V3a1 1 0 0 1 1-1Zm-7 14a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H5Z"
+                />
+              </svg>
+            </span>
+            <span class="btn-text">Index</span>
           </button>
-          <button id="randomBlogBtn" type="button" class="btn btn-ghost">
-            Random recent blog
+          <button
+            id="randomBlogBtn"
+            type="button"
+            class="btn btn-ghost btn-with-icon"
+            title="Randomly open one of your recent blogs"
+          >
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="M7.05 5.636a8 8 0 0 1 13.284 3.924 1 1 0 1 1-1.94.485 6 6 0 0 0-9.802-2.945l1.423 1.423a1 1 0 0 1-1.414 1.414L5.343 7.414a1 1 0 0 1 0-1.414l2.121-2.121a1 1 0 0 1 1.414 1.414L7.05 5.636Zm9.9 12.728a8 8 0 0 1-13.284-3.924 1 1 0 1 1 1.94-.485 6 6 0 0 0 9.802 2.945l-1.423-1.423a1 1 0 1 1 1.414-1.414l3.758 3.758a1 1 0 0 1 0 1.414l-2.121 2.121a1 1 0 1 1-1.414-1.414l1.328-1.328Z"
+                />
+              </svg>
+            </span>
+            <span class="btn-text">Blog</span>
           </button>
         </div>
-        <p id="status" role="status" class="status">Not indexed yet.</p>
       </div>
 
       <section class="search">
-        <label for="query">Search text</label>
         <div class="search-row">
           <input
             id="query"
             type="text"
-            placeholder="Find something…"
+            placeholder="Retrieve from your index"
             autocomplete="off"
           />
-          <button id="searchBtn" type="button" class="btn btn-ghost">Search</button>
+          <button
+            id="searchBtn"
+            type="button"
+            class="btn btn-ghost btn-icon-only"
+            title="Search your indexed content"
+          >
+            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+              <path
+                d="M11 4a7 7 0 1 1-4.95 11.95l-1.8 1.8a1 1 0 0 1-1.414-1.414l1.8-1.8A7 7 0 0 1 11 4Zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"
+              />
+            </svg>
+          </button>
         </div>
       </section>
 
       <section id="results" class="results" aria-live="polite"></section>
+
+      <p id="status" role="status" class="status">Not indexed yet.</p>
     </main>
 
     <script src="popup.js"></script>
