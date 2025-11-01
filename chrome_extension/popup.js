@@ -95,13 +95,6 @@ function renderResults(results = []) {
 
   container.innerHTML = "";
 
-  if (!results.length) {
-    const empty = document.createElement("p");
-    empty.textContent = "No results yet.";
-    container.appendChild(empty);
-    return;
-  }
-
   results.forEach((item) => {
     const result = document.createElement("article");
     result.className = "result";
@@ -175,5 +168,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  setStatus("No results yet. Not indexed yet.");
   renderResults([]);
 });
