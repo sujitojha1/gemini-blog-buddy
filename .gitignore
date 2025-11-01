@@ -11,5 +11,3 @@ server/__pycache__/*
 server/.python-version
 server/documents/*
 server/faiss_index/*
-server/faiss_index/index.faiss
-server/faiss_index/metadata.json
