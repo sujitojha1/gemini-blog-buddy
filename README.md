@@ -28,4 +28,3 @@ Deliver Gemini Blog Buddy: a retrieval-augmented Chrome extension that curates s
 - [ ] Integrate the extension with the backend and validate end-to-end behaviors.
 - [ ] Add automated tests, deployment scripts, and user-facing documentation.
 
-
