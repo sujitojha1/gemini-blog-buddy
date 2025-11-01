@@ -37,6 +37,7 @@ def get_blog_sources() -> tuple[BlogSource, ...]:
 
 class SearchRequest(BaseModel):
     query: str
+    top_k: int | None = None
 
 
 class IndexRequest(BaseModel):
@@ -80,11 +81,12 @@ async def random_blog():
 @app.post("/search")
 async def search_index(request: SearchRequest):
     try:
-        results = await run_in_threadpool(search_with_faiss, request.query)
+        top_k = request.top_k or 3
+        results = await run_in_threadpool(search_with_faiss, request.query, top_k)
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
-    return {"query": request.query, "results": results}
+    return {"query": request.query, "top_k": top_k, "results": results}
 
 
 if __name__ == "__main__":

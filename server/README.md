@@ -16,7 +16,7 @@ The app listens on `http://localhost:8000`. The following endpoints are availabl
 
 - `POST /index` — runs Docling’s VLM pipeline via the Python API (Granite Docling by default, configurable via env vars), saves the Markdown in `server/documents/`, and updates the FAISS index in `server/faiss_index/`.
 - `GET /random-blog` — scrapes the curated source blogs, selects a random article, and returns its URL.
-- `POST /search` — performs a FAISS similarity search over the indexed chunks using Ollama embeddings.
+- `POST /search` — performs a FAISS similarity search over the indexed chunks using Ollama embeddings and returns the top three matches with links back to the original sources.
 
 The Chrome extension communicates with these routes when you click the *Index*, *Blog*, and search buttons in the popup.
 

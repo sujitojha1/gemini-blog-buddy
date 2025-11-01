@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Sequence
 
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 import faiss  # type: ignore
 import numpy as np
 import requests
@@ -188,12 +190,16 @@ class ChunkRecord:
     doc_name: str
     chunk: str
     source_url: str
+    doc_path: str | None = None
 
 
 class FaissStore:
     def __init__(self) -> None:
         ensure_directories()
         self.metadata: list[dict[str, Any]] = read_metadata()
+        self._chunk_lookup: dict[str, dict[str, Any]] = {
+            entry["chunk_id"]: entry for entry in self.metadata if "chunk_id" in entry
+        }
         self.index = self._load_index()
 
     def _load_index(self) -> faiss.Index | None:
@@ -205,10 +211,15 @@ class FaissStore:
         if self.index is None or self.index.ntotal == 0:
             if INDEX_FILE.exists():
                 INDEX_FILE.unlink()
+            self.metadata = []
+            self._chunk_lookup = {}
             write_metadata([])
             return
         faiss.write_index(self.index, str(INDEX_FILE))
         write_metadata(self.metadata)
+        self._chunk_lookup = {
+            entry["chunk_id"]: entry for entry in self.metadata if "chunk_id" in entry
+        }
 
     def add_document(self, markdown_path: Path, source_url: str) -> dict[str, Any]:
         text = markdown_path.read_text(encoding="utf-8")
@@ -230,6 +241,10 @@ class FaissStore:
         self.index.add(embedding_matrix)
 
         doc_name = markdown_path.name
+        try:
+            doc_path = str(markdown_path.relative_to(BASE_DIR))
+        except ValueError:
+            doc_path = str(markdown_path)
         new_metadata = []
         for idx, chunk in enumerate(chunks):
             new_metadata.append(
@@ -238,9 +253,12 @@ class FaissStore:
                     "chunk": chunk,
                     "chunk_id": f"{markdown_path.stem}_{idx}",
                     "source_url": source_url,
+                    "doc_path": doc_path,
                 }
             )
         self.metadata.extend(new_metadata)
+        for entry in new_metadata:
+            self._chunk_lookup[entry["chunk_id"]] = entry
         self._persist()
         return {
             "doc_name": doc_name,
@@ -264,9 +282,10 @@ class FaissStore:
                     "rank": rank + 1,
                     "score": float(distances[0][rank]),
                     "chunk_id": match["chunk_id"],
-                    "doc_name": match["doc_name"],
-                    "chunk": match["chunk"],
-                    "source_url": match["source_url"],
+                    "title": match.get("doc_name"),
+                    "snippet": match.get("chunk"),
+                    "url": match.get("source_url"),
+                    "doc_path": match.get("doc_path"),
                 }
             )
         return results

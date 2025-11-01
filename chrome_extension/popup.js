@@ -175,20 +175,21 @@ function renderResults(results = []) {
     result.className = "result";
 
     const title = document.createElement("h2");
-    title.textContent = item.doc_name || item.title || "Result";
+    title.textContent = item.title || item.doc_name || "Result";
     result.appendChild(title);
 
     const snippet = document.createElement("p");
     snippet.className = "snippet";
     snippet.textContent =
-      item.chunk ||
       item.snippet ||
+      item.chunk ||
       "No snippet available for this match.";
     result.appendChild(snippet);
 
-    if (item.source_url) {
+    const resultUrl = item.url || item.source_url;
+    if (resultUrl) {
       const link = document.createElement("a");
-      link.href = item.source_url;
+      link.href = resultUrl;
       link.textContent = "Open source";
       link.target = "_blank";
       link.rel = "noopener noreferrer";
@@ -220,7 +221,7 @@ async function handleSearchClick() {
   try {
     const data = await callApi("/search", {
       method: "POST",
-      body: JSON.stringify({ query })
+      body: JSON.stringify({ query, top_k: 3 })
     });
 
     const count = data.results?.length ?? 0;

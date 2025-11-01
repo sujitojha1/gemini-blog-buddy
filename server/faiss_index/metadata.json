@@ -382,5 +382,215 @@
     "chunk": "[Terms of service: Commercial](https://www.anthropic.com/legal/commercial-terms) - [Terms of service: Consumer](https://www.anthropic.com/legal/consumer-terms) - [Usage policy](https://www.anthropic.com/legal/aup) \u00a9 2025 Anthropic PBC",
     "chunk_id": "https-www-anthropic-com-engineering-equipping-agents-for-the-real-world-with-agent-skills-1761991616_57",
     "source_url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "# Reasoning's Razor: Reasoning Improves Accuracy but Can Hurt Recall at Critical Operating Points in Safety and Hallucination Detection Authors Atoosa Chegini\u2021\u2020**, Hamid Kazemi\u2021, Garrett Souza, Maria Safi, Yang Song, Samy Bengio, Sinead Williamson, Mehrdad Farajtabar [View publication](https://arxiv.org/pdf/2510.21049) Copy Bibtex",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_0",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "Samy Bengio, Sinead Williamson, Mehrdad Farajtabar [View publication](https://arxiv.org/pdf/2510.21049) Copy Bibtex Reasoning has become a central paradigm for large language models (LLMs), consistently boosting accuracy across diverse benchmarks. Yet its suitability for precision-sensitive tasks remains unclear. We present the first systematic",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_1",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "for precision-sensitive tasks remains unclear. We present the first systematic study of reasoning for classification tasks under strict low false positive rate (FPR) regimes. Our analysis covers two tasks-safety detection and hallucination detection-evaluated in both fine-tuned and zero-shot settings, using",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_2",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "and hallucination detection-evaluated in both fine-tuned and zero-shot settings, using standard LLMs and Large Reasoning Models (LRMs). Our results reveal a clear trade-off: *Think On* (reasoning-augmented) generation improves overall accuracy but underperforms at the low-FPR thresholds essential for practical use.",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_3",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "but underperforms at the low-FPR thresholds essential for practical use. In contrast, *Think Off* (no reasoning during inference) dominates in these precision-sensitive regimes, with *Think On* surpassing only when higher FPRs are acceptable. In addition, we find token-based scoring substantially",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_4",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "FPRs are acceptable. In addition, we find token-based scoring substantially outperforms self-verbalized confidence for precision-sensitive deployments. Finally, a simple ensemble of the two modes recovers the strengths of each. Taken together, our findings position reasoning as a double-edged tool: beneficial",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_5",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "together, our findings position reasoning as a double-edged tool: beneficial for average accuracy, but often ill-suited for applications requiring strict precision. - \u2021 Equal contribution - \u2020 University of Maryland, College Park - ** Work done while at Apple ##",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_6",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "College Park - ** Work done while at Apple ## Related readings and updates. ### [The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity](/research/illusion-of-thinking) June 11, 2025 | [research area Speech",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_7",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "of Problem Complexity](/research/illusion-of-thinking) June 11, 2025 | [research area Speech and Natural Language Processing](/research/?domain=Speech%20and%20Natural%20Language%20Processing) | [conference NeurIPS](/research/?event=NeurIPS) Recent generations of frontier language models have introduced Large Reasoning Models (LRMs) that generate detailed thinking processes before providing answers. While these models",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_8",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "generate detailed thinking processes before providing answers. While these models demonstrate improved performance on reasoning benchmarks, their fundamental capabilities, scaling properties, and limitations remain insufficiently understood. Current evaluations primarily focus on established mathematical and coding benchmarks, emphasizing final... [Read more](/research/illusion-of-thinking)",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_9",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "on established mathematical and coding benchmarks, emphasizing final... [Read more](/research/illusion-of-thinking) ### [Interleaved Reasoning for Large Language Models via Reinforcement Learning](/research/interleaved-reasoning) May 28, 2025 | [research area Knowledge Bases and Search](/research/?domain=Knowledge%20Bases%20and%20Search) , [research area Speech and Natural Language Processing](/research/?domain=Speech%20and%20Natural%20Language%20Processing) Long chain-of-thought",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_10",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": ", [research area Speech and Natural Language Processing](/research/?domain=Speech%20and%20Natural%20Language%20Processing) Long chain-of-thought (CoT) significantly enhances large language models' (LLM) reasoning capabilities. However, the extensive reasoning traces lead to inefficiencies and an increased time-to-first-token (TTFT). We propose a novel training paradigm that uses",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_11",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "time-to-first-token (TTFT). We propose a novel training paradigm that uses reinforcement learning (RL) to guide reasoning LLMs to interleave thinking and answering for multi-hop questions. We observe that models inherently possess the ability to perform interleaved... [Read more](/research/interleaved-reasoning) Bottom banner",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_12",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "possess the ability to perform interleaved... [Read more](/research/interleaved-reasoning) Bottom banner <!-- image --> ## Discover opportunities in Machine Learning. Our research in machine learning breaks new ground every day. [Work with us](/work-with-us)",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_13",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761992719.md",
+    "chunk": "with us](/work-with-us)",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761992719_14",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761992719.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "# Reasoning's Razor: Reasoning Improves Accuracy but Can Hurt Recall at Critical Operating Points in Safety and Hallucination Detection Authors Atoosa Chegini\u2021\u2020**, Hamid Kazemi\u2021, Garrett Souza, Maria Safi, Yang Song, Samy Bengio, Sinead Williamson, Mehrdad Farajtabar [View publication](https://arxiv.org/pdf/2510.21049) Copy Bibtex",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_0",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "Samy Bengio, Sinead Williamson, Mehrdad Farajtabar [View publication](https://arxiv.org/pdf/2510.21049) Copy Bibtex Reasoning has become a central paradigm for large language models (LLMs), consistently boosting accuracy across diverse benchmarks. Yet its suitability for precision-sensitive tasks remains unclear. We present the first systematic",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_1",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "for precision-sensitive tasks remains unclear. We present the first systematic study of reasoning for classification tasks under strict low false positive rate (FPR) regimes. Our analysis covers two tasks-safety detection and hallucination detection-evaluated in both fine-tuned and zero-shot settings, using",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_2",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "and hallucination detection-evaluated in both fine-tuned and zero-shot settings, using standard LLMs and Large Reasoning Models (LRMs). Our results reveal a clear trade-off: *Think On* (reasoning-augmented) generation improves overall accuracy but underperforms at the low-FPR thresholds essential for practical use.",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_3",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "but underperforms at the low-FPR thresholds essential for practical use. In contrast, *Think Off* (no reasoning during inference) dominates in these precision-sensitive regimes, with *Think On* surpassing only when higher FPRs are acceptable. In addition, we find token-based scoring substantially",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_4",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "FPRs are acceptable. In addition, we find token-based scoring substantially outperforms self-verbalized confidence for precision-sensitive deployments. Finally, a simple ensemble of the two modes recovers the strengths of each. Taken together, our findings position reasoning as a double-edged tool: beneficial",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_5",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "together, our findings position reasoning as a double-edged tool: beneficial for average accuracy, but often ill-suited for applications requiring strict precision. - \u2021 Equal contribution - \u2020 University of Maryland, College Park - ** Work done while at Apple ##",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_6",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "College Park - ** Work done while at Apple ## Related readings and updates. ### [The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity](/research/illusion-of-thinking) June 11, 2025 | [research area Speech",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_7",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "of Problem Complexity](/research/illusion-of-thinking) June 11, 2025 | [research area Speech and Natural Language Processing](/research/?domain=Speech%20and%20Natural%20Language%20Processing) | [conference NeurIPS](/research/?event=NeurIPS) Recent generations of frontier language models have introduced Large Reasoning Models (LRMs) that generate detailed thinking processes before providing answers. While these models",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_8",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "generate detailed thinking processes before providing answers. While these models demonstrate improved performance on reasoning benchmarks, their fundamental capabilities, scaling properties, and limitations remain insufficiently understood. Current evaluations primarily focus on established mathematical and coding benchmarks, emphasizing final... [Read more](/research/illusion-of-thinking)",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_9",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "on established mathematical and coding benchmarks, emphasizing final... [Read more](/research/illusion-of-thinking) ### [Interleaved Reasoning for Large Language Models via Reinforcement Learning](/research/interleaved-reasoning) May 28, 2025 | [research area Knowledge Bases and Search](/research/?domain=Knowledge%20Bases%20and%20Search) , [research area Speech and Natural Language Processing](/research/?domain=Speech%20and%20Natural%20Language%20Processing) Long chain-of-thought",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_10",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": ", [research area Speech and Natural Language Processing](/research/?domain=Speech%20and%20Natural%20Language%20Processing) Long chain-of-thought (CoT) significantly enhances large language models' (LLM) reasoning capabilities. However, the extensive reasoning traces lead to inefficiencies and an increased time-to-first-token (TTFT). We propose a novel training paradigm that uses",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_11",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "time-to-first-token (TTFT). We propose a novel training paradigm that uses reinforcement learning (RL) to guide reasoning LLMs to interleave thinking and answering for multi-hop questions. We observe that models inherently possess the ability to perform interleaved... [Read more](/research/interleaved-reasoning) Bottom banner",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_12",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "possess the ability to perform interleaved... [Read more](/research/interleaved-reasoning) Bottom banner <!-- image --> ## Discover opportunities in Machine Learning. Our research in machine learning breaks new ground every day. [Work with us](/work-with-us)",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_13",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
+  },
+  {
+    "doc_name": "https-machinelearning-apple-com-research-reasoning-razor-1761993107.md",
+    "chunk": "with us](/work-with-us)",
+    "chunk_id": "https-machinelearning-apple-com-research-reasoning-razor-1761993107_14",
+    "source_url": "https://machinelearning.apple.com/research/reasoning-razor",
+    "doc_path": "documents/https-machinelearning-apple-com-research-reasoning-razor-1761993107.md"
   }
 ]
