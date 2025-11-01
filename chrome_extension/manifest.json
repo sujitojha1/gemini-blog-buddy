@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Index packaged documents and search for relevant passages directly from the toolbar.",
   "permissions": [
-    "storage"
+    "storage",
+    "tabs"
   ],
   "icons": {
     "16": "icons/icon16.png",

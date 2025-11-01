@@ -63,6 +63,38 @@ async function restoreIndex() {
   }
 }
 
+async function openRandomBlog() {
+  const status = document.getElementById("status");
+
+  try {
+    const stored = await chrome.storage.local.get("recentBlogs");
+    const recentBlogs = Array.isArray(stored.recentBlogs)
+      ? stored.recentBlogs
+      : [];
+
+    if (!recentBlogs.length) {
+      status.textContent = "No recent blogs available yet.";
+      return;
+    }
+
+    const randomEntry =
+      recentBlogs[Math.floor(Math.random() * recentBlogs.length)];
+    const candidateUrl =
+      typeof randomEntry === "string" ? randomEntry : randomEntry?.url;
+
+    if (!candidateUrl) {
+      status.textContent = "Recent blog entry is missing a URL.";
+      return;
+    }
+
+    await chrome.tabs.create({ url: candidateUrl });
+    status.textContent = "Opened a recent blog in a new tab.";
+  } catch (error) {
+    console.error(error);
+    status.textContent = `Unable to open a recent blog: ${error.message}`;
+  }
+}
+
 function renderResults(results, query) {
   const container = document.getElementById("results");
   container.innerHTML = "";
@@ -125,6 +157,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   await restoreIndex();
 
   document.getElementById("indexBtn").addEventListener("click", indexDocuments);
+  document
+    .getElementById("randomBlogBtn")
+    .addEventListener("click", openRandomBlog);
   document.getElementById("searchBtn").addEventListener("click", onSearch);
   document
     .getElementById("query")

@@ -10,13 +10,17 @@
       <header class="card__header">
         <div class="badge">gemini-blog-buddy</div>
         <h1>Document Insights</h1>
-        <p class="subtitle">
-          Index bundled docs once, then surface the most relevant passages with a quick search.
-        </p>
       </header>
 
       <div class="actions">
-        <button id="indexBtn" type="button" class="btn btn-primary">Index Documents</button>
+        <div class="action-buttons">
+          <button id="indexBtn" type="button" class="btn btn-primary">
+            Process the current web page for indexing
+          </button>
+          <button id="randomBlogBtn" type="button" class="btn btn-ghost">
+            Random recent blog
+          </button>
+        </div>
         <p id="status" role="status" class="status">Not indexed yet.</p>
       </div>
 

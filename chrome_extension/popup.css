@@ -53,6 +53,11 @@ h1 {
   gap: 8px;
 }
 
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
 .btn {
   padding: 10px 14px;
   border: none;
@@ -60,6 +65,10 @@ h1 {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.action-buttons .btn {
+  flex: 1;
 }
 
 .btn-primary {
