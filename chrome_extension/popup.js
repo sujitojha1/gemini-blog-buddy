@@ -196,20 +196,40 @@ async function handleSearchClick() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document
-    .getElementById("indexBtn")
-    .addEventListener("click", handleIndexClick);
+  const indexBtn = document.getElementById("indexBtn");
+  const randomBlogBtn = document.getElementById("randomBlogBtn");
+  const searchBtn = document.getElementById("searchBtn");
+  const queryInput = document.getElementById("query");
 
-  document
-    .getElementById("randomBlogBtn")
-    .addEventListener("click", handleRandomBlogClick);
+  indexBtn.addEventListener("click", handleIndexClick);
+  randomBlogBtn.addEventListener("click", handleRandomBlogClick);
+  searchBtn.addEventListener("click", handleSearchClick);
 
-  document.getElementById("searchBtn").addEventListener("click", handleSearchClick);
-
-  document.getElementById("query").addEventListener("keydown", (event) => {
+  queryInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       handleSearchClick();
     }
+  });
+
+  const controlsWithTooltips = [
+    indexBtn,
+    randomBlogBtn,
+    searchBtn,
+    queryInput
+  ];
+
+  controlsWithTooltips.forEach((element) => {
+    element.addEventListener("mouseenter", () => {
+      if (element.title) {
+        setStatus(element.title);
+      }
+    });
+
+    element.addEventListener("focus", () => {
+      if (element.title) {
+        setStatus(element.title);
+      }
+    });
   });
 
   setStatus("No results yet. Not indexed yet.");
