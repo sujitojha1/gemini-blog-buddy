@@ -1,0 +1,15 @@
+sources:
+  - name: Google AI Blog
+    url: https://blog.google/technology/ai/
+  - name: NVIDIA Blog
+    url: https://developer.nvidia.com/blog
+  - name: Amazon Blog
+    url: https://www.amazon.science/blog
+  - name: Apple Research Blog
+    url: https://machinelearning.apple.com/research
+  - name: Anthropic Engineering Blog
+    url: https://www.anthropic.com/engineering
+  - name: Anthropic Research Blog
+    url: https://www.anthropic.com/research
+  - name: Anthropic Transformer Circuits
+    url: https://transformer-circuits.pub/

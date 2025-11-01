@@ -1,6 +1,12 @@
+import random
+from functools import lru_cache
+from urllib.parse import urlparse
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+
+from blog_scraper import BlogSource, gather_article_links, load_sources
 
 
 app = FastAPI(title="Gemini Blog Buddy API")
@@ -12,6 +18,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
+
+
+DEFAULT_RANDOM_RESPONSE = {
+    "message": "Here is a placeholder blog from your recent reads.",
+    "url": "https://blog.example.com/placeholder-post"
+}
+
+
+@lru_cache(maxsize=1)
+def get_blog_sources() -> tuple[BlogSource, ...]:
+    return tuple(load_sources())
 
 
 class SearchRequest(BaseModel):
@@ -33,9 +50,16 @@ async def index_current_page():
 
 @app.get("/random-blog")
 async def random_blog():
+    sources = get_blog_sources()
+    links = await gather_article_links(sources)
+    if not links:
+        return DEFAULT_RANDOM_RESPONSE
+
+    selected = random.choice(links)
+    host = urlparse(selected.source_url).netloc or selected.source_name
     return {
-        "message": "Here is a placeholder blog from your recent reads.",
-        "url": "https://blog.example.com/placeholder-post"
+        "message": f"Surfaced an article from {host}.",
+        "url": selected.url
     }
 
 
