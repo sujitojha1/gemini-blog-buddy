@@ -82,17 +82,48 @@ function createTab(url) {
   });
 }
 
+function getActiveTabUrl() {
+  if (!chrome?.tabs?.query) {
+    return Promise.resolve(null);
+  }
+
+  return new Promise((resolve, reject) => {
+    try {
+      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        if (chrome.runtime.lastError) {
+          reject(new Error(chrome.runtime.lastError.message));
+          return;
+        }
+
+        const activeTab = tabs?.[0];
+        resolve(activeTab?.url ?? null);
+      });
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
 async function handleIndexClick(event) {
   const button = event.currentTarget;
   button.disabled = true;
   setStatus("Sending page to be indexed...");
 
   try {
+    const tabUrl = await getActiveTabUrl();
+
+    if (!tabUrl) {
+      setStatus("Unable to read the active tab URL. Open a page first.");
+      return;
+    }
+
     const data = await callApi("/index", {
       method: "POST",
-      body: JSON.stringify({})
+      body: JSON.stringify({ url: tabUrl })
     });
-    setStatus(data.message || "Index request processed.");
+    const message = data.message || "Index request processed.";
+    const docName = data.doc_name ? ` (${data.doc_name})` : "";
+    setStatus(`${message}${docName}`);
   } catch (error) {
     console.error(error);
     setStatus(`Index request failed: ${error.message}`);
@@ -144,15 +175,25 @@ function renderResults(results = []) {
     result.className = "result";
 
     const title = document.createElement("h2");
-    title.textContent = item.title || "Result";
+    title.textContent = item.doc_name || item.title || "Result";
     result.appendChild(title);
 
     const snippet = document.createElement("p");
     snippet.className = "snippet";
     snippet.textContent =
+      item.chunk ||
       item.snippet ||
-      "This is a placeholder snippet returned by the FastAPI backend.";
+      "No snippet available for this match.";
     result.appendChild(snippet);
+
+    if (item.source_url) {
+      const link = document.createElement("a");
+      link.href = item.source_url;
+      link.textContent = "Open source";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      result.appendChild(link);
+    }
 
     container.appendChild(result);
   });
@@ -182,10 +223,8 @@ async function handleSearchClick() {
       body: JSON.stringify({ query })
     });
 
-    setStatus(
-      data.message ||
-        `Search completed with ${data.results?.length ?? 0} placeholder result(s).`
-    );
+    const count = data.results?.length ?? 0;
+    setStatus(`Search completed with ${count} result${count === 1 ? "" : "s"}.`);
     renderResults(data.results || []);
   } catch (error) {
     console.error(error);

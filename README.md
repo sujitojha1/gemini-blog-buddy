@@ -23,9 +23,9 @@ Deliver Gemini Blog Buddy: a retrieval-augmented Chrome extension that curates s
 - [x] Create a chrome extension in new folder and basic extension with button index the document and find the document with search text
 - [x] Set up a FastAPI backend scaffold (server folder) that returns placeholder responses for extension actions
 - [x] Server - Random blog, reads the websites and extracts ariticle links and randomly select and respond back the link to front end
-- [ ] Define data contracts and interaction flows for the MCP components.
+- [x] Use docling to turn target webpages into Markdown in `server/documents` and store embeddings via the `faiss_advanced_ollama.py` flow in `server/faiss_index`.
+- [ ] Server - retrieval, search string and find the link of document previously processed, once clicked should go to the link and specific section
 - [ ] Build the FastAPI backend, including retrieval pipelines and orchestration logic.
 - [ ] Implement the Chrome extension UI and background services.
 - [ ] Integrate the extension with the backend and validate end-to-end behaviors.
 - [ ] Add automated tests, deployment scripts, and user-facing documentation.
-

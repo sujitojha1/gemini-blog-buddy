@@ -2,11 +2,15 @@ import random
 from functools import lru_cache
 from urllib.parse import urlparse
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from blog_scraper import BlogSource, gather_article_links, load_sources
+from fastapi.concurrency import run_in_threadpool
+
+from rag_pipeline import index_url as index_with_docling
+from rag_pipeline import search_index as search_with_faiss
 
 
 app = FastAPI(title="Gemini Blog Buddy API")
@@ -35,16 +39,26 @@ class SearchRequest(BaseModel):
     query: str
 
 
+class IndexRequest(BaseModel):
+    url: str
+
+
 @app.get("/")
 async def healthcheck():
     return {"message": "Gemini Blog Buddy API is running."}
 
 
 @app.post("/index")
-async def index_current_page():
+async def index_current_page(request: IndexRequest):
+    try:
+        result = await run_in_threadpool(index_with_docling, request.url)
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
     return {
-        "message": "Pretending to process the current page for indexing.",
-        "status": "indexed-placeholder"
+        "message": "Indexed document via Docling and FAISS.",
+        "doc_name": result["doc_name"],
+        "chunks_indexed": result["chunks_indexed"],
     }
 
 
@@ -65,15 +79,12 @@ async def random_blog():
 
 @app.post("/search")
 async def search_index(request: SearchRequest):
-    return {
-        "message": f"Pretending to search for '{request.query}'.",
-        "results": [
-            {
-                "title": "Static search result",
-                "snippet": "This is a placeholder snippet returned from the FastAPI backend."
-            }
-        ]
-    }
+    try:
+        results = await run_in_threadpool(search_with_faiss, request.query)
+    except Exception as exc:  # noqa: BLE001
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+    return {"query": request.query, "results": results}
 
 
 if __name__ == "__main__":
