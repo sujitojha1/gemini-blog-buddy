@@ -29,6 +29,40 @@ async function callApi(path, options = {}) {
 }
 
 function openTab(url) {
+  if (!chrome?.tabs?.update) {
+    return Promise.resolve();
+  }
+
+  return new Promise((resolve, reject) => {
+    try {
+      chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        if (chrome.runtime.lastError) {
+          reject(new Error(chrome.runtime.lastError.message));
+          return;
+        }
+
+        const activeTab = tabs?.[0];
+
+        if (!activeTab?.id) {
+          resolve();
+          return;
+        }
+
+        chrome.tabs.update(activeTab.id, { url }, () => {
+          if (chrome.runtime.lastError) {
+            reject(new Error(chrome.runtime.lastError.message));
+          } else {
+            resolve();
+          }
+        });
+      });
+    } catch (error) {
+      reject(error);
+    }
+  });
+}
+
+function createTab(url) {
   if (!chrome?.tabs?.create) {
     return Promise.resolve();
   }
@@ -77,7 +111,17 @@ async function handleRandomBlogClick(event) {
     setStatus(data.message || "Random blog retrieved.");
 
     if (data.url) {
-      await openTab(data.url);
+      const openInCurrent = await chrome.storage.local.get("openBlogsInCurrent");
+      const shouldOpenInCurrent =
+        typeof openInCurrent.openBlogsInCurrent === "boolean"
+          ? openInCurrent.openBlogsInCurrent
+          : true;
+
+      if (shouldOpenInCurrent) {
+        await openTab(data.url);
+      } else {
+        await createTab(data.url);
+      }
     }
   } catch (error) {
     console.error(error);
