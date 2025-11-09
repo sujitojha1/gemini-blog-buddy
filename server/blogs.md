@@ -1,3 +1,24 @@
+## 2025-11-09
+- [Enhancing GPU-Accelerated Vector Search in Faiss with NVIDIA cuVS](https://developer.nvidia.com/blog/enhancing-gpu-accelerated-vector-search-in-faiss-with-nvidia-cuvs/) — *NVIDIA Blog*
+- [Learning Deformable Body Interactions With Adaptive Spatial Tokenization](https://machinelearning.apple.com/research/learning-deformable-body) — *Apple Research Blog*
+- [Gemini Deep Research can now connect to your Gmail, Docs, Drive and even Chat.](https://blog.google/products/gemini/deep-research-workspace-app-integration/) — *Google AI Blog*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+- [ExpertLens: Activation Steering Features Are Highly Interpretable](https://machinelearning.apple.com/research/expertlens-activation) — *Apple Research Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Workshop at NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS%20Workshop) — *Apple Research Blog*
+- [Accelerating AV Simulation with Neural Reconstruction and World Foundation Models](https://developer.nvidia.com/blog/accelerating-av-simulation-with-neural-reconstruction-and-world-foundation-models/) — *NVIDIA Blog*
+- [Meet Project Suncatcher, a research moonshot to scale machine learning compute in space.](https://blog.google/technology/research/google-project-suncatcher/) — *Google AI Blog*
+- [Building an Interactive AI Agent for Lightning-Fast Machine Learning Tasks](https://developer.nvidia.com/blog/building-an-interactive-ai-agent-for-lightning-fast-machine-learning-tasks/) — *NVIDIA Blog*
+- [Benchmarking LLMs on AI-Generated CUDA Code with ComputeEval 2025.2](https://developer.nvidia.com/blog/benchmarking-llms-on-ai-generated-cuda-code-with-computeeval-2025-2/) — *NVIDIA Blog*
+- [Accelerating Large-Scale Mixture-of-Experts Training in PyTorch](https://developer.nvidia.com/blog/accelerating-large-scale-mixture-of-experts-training-in-pytorch/) — *NVIDIA Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Google AI Blog](https://blog.google/technology/ai/ask-a-techspert-what-is-inference/) — *Google AI Blog*
+- [conference EMNLP](https://machinelearning.apple.com/research/?event=EMNLP) — *Apple Research Blog*
+- [research area Tools, Platforms, Frameworks](https://machinelearning.apple.com/research/?domain=Tools%2C%20Platforms%2C%20Frameworks) — *Apple Research Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [PolyNorm: Few-Shot LLM-Based Text Normalization for Text-to-Speech](https://machinelearning.apple.com/research/polynorm) — *Apple Research Blog*
+
 ## 2025-11-01
 - [Build Synthetic Data Pipelines to Train Smarter Robots with NVIDIA Isaac Sim](https://developer.nvidia.com/blog/build-synthetic-data-pipelines-to-train-smarter-robots-with-nvidia-isaac-sim/) — *NVIDIA Blog*
 - [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
