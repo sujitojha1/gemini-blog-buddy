@@ -1,6 +1,8 @@
 sources:
   - name: Google AI Blog
     url: https://blog.google/technology/ai/
+  - name: Google Research Blog
+    url: https://research.google/blog/
   - name: NVIDIA Blog
     url: https://developer.nvidia.com/blog
   - name: Amazon Blog

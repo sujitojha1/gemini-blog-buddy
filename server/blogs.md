@@ -1,4 +1,59 @@
 ## 2025-11-09
+- [Google Labs](https://blog.google/technology/google-labs/) — *Google AI Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [Google DeepMind](https://blog.google/technology/google-deepmind/) — *Google AI Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Progress on Attention An update on our progress studying attention.](https://transformer-circuits.pub/2025/attention-update/index.html) — *Anthropic Transformer Circuits*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Developers](https://blog.google/technology/developers/) — *Google AI Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Develop Specialized AI Agents with New NVIDIA Nemotron Vision, RAG, and Guardrail Models](https://developer.nvidia.com/blog/develop-specialized-ai-agents-with-new-nvidia-nemotron-vision-rag-and-guardrail-models/) — *NVIDIA Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Research Blog*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [Sustainability](https://blog.google/outreach-initiatives/sustainability/) — *Google AI Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Google AI Blog](https://blog.google/technology/ai/rss/) — *Google AI Blog*
+- [Published year 2025](https://machinelearning.apple.com/research/?year=2025) — *Apple Research Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Create Your Own Bash Computer Use Agent with NVIDIA Nemotron in One Hour](https://developer.nvidia.com/blog/create-your-own-bash-computer-use-agent-with-nvidia-nemotron-in-one-hour/) — *NVIDIA Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Reconstruct a Scene in NVIDIA Isaac Sim Using Only a Smartphone](https://developer.nvidia.com/blog/reconstruct-a-scene-in-nvidia-isaac-sim-using-only-a-smartphone/) — *NVIDIA Blog*
+- [Safety and security](https://blog.google/technology/safety-security/) — *Google AI Blog*
+
+## 2025-11-08
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Adapting Self-Supervised Representations as a Latent Space for Efficient Generation](https://machinelearning.apple.com/research/self-supervised-representations) — *Apple Research Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+
+## 2025-11-07
 - [Enhancing GPU-Accelerated Vector Search in Faiss with NVIDIA cuVS](https://developer.nvidia.com/blog/enhancing-gpu-accelerated-vector-search-in-faiss-with-nvidia-cuvs/) — *NVIDIA Blog*
 - [Learning Deformable Body Interactions With Adaptive Spatial Tokenization](https://machinelearning.apple.com/research/learning-deformable-body) — *Apple Research Blog*
 - [Gemini Deep Research can now connect to your Gmail, Docs, Drive and even Chat.](https://blog.google/products/gemini/deep-research-workspace-app-integration/) — *Google AI Blog*
