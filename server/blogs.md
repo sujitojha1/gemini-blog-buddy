@@ -1,3 +1,31 @@
+## 2025-11-11
+- [NVIDIA Blackwell Architecture Sweeps MLPerf Training v5.1 Benchmarks](https://developer.nvidia.com/blog/nvidia-blackwell-architecture-sweeps-mlperf-training-v5-1-benchmarks/) — *NVIDIA Blog*
+- [Health](https://blog.google/technology/health/) — *Google AI Blog*
+- [research area Tools, Platforms, Frameworks](https://machinelearning.apple.com/research/?domain=Tools%2C%20Platforms%2C%20Frameworks) — *Apple Research Blog*
+- [Building Scalable and Fault-Tolerant NCCL Applications](https://developer.nvidia.com/blog/building-scalable-and-fault-tolerant-nccl-applications/) — *NVIDIA Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Accelerating AV Simulation with Neural Reconstruction and World Foundation Models](https://developer.nvidia.com/blog/accelerating-av-simulation-with-neural-reconstruction-and-world-foundation-models/) — *NVIDIA Blog*
+- [Achieve CUTLASS C++ Performance with Python APIs Using CuTe DSL](https://developer.nvidia.com/blog/achieve-cutlass-c-performance-with-python-apis-using-cute-dsl/) — *NVIDIA Blog*
+- [Gemini Deep Research can now connect to your Gmail, Docs, Drive and even Chat.](https://blog.google/products/gemini/deep-research-workspace-app-integration/) — *Google AI Blog*
+- [Equipping agents for the real world with Agent Skills Oct 16, 2025](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) — *Anthropic Engineering Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [The road to useful quantum computing applications](https://blog.google/technology/research/useful-quantum-computing-applications/) — *Google AI Blog*
+- [conference EMNLP](https://machinelearning.apple.com/research/?event=EMNLP) — *Apple Research Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [How to Get Started with Neural Shading for Your Game or Application](https://developer.nvidia.com/blog/how-to-get-started-with-neural-shading-for-your-game-or-application/) — *NVIDIA Blog*
+- [Gen AI Super-Resolution Accelerates Weather Prediction with Scalable, Low-Compute Models](https://developer.nvidia.com/blog/gen-ai-super-resolution-accelerates-weather-prediction-with-scalable-low-compute-models/) — *NVIDIA Blog*
+- [CAR-Flow: Condition-Aware Reparameterization Aligns Source and Target for Better Flow Matching](https://machinelearning.apple.com/research/car-flow) — *Apple Research Blog*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Building an Interactive AI Agent for Lightning-Fast Machine Learning Tasks](https://developer.nvidia.com/blog/building-an-interactive-ai-agent-for-lightning-fast-machine-learning-tasks/) — *NVIDIA Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [Accelerating Large-Scale Mixture-of-Experts Training in PyTorch](https://developer.nvidia.com/blog/accelerating-large-scale-mixture-of-experts-training-in-pytorch/) — *NVIDIA Blog*
+- [PolyNorm: Few-Shot LLM-Based Text Normalization for Text-to-Speech](https://machinelearning.apple.com/research/polynorm) — *Apple Research Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+
 ## 2025-11-09
 - [Google Labs](https://blog.google/technology/google-labs/) — *Google AI Blog*
 - [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
