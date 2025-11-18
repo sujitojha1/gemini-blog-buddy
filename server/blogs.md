@@ -1,3 +1,36 @@
+## 2025-11-18
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Research Blog*
+- [Developers](https://blog.google/technology/developers/) — *Google AI Blog*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [Google Labs](https://blog.google/technology/google-labs/) — *Google AI Blog*
+- [Pioneering AI Co-Scientists for Fusion Research and Cancer Treatment](https://developer.nvidia.com/blog/pioneering-ai-co-scientists-for-fusion-research-and-cancer-treatment/) — *NVIDIA Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [PolyNorm: Few-Shot LLM-Based Text Normalization for Text-to-Speech](https://machinelearning.apple.com/research/polynorm) — *Apple Research Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [Google AI Blog](https://blog.google/technology/ai/rss/) — *Google AI Blog*
+- [conference NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS) — *Apple Research Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Workshop at NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS%20Workshop) — *Apple Research Blog*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Progress on Attention An update on our progress studying attention.](https://transformer-circuits.pub/2025/attention-update/index.html) — *Anthropic Transformer Circuits*
+- [Published year 2025](https://machinelearning.apple.com/research/?year=2025) — *Apple Research Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [NVIDIA NVQLink Architecture Integrates Accelerated Computing with Quantum Processors](https://developer.nvidia.com/blog/nvidia-nvqlink-architecture-integrates-accelerated-computing-with-quantum-processors/) — *NVIDIA Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Google AI Blog](https://blog.google/technology/ai/ask-a-techspert-what-is-inference/) — *Google AI Blog*
+
 ## 2025-11-17
 - [The road to useful quantum computing applications](https://blog.google/technology/research/useful-quantum-computing-applications/) — *Google AI Blog*
 - [How to Get Started with Neural Shading for Your Game or Application](https://developer.nvidia.com/blog/how-to-get-started-with-neural-shading-for-your-game-or-application/) — *NVIDIA Blog*
