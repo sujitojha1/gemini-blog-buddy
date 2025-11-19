@@ -1,3 +1,29 @@
+## 2025-11-19
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Health](https://blog.google/technology/health/) — *Google AI Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Gen AI Super-Resolution Accelerates Weather Prediction with Scalable, Low-Compute Models](https://developer.nvidia.com/blog/gen-ai-super-resolution-accelerates-weather-prediction-with-scalable-low-compute-models/) — *NVIDIA Blog*
+- [Safety and security](https://blog.google/technology/safety-security/) — *Google AI Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Google DeepMind](https://blog.google/technology/google-deepmind/) — *Google AI Blog*
+- [Achieve CUTLASS C++ Performance with Python APIs Using CuTe DSL](https://developer.nvidia.com/blog/achieve-cutlass-c-performance-with-python-apis-using-cute-dsl/) — *NVIDIA Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Building Scalable AI on Enterprise Data with NVIDIA Nemotron RAG and Microsoft SQL Server 2025](https://developer.nvidia.com/blog/building-scalable-ai-on-enterprise-data-with-nvidia-nemotron-rag-and-microsoft-sql-server-2025/) — *NVIDIA Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Faster Chemistry and Materials Discovery with AI-Powered Simulations Using NVIDIA ALCHEMI](https://developer.nvidia.com/blog/faster-chemistry-and-materials-discovery-with-ai-powered-simulations-using-nvidia-alchemi/) — *NVIDIA Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+
 ## 2025-11-18
 - [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
 - [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
