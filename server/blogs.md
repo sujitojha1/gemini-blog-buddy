@@ -1,3 +1,32 @@
+## 2025-11-22
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [conference NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS) — *Apple Research Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Learning the Relative Composition of EEG Signals Using Pairwise Relative Shift Pretraining](https://machinelearning.apple.com/research/relative-composition-eeg) — *Apple Research Blog*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [Breaking Through Reinforcement Learning Training Limits with Scaling Rollouts in BroRL](https://developer.nvidia.com/blog/breaking-through-rl-training-limits-with-scaling-rollouts-in-brorl/) — *NVIDIA Blog*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Equipping agents for the real world with Agent Skills Oct 16, 2025](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) — *Anthropic Engineering Blog*
+- [Skip to main content](https://www.anthropic.com/research) — *Anthropic Research Blog*
+- [Meet Project Suncatcher, a research moonshot to scale machine learning compute in space.](https://blog.google/technology/research/google-project-suncatcher/) — *Google AI Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Google Labs](https://blog.google/technology/google-labs/) — *Google AI Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [VLSU: Mapping the Limits of Joint Multimodal Understanding for AI Safety](https://machinelearning.apple.com/research/vlsu-mapping) — *Apple Research Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [Speech Foundation Models Generalize to Time Series Tasks from Wearable Sensor Data](https://machinelearning.apple.com/research/speech-foundation) — *Apple Research Blog*
+- [Workshop at NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS%20Workshop) — *Apple Research Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [The road to useful quantum computing applications](https://blog.google/technology/research/useful-quantum-computing-applications/) — *Google AI Blog*
+- [Nov 4, 2025 Alignment Commitments on model deprecation and preservation](https://www.anthropic.com/research/deprecation-commitments) — *Anthropic Research Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+
 ## 2025-11-21
 - [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
 - [NVIDIA Blackwell Architecture Sweeps MLPerf Training v5.1 Benchmarks](https://developer.nvidia.com/blog/nvidia-blackwell-architecture-sweeps-mlperf-training-v5-1-benchmarks/) — *NVIDIA Blog*
