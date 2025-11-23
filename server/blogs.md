@@ -1,3 +1,31 @@
+## 2025-11-23
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Google DeepMind](https://blog.google/technology/google-deepmind/) — *Google AI Blog*
+- [research area Tools, Platforms, Frameworks](https://machinelearning.apple.com/research/?domain=Tools%2C%20Platforms%2C%20Frameworks) — *Apple Research Blog*
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Building Scalable AI on Enterprise Data with NVIDIA Nemotron RAG and Microsoft SQL Server 2025](https://developer.nvidia.com/blog/building-scalable-ai-on-enterprise-data-with-nvidia-nemotron-rag-and-microsoft-sql-server-2025/) — *NVIDIA Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Oct 14, 2025 Policy Preparing for AI’s economic impact: exploring policy responses](https://www.anthropic.com/research/economic-policy-responses) — *Anthropic Research Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Towards a Better Evaluation of 3D CVML Algorithms: Immersive Debugging of a Localization Model](https://machinelearning.apple.com/research/immersive-debugging) — *Apple Research Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Health](https://blog.google/technology/health/) — *Google AI Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Gen AI Super-Resolution Accelerates Weather Prediction with Scalable, Low-Compute Models](https://developer.nvidia.com/blog/gen-ai-super-resolution-accelerates-weather-prediction-with-scalable-low-compute-models/) — *NVIDIA Blog*
+- [Developers](https://blog.google/technology/developers/) — *Google AI Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [research area Human-Computer Interaction](https://machinelearning.apple.com/research/?domain=Human-Computer%20Interaction) — *Apple Research Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [conference EuroVis](https://machinelearning.apple.com/research/?event=EuroVis) — *Apple Research Blog*
+
 ## 2025-11-22
 - [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
 - [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
