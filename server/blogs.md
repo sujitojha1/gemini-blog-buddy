@@ -1,3 +1,32 @@
+## 2025-11-26
+- [Google AI Blog](https://blog.google/technology/ai/rss/) — *Google AI Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Safety and security](https://blog.google/technology/safety-security/) — *Google AI Blog*
+- [Making Robot Perception More Efficient on NVIDIA Jetson Thor](https://developer.nvidia.com/blog/making-robot-perception-more-efficient-on-nvidia-jetson-thor/) — *NVIDIA Blog*
+- [Making GPU Clusters More Efficient with NVIDIA Data Center Monitoring Tools](https://developer.nvidia.com/blog/making-gpu-clusters-more-efficient-with-nvidia-data-center-monitoring/) — *NVIDIA Blog*
+- [Learning the Relative Composition of EEG Signals Using Pairwise Relative Shift Pretraining](https://machinelearning.apple.com/research/relative-composition-eeg) — *Apple Research Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [The road to useful quantum computing applications](https://blog.google/technology/research/useful-quantum-computing-applications/) — *Google AI Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Nov 25, 2025 Economic Research Estimating AI productivity gains from Claude conversations](https://www.anthropic.com/research/estimating-productivity-gains) — *Anthropic Research Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Breaking Through Reinforcement Learning Training Limits with Scaling Rollouts in BroRL](https://developer.nvidia.com/blog/breaking-through-rl-training-limits-with-scaling-rollouts-in-brorl/) — *NVIDIA Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Google Labs](https://blog.google/technology/google-labs/) — *Google AI Blog*
+- [Build and Run Secure, Data-Driven AI Agents](https://developer.nvidia.com/blog/build-and-run-secure-data-driven-ai-agents/) — *NVIDIA Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [NVIDIA Blackwell Architecture Sweeps MLPerf Training v5.1 Benchmarks](https://developer.nvidia.com/blog/nvidia-blackwell-architecture-sweeps-mlperf-training-v5-1-benchmarks/) — *NVIDIA Blog*
+- [Featured Effective harnesses for long-running agents Agents still face challenges working across many context windows. We looked to human engineers for inspiration in creating a more effective harness for long-running agents.](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+
 ## 2025-11-24
 - [Sample and Map from a Single Convex Potential: Generation using Conjugate Moment Measures](https://machinelearning.apple.com/research/sample-and-map) — *Apple Research Blog*
 - [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
