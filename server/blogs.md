@@ -1,3 +1,35 @@
+## 2025-11-28
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [conference EuroVis](https://machinelearning.apple.com/research/?event=EuroVis) — *Apple Research Blog*
+- [Towards a Better Evaluation of 3D CVML Algorithms: Immersive Debugging of a Localization Model](https://machinelearning.apple.com/research/immersive-debugging) — *Apple Research Blog*
+- [Google DeepMind](https://blog.google/technology/google-deepmind/) — *Google AI Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [research area Tools, Platforms, Frameworks](https://machinelearning.apple.com/research/?domain=Tools%2C%20Platforms%2C%20Frameworks) — *Apple Research Blog*
+- [Sustainability](https://blog.google/outreach-initiatives/sustainability/) — *Google AI Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Health](https://blog.google/technology/health/) — *Google AI Blog*
+- [Gen AI Super-Resolution Accelerates Weather Prediction with Scalable, Low-Compute Models](https://developer.nvidia.com/blog/gen-ai-super-resolution-accelerates-weather-prediction-with-scalable-low-compute-models/) — *NVIDIA Blog*
+- [Circuits Updates — November 2025 A short update on harm pressure.](https://transformer-circuits.pub/2025/november-update/index.html) — *Anthropic Transformer Circuits*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Model Quantization: Concepts, Methods, and Why It Matters](https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/) — *NVIDIA Blog*
+- [Nov 24, 2025 Product Mitigating the risk of prompt injections in browser use](https://www.anthropic.com/research/prompt-injection-defenses) — *Anthropic Research Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Building Better Qubits with GPU-Accelerated Computing](https://developer.nvidia.com/blog/building-better-qubits-with-gpu-accelerated-computing/) — *NVIDIA Blog*
+- [conference NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS) — *Apple Research Blog*
+
 ## 2025-11-26
 - [Google AI Blog](https://blog.google/technology/ai/rss/) — *Google AI Blog*
 - [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
