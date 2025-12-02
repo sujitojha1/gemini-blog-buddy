@@ -1,3 +1,36 @@
+## 2025-12-02
+- [Train Small Orchestration Agents to Solve Big Problems](https://developer.nvidia.com/blog/train-small-orchestration-agents-to-solve-big-problems/) — *NVIDIA Blog*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [conference NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS) — *Apple Research Blog*
+- [Model Quantization: Concepts, Methods, and Why It Matters](https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/) — *NVIDIA Blog*
+- [Google DeepMind](https://blog.google/technology/google-deepmind/) — *Google AI Blog*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Health](https://blog.google/technology/health/) — *Google AI Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [Circuits Updates — November 2025 A short update on harm pressure.](https://transformer-circuits.pub/2025/november-update/index.html) — *Anthropic Transformer Circuits*
+- [Towards a Better Evaluation of 3D CVML Algorithms: Immersive Debugging of a Localization Model](https://machinelearning.apple.com/research/immersive-debugging) — *Apple Research Blog*
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [Learning the Relative Composition of EEG Signals Using Pairwise Relative Shift Pretraining](https://machinelearning.apple.com/research/relative-composition-eeg) — *Apple Research Blog*
+- [Google AI Blog](https://blog.google/technology/ai/rss/) — *Google AI Blog*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Sustainability](https://blog.google/outreach-initiatives/sustainability/) — *Google AI Blog*
+- [conference EuroVis](https://machinelearning.apple.com/research/?event=EuroVis) — *Apple Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Nov 24, 2025 Product Mitigating the risk of prompt injections in browser use](https://www.anthropic.com/research/prompt-injection-defenses) — *Anthropic Research Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Google Labs](https://blog.google/technology/google-labs/) — *Google AI Blog*
+
 ## 2025-11-30
 - [Nov 25, 2025 Economic Research Estimating AI productivity gains from Claude conversations](https://www.anthropic.com/research/estimating-productivity-gains) — *Anthropic Research Blog*
 - [Faster Chemistry and Materials Discovery with AI-Powered Simulations Using NVIDIA ALCHEMI](https://developer.nvidia.com/blog/faster-chemistry-and-materials-discovery-with-ai-powered-simulations-using-nvidia-alchemi/) — *NVIDIA Blog*
