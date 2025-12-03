@@ -1,3 +1,30 @@
+## 2025-12-03
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Making GPU Clusters More Efficient with NVIDIA Data Center Monitoring Tools](https://developer.nvidia.com/blog/making-gpu-clusters-more-efficient-with-nvidia-data-center-monitoring/) — *NVIDIA Blog*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Build Efficient Financial Data Workflows with AI Model Distillation](https://developer.nvidia.com/blog/build-efficient-financial-data-workflows-with-ai-model-distillation/) — *NVIDIA Blog*
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [conference Machine Learning for Health (ML4H)](https://machinelearning.apple.com/research/?event=Machine%20Learning%20for%20Health%20(ML4H)) — *Apple Research Blog*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+- [Accelerating Real-Time Financial Decisions with Quantitative Portfolio Optimization](https://developer.nvidia.com/blog/accelerating-real-time-financial-decisions-with-quantitative-portfolio-optimization/) — *NVIDIA Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Featured Effective harnesses for long-running agents Agents still face challenges working across many context windows. We looked to human engineers for inspiration in creating a more effective harness for long-running agents.](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Project Fetch: Can Claude train a robot dog? Policy Nov 12, 2025 How much does Claude help people program robots? To find out, two teams of Anthropic staff raced to teach quadruped robots to fetch beach balls. The AI-assisted team completed tasks faster and was the only group to make real progress toward full autonomy.](https://www.anthropic.com/research/project-fetch-robot-dog) — *Anthropic Research Blog*
+- [NVIDIA-Accelerated Mistral 3 Open Models Deliver Efficiency, Accuracy at Any Scale](https://developer.nvidia.com/blog/nvidia-accelerated-mistral-3-open-models-deliver-efficiency-accuracy-at-any-scale/) — *NVIDIA Blog*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+
 ## 2025-12-02
 - [Train Small Orchestration Agents to Solve Big Problems](https://developer.nvidia.com/blog/train-small-orchestration-agents-to-solve-big-problems/) — *NVIDIA Blog*
 - [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
