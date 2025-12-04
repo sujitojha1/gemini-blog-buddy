@@ -1,3 +1,31 @@
+## 2025-12-04
+- [Developers](https://blog.google/technology/developers/) — *Google AI Blog*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+- [research area Health](https://machinelearning.apple.com/research/?domain=Health) — *Apple Research Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [conference Machine Learning for Health (ML4H)](https://machinelearning.apple.com/research/?event=Machine%20Learning%20for%20Health%20(ML4H)) — *Apple Research Blog*
+- [Published year 2025](https://machinelearning.apple.com/research/?year=2025) — *Apple Research Blog*
+- [How to Enhance 3D Gaussian Reconstruction Quality for Simulation](https://developer.nvidia.com/blog/how-to-enhance-3d-gaussian-reconstruction-quality-for-simulation/) — *NVIDIA Blog*
+- [At our Research@ Poland event we shared how AI is helping us solve big challenges.](https://blog.google/technology/research/ai-collaboration-poland-2025/) — *Google AI Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Build and Run Secure, Data-Driven AI Agents](https://developer.nvidia.com/blog/build-and-run-secure-data-driven-ai-agents/) — *NVIDIA Blog*
+- [Hybrid Modeling of Photoplethysmography for Non-Invasive Monitoring of Cardiovascular Parameters](https://machinelearning.apple.com/research/photoplethysmography) — *Apple Research Blog*
+- [How to Scale Data Generation for Physical AI with the NVIDIA Cosmos Cookbook](https://developer.nvidia.com/blog/how-to-scale-data-generation-for-physical-ai-with-the-nvidia-cosmos-cookbook/) — *NVIDIA Blog*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Dec 2, 2025 Societal Impacts How AI is transforming work at Anthropic](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic) — *Anthropic Research Blog*
+- [Nov 25, 2025 Economic Research Estimating AI productivity gains from Claude conversations](https://www.anthropic.com/research/estimating-productivity-gains) — *Anthropic Research Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [The road to useful quantum computing applications](https://blog.google/technology/research/useful-quantum-computing-applications/) — *Google AI Blog*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [Optimize Data Center Efficiency for AI and HPC Workloads with Power Profiles](https://developer.nvidia.com/blog/optimize-data-center-efficiency-for-ai-and-hpc-workloads-with-power-profiles/) — *NVIDIA Blog*
+
 ## 2025-12-03
 - [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
 - [Making GPU Clusters More Efficient with NVIDIA Data Center Monitoring Tools](https://developer.nvidia.com/blog/making-gpu-clusters-more-efficient-with-nvidia-data-center-monitoring/) — *NVIDIA Blog*
