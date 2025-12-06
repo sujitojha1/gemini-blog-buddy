@@ -1,3 +1,29 @@
+## 2025-12-06
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [research area Human-Computer Interaction](https://machinelearning.apple.com/research/?domain=Human-Computer%20Interaction) — *Apple Research Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [conference Machine Learning for Health (ML4H)](https://machinelearning.apple.com/research/?event=Machine%20Learning%20for%20Health%20(ML4H)) — *Apple Research Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [NVIDIA-Accelerated Mistral 3 Open Models Deliver Efficiency, Accuracy at Any Scale](https://developer.nvidia.com/blog/nvidia-accelerated-mistral-3-open-models-deliver-efficiency-accuracy-at-any-scale/) — *NVIDIA Blog*
+- [Health](https://blog.google/technology/health/) — *Google AI Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [NVIDIA Kaggle Grandmasters Win Artificial General Intelligence Competition](https://developer.nvidia.com/blog/nvidia-kaggle-grandmasters-win-artificial-general-intelligence-competition/) — *NVIDIA Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Safety and security](https://blog.google/technology/safety-security/) — *Google AI Blog*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [Featured Effective harnesses for long-running agents Agents still face challenges working across many context windows. We looked to human engineers for inspiration in creating a more effective harness for long-running agents.](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+
 ## 2025-12-05
 - [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
 - [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
