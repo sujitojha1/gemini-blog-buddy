@@ -1,3 +1,37 @@
+## 2025-12-27
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Featured Effective harnesses for long-running agents Agents still face challenges working across many context windows. We looked to human engineers for inspiration in creating a more effective harness for long-running agents.](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Dec 19, 2025 Alignment Introducing Bloom: an open source tool for automated behavioral evaluations](https://www.anthropic.com/research/bloom) — *Anthropic Research Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Health](https://blog.google/technology/health/) — *Google AI Blog*
+- [Data-Centric Lessons To Improve Speech-Language Pretraining](https://machinelearning.apple.com/research/data-centric-lessons) — *Apple Research Blog*
+- [Solving Large-Scale Linear Sparse Problems with NVIDIA cuDSS](https://developer.nvidia.com/blog/solving-large-scale-linear-sparse-problems-with-nvidia-cudss/) — *NVIDIA Blog*
+- [The Communication Complexity of Distributed Estimation](https://machinelearning.apple.com/research/communication-complexity) — *Apple Research Blog*
+- [AI Factories, Physical AI, and Advances in Models, Agents, and Infrastructure That Shaped 2025](https://developer.nvidia.com/blog/ai-factories-physical-ai-and-advances-in-models-agents-and-infrastructure-that-shaped-2025/) — *NVIDIA Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [4 highlights from Google Beam in 2025](https://blog.google/technology/research/google-beam-2025-moments/) — *Google AI Blog*
+- [Circuits Updates — November 2025 A short update on harm pressure.](https://transformer-circuits.pub/2025/november-update/index.html) — *Anthropic Transformer Circuits*
+- [Migrate Apache Spark Workloads to GPUs at Scale on Amazon EMR with Project Aether](https://developer.nvidia.com/blog/migrate-apache-spark-workloads-to-gpus-at-scale-on-amazon-emr-with-project-aether/) — *NVIDIA Blog*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [BED-LLM: Intelligent Information Gathering with LLMs and Bayesian Experimental Design](https://machinelearning.apple.com/research/bed-llm) — *Apple Research Blog*
+- [Inside NVIDIA Nemotron 3: Techniques, Tools, and Data That Make It Efficient and Accurate](https://developer.nvidia.com/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/) — *NVIDIA Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [NVIDIA Blackwell Enables 3x Faster Training and Nearly 2x Training Performance Per Dollar than Previous-Gen Architecture](https://developer.nvidia.com/blog/nvidia-blackwell-enables-3x-faster-training-and-nearly-2x-training-performance-per-dollar-than-previous-gen-architecture/) — *NVIDIA Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+
 ## 2025-12-10
 - [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
 - [Google AI Blog](https://blog.google/technology/ai/rss/) — *Google AI Blog*
