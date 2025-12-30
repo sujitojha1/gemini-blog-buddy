@@ -1,3 +1,36 @@
+## 2025-12-30
+- [Inside NVIDIA Nemotron 3: Techniques, Tools, and Data That Make It Efficient and Accurate](https://developer.nvidia.com/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/) — *NVIDIA Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [4 highlights from Google Beam in 2025](https://blog.google/technology/research/google-beam-2025-moments/) — *Google AI Blog*
+- [Dec 19, 2025 Alignment Introducing Bloom: an open source tool for automated behavioral evaluations](https://www.anthropic.com/research/bloom) — *Anthropic Research Blog*
+- [The 7 finalists in the XPRIZE Quantum Applications competition](https://blog.google/technology/research/google-gesda-xprize-quantum-applications-finalists/) — *Google AI Blog*
+- [Equipping agents for the real world with Agent Skills Oct 16, 2025](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) — *Anthropic Engineering Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Data-Centric Lessons To Improve Speech-Language Pretraining](https://machinelearning.apple.com/research/data-centric-lessons) — *Apple Research Blog*
+- [Migrate Apache Spark Workloads to GPUs at Scale on Amazon EMR with Project Aether](https://developer.nvidia.com/blog/migrate-apache-spark-workloads-to-gpus-at-scale-on-amazon-emr-with-project-aether/) — *NVIDIA Blog*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Real-Time Decoding, Algorithmic GPU Decoders, and AI Inference Enhancements in NVIDIA CUDA-Q QEC](https://developer.nvidia.com/blog/real-time-decoding-algorithmic-gpu-decoders-and-ai-inference-enhancements-in-nvidia-cuda-q-qec/) — *NVIDIA Blog*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Google AI Blog](https://blog.google/technology/ai/rss/) — *Google AI Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [The Communication Complexity of Distributed Estimation](https://machinelearning.apple.com/research/communication-complexity) — *Apple Research Blog*
+- [See all](https://blog.google/technology/) — *Google AI Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Dec 4, 2025 Societal Impacts Introducing Anthropic Interviewer: What 1,250 professionals told us about working with AI](https://www.anthropic.com/research/anthropic-interviewer) — *Anthropic Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [BED-LLM: Intelligent Information Gathering with LLMs and Bayesian Experimental Design](https://machinelearning.apple.com/research/bed-llm) — *Apple Research Blog*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+
 ## 2025-12-29
 - [AgREE: Agentic Reasoning for Knowledge Graph Completion on Emerging Entities](https://machinelearning.apple.com/research/agentic-reasoning) — *Apple Research Blog*
 - [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
