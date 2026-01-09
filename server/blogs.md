@@ -1,3 +1,29 @@
+## 2026-01-09
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [research area Knowledge Bases and Search](https://machinelearning.apple.com/research/?domain=Knowledge%20Bases%20and%20Search) — *Apple Research Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Inferring Optical Tissue Properties from Photoplethysmography using Hybrid Amortized Inference](https://machinelearning.apple.com/research/inferring-optical-tissue) — *Apple Research Blog*
+- [Google DeepMind](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/) — *Google AI Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+- [See all](https://blog.google/innovation-and-ai/products/) — *Google AI Blog*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Multi-Agent Warehouse AI Command Layer Enables Operational Excellence and Supply Chain Intelligence](https://developer.nvidia.com/blog/multi-agent-warehouse-ai-command-layer-enables-operational-excellence-and-supply-chain-intelligence/) — *NVIDIA Blog*
+- [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) — *Google AI Blog*
+- [Building Generalist Humanoid Capabilities with NVIDIA Isaac GR00T N1.6 Using a Sim-to-Real Workflow](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow/) — *NVIDIA Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [research area Health](https://machinelearning.apple.com/research/?domain=Health) — *Apple Research Blog*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+
 ## 2026-01-08
 - [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
 - [Redefining Secure AI Infrastructure with NVIDIA BlueField Astra for NVIDIA Vera Rubin NVL72](https://developer.nvidia.com/blog/redefining-secure-ai-infrastructure-with-nvidia-bluefield-astra-for-nvidia-vera-rubin-nvl72/) — *NVIDIA Blog*
