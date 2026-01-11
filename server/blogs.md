@@ -1,3 +1,31 @@
+## 2026-01-11
+- [Gemini app](https://blog.google/innovation-and-ai/products/gemini-app/) — *Google AI Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [Redefining Secure AI Infrastructure with NVIDIA BlueField Astra for NVIDIA Vera Rubin NVL72](https://developer.nvidia.com/blog/redefining-secure-ai-infrastructure-with-nvidia-bluefield-astra-for-nvidia-vera-rubin-nvl72/) — *NVIDIA Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [Open-Source AI Tool Upgrades Speed Up LLM and Diffusion Models on NVIDIA RTX PCs](https://developer.nvidia.com/blog/open-source-ai-tool-upgrades-speed-up-llm-and-diffusion-models-on-nvidia-rtx-pcs/) — *NVIDIA Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [See all](https://blog.google/innovation-and-ai/models-and-research/) — *Google AI Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+
 ## 2026-01-10
 - [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
 - [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
