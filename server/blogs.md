@@ -1,3 +1,30 @@
+## 2026-01-13
+- [research area Data Science and Annotation](https://machinelearning.apple.com/research/?domain=Data%20Science%20and%20Annotation) — *Apple Research Blog*
+- [conference EACL](https://machinelearning.apple.com/research/?event=EACL) — *Apple Research Blog*
+- [Delivering Massive Performance Leaps for Mixture of Experts Inference on NVIDIA Blackwell](https://developer.nvidia.com/blog/delivering-massive-performance-leaps-for-mixture-of-experts-inference-on-nvidia-blackwell/) — *NVIDIA Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
+- [Over-Searching in Search-Augmented Large Language Models](https://machinelearning.apple.com/research/search-augmented) — *Apple Research Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Jan 9, 2026 Alignment Next-generation Constitutional Classifiers: More efficient protection against universal jailbreaks](https://www.anthropic.com/research/next-generation-constitutional-classifiers) — *Anthropic Research Blog*
+- [Reimagining LLM Memory: Using Context as Training Data Unlocks Models That Learn at Test-Time](https://developer.nvidia.com/blog/reimagining-llm-memory-using-context-as-training-data-unlocks-models-that-learn-at-test-time/) — *NVIDIA Blog*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+- [DeepMMSearch-R1: Empowering Multimodal LLMs in Multimodal Web Search](https://machinelearning.apple.com/research/r1) — *Apple Research Blog*
+- [NotebookLM](https://blog.google/innovation-and-ai/products/notebooklm/) — *Google AI Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [Published year 2026](https://machinelearning.apple.com/research/?year=2026) — *Apple Research Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Inside the NVIDIA Rubin Platform: Six New Chips, One AI Supercomputer](https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/) — *NVIDIA Blog*
+- [Multivariate Conformal Prediction using Optimal Transport](https://machinelearning.apple.com/research/optimal-transport) — *Apple Research Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) — *Google AI Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Multi-Agent Warehouse AI Command Layer Enables Operational Excellence and Supply Chain Intelligence](https://developer.nvidia.com/blog/multi-agent-warehouse-ai-command-layer-enables-operational-excellence-and-supply-chain-intelligence/) — *NVIDIA Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+
 ## 2026-01-12
 - [MANZANO: A Simple and Scalable Unified Multimodal Model with a Hybrid Vision Tokenizer](https://machinelearning.apple.com/research/manzano) — *Apple Research Blog*
 - [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
