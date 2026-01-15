@@ -1,4 +1,4 @@
-## 2026-01-15
+## 2026-01-14
 - [Open Source AI Tool Upgrades Speed Up LLM and Diffusion Models on NVIDIA RTX PCs](https://developer.nvidia.com/blog/open-source-ai-tool-upgrades-speed-up-llm-and-diffusion-models-on-nvidia-rtx-pcs/) — *NVIDIA Blog*
 - [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
 - [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*

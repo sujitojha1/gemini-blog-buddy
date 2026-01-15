@@ -1,4 +1,6 @@
 sources:
+  - name: Cursor
+    url: https://cursor.com/blog/topic/research
   - name: Google AI Blog
     url: https://blog.google/technology/ai/
   - name: Google Research Blog
