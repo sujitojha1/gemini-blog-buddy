@@ -1,3 +1,38 @@
+## 2026-01-15
+- [Open Source AI Tool Upgrades Speed Up LLM and Diffusion Models on NVIDIA RTX PCs](https://developer.nvidia.com/blog/open-source-ai-tool-upgrades-speed-up-llm-and-diffusion-models-on-nvidia-rtx-pcs/) — *NVIDIA Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [Learn How NVIDIA cuOpt Accelerates Mixed Integer Optimization using Primal Heuristics](https://developer.nvidia.com/blog/learn-how-nvidia-cuopt-accelerates-mixed-integer-optimization-using-primal-heuristics/) — *NVIDIA Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Gemini app](https://blog.google/innovation-and-ai/products/gemini-app/) — *Google AI Blog*
+- [Equipping agents for the real world with Agent Skills Oct 16, 2025](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) — *Anthropic Engineering Blog*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [How to Write High-Performance Matrix Multiply in NVIDIA CUDA Tile](https://developer.nvidia.com/blog/how-to-write-high-performance-matrix-multiply-in-nvidia-cuda-tile/) — *NVIDIA Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [research area Knowledge Bases and Search](https://machinelearning.apple.com/research/?domain=Knowledge%20Bases%20and%20Search) — *Apple Research Blog*
+- [See all](https://blog.google/innovation-and-ai/models-and-research/) — *Google AI Blog*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [MoEs Are Stronger than You Think: Hyper-Parallel Inference Scaling with RoE](https://machinelearning.apple.com/research/roe) — *Apple Research Blog*
+- [Scaling Power-Efficient AI Factories with NVIDIA Spectrum-X Ethernet Photonics](https://developer.nvidia.com/blog/scaling-power-efficient-ai-factories-with-nvidia-spectrum-x-ethernet-photonics/) — *NVIDIA Blog*
+- [Dec 19, 2025 Alignment Introducing Bloom: an open source tool for automated behavioral evaluations](https://www.anthropic.com/research/bloom) — *Anthropic Research Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [NVIDIA DLSS 4.5 Delivers Super Resolution Upgrades and New Dynamic Multi Frame Generation](https://developer.nvidia.com/blog/nvidia-dlss-4-5-delivers-super-resolution-upgrades-and-new-dynamic-multi-frame-generation/) — *NVIDIA Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+
 ## 2026-01-13
 - [research area Data Science and Annotation](https://machinelearning.apple.com/research/?domain=Data%20Science%20and%20Annotation) — *Apple Research Blog*
 - [conference EACL](https://machinelearning.apple.com/research/?event=EACL) — *Apple Research Blog*
