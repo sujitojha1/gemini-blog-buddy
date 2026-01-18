@@ -1,3 +1,36 @@
+## 2026-01-18
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Scaling long-running autonomous coding We've been experimenting with running coding agents autonomously for weeks at a time. research · Jan 14, 2026](https://cursor.com/blog/scaling-agents) — *Cursor*
+- [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
+- [Redefining Secure AI Infrastructure with NVIDIA BlueField Astra for NVIDIA Vera Rubin NVL72](https://developer.nvidia.com/blog/redefining-secure-ai-infrastructure-with-nvidia-bluefield-astra-for-nvidia-vera-rubin-nvl72/) — *NVIDIA Blog*
+- [Project Vend: Phase two Policy Dec 18, 2025 In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?](https://www.anthropic.com/research/project-vend-2) — *Anthropic Research Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [How to Write High-Performance Matrix Multiply in NVIDIA CUDA Tile](https://developer.nvidia.com/blog/how-to-write-high-performance-matrix-multiply-in-nvidia-cuda-tile/) — *NVIDIA Blog*
+- [Published year 2026](https://machinelearning.apple.com/research/?year=2026) — *Apple Research Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Equipping agents for the real world with Agent Skills Oct 16, 2025](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) — *Anthropic Engineering Blog*
+- [Multivariate Conformal Prediction using Optimal Transport](https://machinelearning.apple.com/research/optimal-transport) — *Apple Research Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Open Source AI Tool Upgrades Speed Up LLM and Diffusion Models on NVIDIA RTX PCs](https://developer.nvidia.com/blog/open-source-ai-tool-upgrades-speed-up-llm-and-diffusion-models-on-nvidia-rtx-pcs/) — *NVIDIA Blog*
+- [How to Train an AI Agent for Command-Line Tasks with Synthetic Data and Reinforcement Learning](https://developer.nvidia.com/blog/how-to-train-an-ai-agent-for-command-line-tasks-with-synthetic-data-and-reinforcement-learning/) — *NVIDIA Blog*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [1.5x faster MoE training with custom MXFP8 kernels Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs. research · Aug 29, 2025](https://cursor.com/blog/kernels) — *Cursor*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [Google DeepMind](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/) — *Google AI Blog*
+- [Improving agent with semantic search Semantic search significantly improves coding agent performance with 12.5% higher accuracy, improves code retention and decreases dissatisfied user requests. research · Nov 6, 2025](https://cursor.com/blog/semsearch) — *Cursor*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [The Data-Quality Illusion: Rethinking Classifier-Based Quality Filtering for LLM Pretraining](https://machinelearning.apple.com/research/data-quality-illusion) — *Apple Research Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+
 ## 2026-01-17
 - [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
 - [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
