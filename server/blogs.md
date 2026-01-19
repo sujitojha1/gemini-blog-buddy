@@ -1,3 +1,27 @@
+## 2026-01-19
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Inside the NVIDIA Rubin Platform: Six New Chips, One AI Supercomputer](https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/) — *NVIDIA Blog*
+- [Effective harnesses for long-running agents Nov 26, 2025](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [See all](https://blog.google/innovation-and-ai/products/) — *Google AI Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Web Agents](https://cursor.com/agents) — *Cursor*
+- [Building a better Bugbot How we used a custom AI-driven metric to systematically improve Bugbot. research · Jan 15, 2026](https://cursor.com/blog/building-bugbot) — *Cursor*
+- [Developer tools](https://blog.google/innovation-and-ai/technology/developers-tools/) — *Google AI Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Improving Cursor Tab with online RL Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate. research · Sep 12, 2025](https://cursor.com/blog/tab-rl) — *Cursor*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+
 ## 2026-01-18
 - [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
 - [Scaling long-running autonomous coding We've been experimenting with running coding agents autonomously for weeks at a time. research · Jan 14, 2026](https://cursor.com/blog/scaling-agents) — *Cursor*
