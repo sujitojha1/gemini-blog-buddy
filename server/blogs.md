@@ -1,3 +1,38 @@
+## 2026-01-20
+- [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
+- [More problems Several exciting problem areas for the next phase of AI-programming. research · May 25, 2024](https://cursor.com/blog/problems-2024) — *Cursor*
+- [Jan 15, 2026 Economic Research Anthropic Economic Index: new building blocks for understanding AI use](https://www.anthropic.com/research/economic-index-primitives) — *Anthropic Research Blog*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [Learn How NVIDIA cuOpt Accelerates Mixed Integer Optimization using Primal Heuristics](https://developer.nvidia.com/blog/learn-how-nvidia-cuopt-accelerates-mixed-integer-optimization-using-primal-heuristics/) — *NVIDIA Blog*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Delivering Massive Performance Leaps for Mixture of Experts Inference on NVIDIA Blackwell](https://developer.nvidia.com/blog/delivering-massive-performance-leaps-for-mixture-of-experts-inference-on-nvidia-blackwell/) — *NVIDIA Blog*
+- [ParaRNN: Unlocking Parallel Training of Nonlinear RNNs for Large Language Models](https://machinelearning.apple.com/research/pararnn) — *Apple Research Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [Scaling Power-Efficient AI Factories with NVIDIA Spectrum-X Ethernet Photonics](https://developer.nvidia.com/blog/scaling-power-efficient-ai-factories-with-nvidia-spectrum-x-ethernet-photonics/) — *NVIDIA Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) — *Google AI Blog*
+- [Iterating with shadow workspaces Hidden windows and kernel-level folder proxies to let AIs iterate on code without affecting the user. research · Sep 1, 2024](https://cursor.com/blog/shadow-workspace) — *Cursor*
+- [Blog](https://cursor.com/blog) — *Cursor*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [Dynamic context discovery As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own. research · Jan 6, 2026](https://cursor.com/blog/dynamic-context-discovery) — *Cursor*
+- [DeepMMSearch-R1: Empowering Multimodal LLMs in Multimodal Web Search](https://machinelearning.apple.com/research/r1) — *Apple Research Blog*
+- [See all](https://blog.google/innovation-and-ai/models-and-research/) — *Google AI Blog*
+- [NVIDIA DLSS 4.5 Delivers Super Resolution Upgrades and New Dynamic Multi Frame Generation](https://developer.nvidia.com/blog/nvidia-dlss-4-5-delivers-super-resolution-upgrades-and-new-dynamic-multi-frame-generation/) — *NVIDIA Blog*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Jan 19, 2026 Interpretability The assistant axis: situating and stabilizing the character of large language models](https://www.anthropic.com/research/assistant-axis) — *Anthropic Research Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+
 ## 2026-01-19
 - [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
 - [Inside the NVIDIA Rubin Platform: Six New Chips, One AI Supercomputer](https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/) — *NVIDIA Blog*
