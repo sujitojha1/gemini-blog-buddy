@@ -1,3 +1,36 @@
+## 2026-01-21
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Multivariate Conformal Prediction using Optimal Transport](https://machinelearning.apple.com/research/optimal-transport) — *Apple Research Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [The Data-Quality Illusion: Rethinking Classifier-Based Quality Filtering for LLM Pretraining](https://machinelearning.apple.com/research/data-quality-illusion) — *Apple Research Blog*
+- [Open Source AI Tool Upgrades Speed Up LLM and Diffusion Models on NVIDIA RTX PCs](https://developer.nvidia.com/blog/open-source-ai-tool-upgrades-speed-up-llm-and-diffusion-models-on-nvidia-rtx-pcs/) — *NVIDIA Blog*
+- [Published year 2026](https://machinelearning.apple.com/research/?year=2026) — *Apple Research Blog*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [research area Tools, Platforms, Frameworks](https://machinelearning.apple.com/research/?domain=Tools%2C%20Platforms%2C%20Frameworks) — *Apple Research Blog*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Equipping agents for the real world with Agent Skills Oct 16, 2025](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) — *Anthropic Engineering Blog*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Gemini app](https://blog.google/innovation-and-ai/products/gemini-app/) — *Google AI Blog*
+- [1.5x faster MoE training with custom MXFP8 kernels Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs. research · Aug 29, 2025](https://cursor.com/blog/kernels) — *Cursor*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [MoEs Are Stronger than You Think: Hyper-Parallel Inference Scaling with RoE](https://machinelearning.apple.com/research/roe) — *Apple Research Blog*
+- [Featured Demystifying evals for AI agents The capabilities that make agents useful also make them difficult to evaluate. The strategies that work across deployments combine techniques to match the complexity of the systems they measure.](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — *Anthropic Engineering Blog*
+- [How to Write High-Performance Matrix Multiply in NVIDIA CUDA Tile](https://developer.nvidia.com/blog/how-to-write-high-performance-matrix-multiply-in-nvidia-cuda-tile/) — *NVIDIA Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [Project Vend: Phase two Policy Dec 18, 2025 In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?](https://www.anthropic.com/research/project-vend-2) — *Anthropic Research Blog*
+- [Building agents with the Claude Agent SDK Sep 29, 2025](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — *Anthropic Engineering Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+
 ## 2026-01-20
 - [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
 - [More problems Several exciting problem areas for the next phase of AI-programming. research · May 25, 2024](https://cursor.com/blog/problems-2024) — *Cursor*
