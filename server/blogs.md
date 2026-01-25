@@ -1,3 +1,29 @@
+## 2026-01-25
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [Improving Cursor Tab with online RL Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate. research · Sep 12, 2025](https://cursor.com/blog/tab-rl) — *Cursor*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [MoEs Are Stronger than You Think: Hyper-Parallel Inference Scaling with RoE](https://machinelearning.apple.com/research/roe) — *Apple Research Blog*
+- [The Data-Quality Illusion: Rethinking Classifier-Based Quality Filtering for LLM Pretraining](https://machinelearning.apple.com/research/data-quality-illusion) — *Apple Research Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [NVIDIA DLSS 4.5 Delivers Super Resolution Upgrades and New Dynamic Multi Frame Generation](https://developer.nvidia.com/blog/nvidia-dlss-4-5-delivers-super-resolution-upgrades-and-new-dynamic-multi-frame-generation/) — *NVIDIA Blog*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [Redefining Secure AI Infrastructure with NVIDIA BlueField Astra for NVIDIA Vera Rubin NVL72](https://developer.nvidia.com/blog/redefining-secure-ai-infrastructure-with-nvidia-bluefield-astra-for-nvidia-vera-rubin-nvl72/) — *NVIDIA Blog*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Demystifying evals for AI agents Jan 09, 2026](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — *Anthropic Engineering Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Equipping agents for the real world with Agent Skills Oct 16, 2025](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills) — *Anthropic Engineering Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Featured Designing AI-resistant technical evaluations What we learned from three iterations of a performance engineering take-home that Claude keeps beating.](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations) — *Anthropic Engineering Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Blog](https://cursor.com/blog) — *Cursor*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [1.5x faster MoE training with custom MXFP8 kernels Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs. research · Aug 29, 2025](https://cursor.com/blog/kernels) — *Cursor*
+- [Google DeepMind](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/) — *Google AI Blog*
+
 ## 2026-01-24
 - [More problems Several exciting problem areas for the next phase of AI-programming. research · May 25, 2024](https://cursor.com/blog/problems-2024) — *Cursor*
 - [research area Tools, Platforms, Frameworks](https://machinelearning.apple.com/research/?domain=Tools%2C%20Platforms%2C%20Frameworks) — *Apple Research Blog*
