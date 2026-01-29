@@ -1,3 +1,38 @@
+## 2026-01-29
+- [VLSU: Mapping the Limits of Joint Multimodal Understanding for AI Safety](https://machinelearning.apple.com/research/vlsu) — *Apple Research Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+- [Jan 19, 2026 Interpretability The assistant axis: situating and stabilizing the character of large language models](https://www.anthropic.com/research/assistant-axis) — *Anthropic Research Blog*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [Scaling Power-Efficient AI Factories with NVIDIA Spectrum-X Ethernet Photonics](https://developer.nvidia.com/blog/scaling-power-efficient-ai-factories-with-nvidia-spectrum-x-ethernet-photonics/) — *NVIDIA Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Learning to Reason as Action Abstractions with Scalable Mid-Training RL](https://machinelearning.apple.com/research/action-abstractions) — *Apple Research Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Scaling long-running autonomous coding We've been experimenting with running coding agents autonomously for weeks at a time. research · Jan 14, 2026](https://cursor.com/blog/scaling-agents) — *Cursor*
+- [Updating Classifier Evasion for Vision Language Models](https://developer.nvidia.com/blog/updating-classifier-evasion-for-vision-language-models/) — *NVIDIA Blog*
+- [Jan 28, 2026 Alignment Disempowerment patterns in real-world AI usage](https://www.anthropic.com/research/disempowerment-patterns) — *Anthropic Research Blog*
+- [SelfReflect: Can LLMs Communicate Their Internal Answer Distribution?](https://machinelearning.apple.com/research/selfreflect) — *Apple Research Blog*
+- [See all](https://blog.google/innovation-and-ai/models-and-research/) — *Google AI Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Speeding Up Variable-Length Training with Dynamic Context Parallelism and NVIDIA Megatron Core](https://developer.nvidia.com/blog/speeding-up-variable-length-training-with-dynamic-context-parallelism-and-nvidia-megatron-core/) — *NVIDIA Blog*
+- [conference ICML](https://machinelearning.apple.com/research/?event=ICML) — *Apple Research Blog*
+- [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+
 ## 2026-01-28
 - [Accelerating Diffusion Models with an Open, Plug-and-Play Offering](https://developer.nvidia.com/blog/accelerating-diffusion-models-with-an-open-plug-and-play-offering/) — *NVIDIA Blog*
 - [conference ICASSP](https://machinelearning.apple.com/research/?event=ICASSP) — *Apple Research Blog*
