@@ -1,3 +1,31 @@
+## 2026-02-02
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Google DeepMind](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/) — *Google AI Blog*
+- [1.5x faster MoE training with custom MXFP8 kernels Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs. research · Aug 29, 2025](https://cursor.com/blog/kernels) — *Cursor*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Advancing GPU Programming with the CUDA Tile IR Backend for OpenAI Triton](https://developer.nvidia.com/blog/advancing-gpu-programming-with-the-cuda-tile-ir-backend-for-openai-triton/) — *NVIDIA Blog*
+- [Skip to main content](https://www.anthropic.com/research) — *Anthropic Research Blog*
+- [Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) — *Google AI Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [research area Data Science and Annotation](https://machinelearning.apple.com/research/?domain=Data%20Science%20and%20Annotation) — *Apple Research Blog*
+- [Iterating with shadow workspaces Hidden windows and kernel-level folder proxies to let AIs iterate on code without affecting the user. research · Sep 1, 2024](https://cursor.com/blog/shadow-workspace) — *Cursor*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
+- [Gemini app](https://blog.google/innovation-and-ai/products/gemini-app/) — *Google AI Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+- [Redefining Secure AI Infrastructure with NVIDIA BlueField Astra for NVIDIA Vera Rubin NVL72](https://developer.nvidia.com/blog/redefining-secure-ai-infrastructure-with-nvidia-bluefield-astra-for-nvidia-vera-rubin-nvl72/) — *NVIDIA Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
+- [Blog](https://cursor.com/blog) — *Cursor*
+
 ## 2026-02-01
 - [Jump to Content](https://research.google/blog/) — *Google Research Blog*
 - [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
