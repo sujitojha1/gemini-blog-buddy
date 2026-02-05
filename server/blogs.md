@@ -1,3 +1,32 @@
+## 2026-02-05
+- [Build with Kimi K2.5 Multimodal VLM Using NVIDIA GPU-Accelerated Endpoints](https://developer.nvidia.com/blog/build-with-kimi-k2-5-multimodal-vlm-using-nvidia-gpu-accelerated-endpoints/) — *NVIDIA Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [conference ICASSP](https://machinelearning.apple.com/research/?event=ICASSP) — *Apple Research Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [A Reinforcement Learning Based Universal Sequence Design for Polar Codes](https://machinelearning.apple.com/research/reinforcement-learning) — *Apple Research Blog*
+- [Published year 2026](https://machinelearning.apple.com/research/?year=2026) — *Apple Research Blog*
+- [Demystifying evals for AI agents Jan 09, 2026](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — *Anthropic Engineering Blog*
+- [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
+- [research area Data Science and Annotation](https://machinelearning.apple.com/research/?domain=Data%20Science%20and%20Annotation) — *Apple Research Blog*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [Gemini app](https://blog.google/innovation-and-ai/products/gemini-app/) — *Google AI Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Iterating with shadow workspaces Hidden windows and kernel-level folder proxies to let AIs iterate on code without affecting the user. research · Sep 1, 2024](https://cursor.com/blog/shadow-workspace) — *Cursor*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [Blog](https://cursor.com/blog) — *Cursor*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [How Painkiller RTX Uses Generative AI to Modernize Game Assets at Scale](https://developer.nvidia.com/blog/how-painkiller-rtx-uses-generative-ai-to-modernize-game-assets-at-scale/) — *NVIDIA Blog*
+
 ## 2026-02-04
 - [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
 - [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
