@@ -1,4 +1,6 @@
 sources:
+  - name: Anthropic News
+    url: https://www.anthropic.com/news
   - name: Cursor
     url: https://cursor.com/blog/topic/research
   - name: Google AI Blog
