@@ -1,3 +1,35 @@
+## 2026-02-06
+- [Project Vend: Phase two Policy Dec 18, 2025 In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?](https://www.anthropic.com/research/project-vend-2) — *Anthropic Research Blog*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
+- [Cloud Agents](https://cursor.com/agents) — *Cursor*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [1.5x faster MoE training with custom MXFP8 kernels Achieving a 3.5x MoE layer speedup with a complete rebuild for Blackwell GPUs. research · Aug 29, 2025](https://cursor.com/blog/kernels) — *Cursor*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Securely indexing large codebases By securely reusing a teammate's existing index, we cut time-to-first-query from hours to seconds on the largest repos. research · Jan 27, 2026](https://cursor.com/blog/secure-codebase-indexing) — *Cursor*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [conference ICLR](https://machinelearning.apple.com/research/?event=ICLR) — *Apple Research Blog*
+- [Principled Coarse-Grained Acceptance for Speculative Decoding in Speech](https://machinelearning.apple.com/research/coarse-grained) — *Apple Research Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Practical Security Guidance for Sandboxing Agentic Workflows and Managing Execution Risk](https://developer.nvidia.com/blog/practical-security-guidance-for-sandboxing-agentic-workflows-and-managing-execution-risk/) — *NVIDIA Blog*
+- [Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) — *Google AI Blog*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Advancing GPU Programming with the CUDA Tile IR Backend for OpenAI Triton](https://developer.nvidia.com/blog/advancing-gpu-programming-with-the-cuda-tile-ir-backend-for-openai-triton/) — *NVIDIA Blog*
+- [Towards self-driving codebases We're making a part of our multi-agent research harness available to try today in preview. research · Feb 5, 2026](https://cursor.com/blog/self-driving-codebases) — *Cursor*
+- [Self-Supervised Learning with Gaussian Processes](https://machinelearning.apple.com/research/gaussian-process) — *Apple Research Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Building a better Bugbot How we used a custom AI-driven metric to systematically improve Bugbot. research · Jan 15, 2026](https://cursor.com/blog/building-bugbot) — *Cursor*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
+- [Effective harnesses for long-running agents Nov 26, 2025](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+
 ## 2026-02-05
 - [Build with Kimi K2.5 Multimodal VLM Using NVIDIA GPU-Accelerated Endpoints](https://developer.nvidia.com/blog/build-with-kimi-k2-5-multimodal-vlm-using-nvidia-gpu-accelerated-endpoints/) — *NVIDIA Blog*
 - [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
