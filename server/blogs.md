@@ -1,3 +1,39 @@
+## 2026-02-07
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [3 Ways NVFP4 Accelerates AI Training and Inference](https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/) — *NVIDIA Blog*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Optimizing Communication for Mixture-of-Experts Training with Hybrid Expert Parallel](https://developer.nvidia.com/blog/optimizing-communication-for-mixture-of-experts-training-with-hybrid-expert-parallel/) — *NVIDIA Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [Accelerating Long-Context Model Training in JAX and XLA](https://developer.nvidia.com/blog/accelerating-long-context-model-training-in-jax-and-xla/) — *NVIDIA Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [See all](https://blog.google/innovation-and-ai/products/) — *Google AI Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Improving Cursor Tab with online RL Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate. research · Sep 12, 2025](https://cursor.com/blog/tab-rl) — *Cursor*
+- [Developer tools](https://blog.google/innovation-and-ai/technology/developers-tools/) — *Google AI Blog*
+- [Dynamic context discovery As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own. research · Jan 6, 2026](https://cursor.com/blog/dynamic-context-discovery) — *Cursor*
+- [How PARTs Assemble into Wholes: Learning the Relative Composition of Images](https://machinelearning.apple.com/research/parts-assemble) — *Apple Research Blog*
+- [Jan 28, 2026 Alignment Disempowerment patterns in real-world AI usage](https://www.anthropic.com/research/disempowerment-patterns) — *Anthropic Research Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Google Research](https://blog.google/innovation-and-ai/models-and-research/google-research/) — *Google AI Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [VSSFlow: Unifying Video-conditioned Sound and Speech Generation via Joint Learning](https://machinelearning.apple.com/research/vssflow) — *Apple Research Blog*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [Designing AI-resistant technical evaluations Jan 21, 2026](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations) — *Anthropic Engineering Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+
 ## 2026-02-06
 - [Project Vend: Phase two Policy Dec 18, 2025 In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?](https://www.anthropic.com/research/project-vend-2) — *Anthropic Research Blog*
 - [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
