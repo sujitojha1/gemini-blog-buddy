@@ -1,4 +1,35 @@
 ## 2026-02-15
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [research area Tools, Platforms, Frameworks](https://machinelearning.apple.com/research/?domain=Tools%2C%20Platforms%2C%20Frameworks) — *Apple Research Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Towards self-driving codebases We're making a part of our multi-agent research harness available to try today in preview. research · Feb 5, 2026](https://cursor.com/blog/self-driving-codebases) — *Cursor*
+- [Dynamic context discovery As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own. research · Jan 6, 2026](https://cursor.com/blog/dynamic-context-discovery) — *Cursor*
+- [Jan 28, 2026 Alignment Disempowerment patterns in real-world AI usage](https://www.anthropic.com/research/disempowerment-patterns) — *Anthropic Research Blog*
+- [See all](https://blog.google/innovation-and-ai/products/) — *Google AI Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+- [Cloud Agents](https://cursor.com/agents) — *Cursor*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [How to Build License-Compliant Synthetic Data Pipelines for AI Model Distillation](https://developer.nvidia.com/blog/how-to-build-license-compliant-synthetic-data-pipelines-for-ai-model-distillation/) — *NVIDIA Blog*
+- [How to Build a Document Processing Pipeline for RAG with Nemotron](https://developer.nvidia.com/blog/how-to-build-a-document-processing-pipeline-for-rag-with-nemotron/) — *NVIDIA Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [Trace Length is a Simple Uncertainty Signal in Reasoning Models](https://machinelearning.apple.com/research/trace-length) — *Apple Research Blog*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Google Research](https://blog.google/innovation-and-ai/models-and-research/google-research/) — *Google AI Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [Announcements Feb 12, 2026 Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation We have raised $30 billion in Series G funding led by GIC and Coatue, valuing Anthropic at $380 billion post-money. The investment will fuel the frontier research, product development, and infrastructure expansions that have made Anthropic the market leader in enterprise AI and coding. Our run-rate revenue is $14 billion, with this figure growing over 10x annually in each of those past three years.](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation) — *Anthropic News*
+- [Published year 2026](https://machinelearning.apple.com/research/?year=2026) — *Apple Research Blog*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+
+## 2026-02-13
 - [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
 - [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
 - [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
