@@ -1,3 +1,29 @@
+## 2026-02-15
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [See all](https://blog.google/innovation-and-ai/models-and-research/) — *Google AI Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Advancing GPU Programming with the CUDA Tile IR Backend for OpenAI Triton](https://developer.nvidia.com/blog/advancing-gpu-programming-with-the-cuda-tile-ir-backend-for-openai-triton/) — *NVIDIA Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Designing AI-resistant technical evaluations Jan 21, 2026](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations) — *Anthropic Engineering Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Improving Cursor Tab with online RL Our new Tab model makes 21% fewer suggestions while having 28% higher accept rate. research · Sep 12, 2025](https://cursor.com/blog/tab-rl) — *Cursor*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Build with Kimi K2.5 Multimodal VLM Using NVIDIA GPU-Accelerated Endpoints](https://developer.nvidia.com/blog/build-with-kimi-k2-5-multimodal-vlm-using-nvidia-gpu-accelerated-endpoints/) — *NVIDIA Blog*
+- [Feb 3, 2026 Product Apple’s Xcode now supports the Claude Agent SDK](https://www.anthropic.com/news/apple-xcode-claude-agent-sdk) — *Anthropic News*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation](https://machinelearning.apple.com/research/controlled-experimentation) — *Apple Research Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [Effective harnesses for long-running agents Nov 26, 2025](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [3 Ways NVFP4 Accelerates AI Training and Inference](https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/) — *NVIDIA Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+
 ## 2026-02-14
 - [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
 - [Using Accelerated Computing to Live-Steer Scientific Experiments at Massive Research Facilities](https://developer.nvidia.com/blog/using-accelerated-computing-to-live-steer-scientific-experiments-at-massive-research-facilities/) — *NVIDIA Blog*
