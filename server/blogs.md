@@ -1,3 +1,34 @@
+## 2026-02-17
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [A Small-Scale System for Autoregressive Program Synthesis Enabling Controlled Experimentation](https://machinelearning.apple.com/research/controlled-experimentation) — *Apple Research Blog*
+- [Google DeepMind](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/) — *Google AI Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Designing AI-resistant technical evaluations Jan 21, 2026](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations) — *Anthropic Engineering Blog*
+- [Jan 29, 2026 Alignment How AI assistance impacts the formation of coding skills](https://www.anthropic.com/research/AI-assistance-coding-skills) — *Anthropic Research Blog*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Developer tools](https://blog.google/innovation-and-ai/technology/developers-tools/) — *Google AI Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Effective harnesses for long-running agents Nov 26, 2025](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Practical Security Guidance for Sandboxing Agentic Workflows and Managing Execution Risk](https://developer.nvidia.com/blog/practical-security-guidance-for-sandboxing-agentic-workflows-and-managing-execution-risk/) — *NVIDIA Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Asynchronous Verified Semantic Caching for Tiered LLM Architectures](https://machinelearning.apple.com/research/semantic-caching) — *Apple Research Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Securely indexing large codebases By securely reusing a teammate's existing index, we cut time-to-first-query from hours to seconds on the largest repos. research · Jan 27, 2026](https://cursor.com/blog/secure-codebase-indexing) — *Cursor*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Advancing GPU Programming with the CUDA Tile IR Backend for OpenAI Triton](https://developer.nvidia.com/blog/advancing-gpu-programming-with-the-cuda-tile-ir-backend-for-openai-triton/) — *NVIDIA Blog*
+- [Feb 16, 2026 Economic Research India Country Brief: The Anthropic Economic Index](https://www.anthropic.com/research/india-brief-economic-index) — *Anthropic Research Blog*
+- [R²D²: Scaling Multimodal Robot Learning with NVIDIA Isaac Lab](https://developer.nvidia.com/blog/r2d2-scaling-multimodal-robot-learning-with-nvidia-isaac-lab/) — *NVIDIA Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Blog](https://cursor.com/blog) — *Cursor*
+
 ## 2026-02-16
 - [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
 - [conference ICLR](https://machinelearning.apple.com/research/?event=ICLR) — *Apple Research Blog*
