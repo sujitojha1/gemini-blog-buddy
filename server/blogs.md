@@ -1,3 +1,34 @@
+## 2026-02-20
+- [conference NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS) — *Apple Research Blog*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) — *Google AI Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+- [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Demystifying evals for AI agents Jan 09, 2026](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — *Anthropic Engineering Blog*
+- [Published year 2026](https://machinelearning.apple.com/research/?year=2026) — *Apple Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Building a better Bugbot How we used a custom AI-driven metric to systematically improve Bugbot. research · Jan 15, 2026](https://cursor.com/blog/building-bugbot) — *Cursor*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [Cloud Agents](https://cursor.com/agents) — *Cursor*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [Feb 18, 2026 Societal Impacts Measuring AI agent autonomy in practice](https://www.anthropic.com/research/measuring-agent-autonomy) — *Anthropic Research Blog*
+- [Unlock Massive Token Throughput with GPU Fractioning in NVIDIA Run:ai](https://developer.nvidia.com/blog/unlock-massive-token-throughput-with-gpu-fractioning-in-nvidia-runai/) — *NVIDIA Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Project Vend: Phase two Policy Dec 18, 2025 In June, we revealed that we’d set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?](https://www.anthropic.com/research/project-vend-2) — *Anthropic Research Blog*
+- [research area Knowledge Bases and Search](https://machinelearning.apple.com/research/?domain=Knowledge%20Bases%20and%20Search) — *Apple Research Blog*
+- [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+- [See all](https://blog.google/innovation-and-ai/products/) — *Google AI Blog*
+- [Scaling long-running autonomous coding We've been experimenting with running coding agents autonomously for weeks at a time. research · Jan 14, 2026](https://cursor.com/blog/scaling-agents) — *Cursor*
+
 ## 2026-02-18
 - [Models That Prove Their Own Correctness](https://machinelearning.apple.com/research/correctness) — *Apple Research Blog*
 - [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
