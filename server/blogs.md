@@ -1,3 +1,29 @@
+## 2026-02-21
+- [Towards self-driving codebases We're making a part of our multi-agent research harness available to try today in preview. research · Feb 5, 2026](https://cursor.com/blog/self-driving-codebases) — *Cursor*
+- [Unifying Ranking and Generation in Query Auto-Completion via Retrieval-Augmented Generation and Multi-Objective Alignment](https://machinelearning.apple.com/research/query-auto-completion) — *Apple Research Blog*
+- [See all](https://developer.nvidia.com/blog/recent-posts/) — *NVIDIA Blog*
+- [Research](https://www.anthropic.com/research) — *Anthropic Engineering Blog*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+- [Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node Localization](https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/) — *NVIDIA Blog*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Securely indexing large codebases By securely reusing a teammate's existing index, we cut time-to-first-query from hours to seconds on the largest repos. research · Jan 27, 2026](https://cursor.com/blog/secure-codebase-indexing) — *Cursor*
+- [Implementing a secure sandbox for local agents How we built agent sandboxing on macOS, Linux, and Windows to reduce interruptions while improving security. research · Feb 18, 2026](https://cursor.com/blog/agent-sandboxing) — *Cursor*
+- [Designing AI-resistant technical evaluations Jan 21, 2026](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations) — *Anthropic Engineering Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Google DeepMind](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/) — *Google AI Blog*
+- [Improving agent with semantic search Semantic search significantly improves coding agent performance with 12.5% higher accuracy, improves code retention and decreases dissatisfied user requests. research · Nov 6, 2025](https://cursor.com/blog/semsearch) — *Cursor*
+- [How NVIDIA Extreme Hardware-Software Co-Design Delivered a Large Inference Boost for Sarvam AI’s Sovereign Models](https://developer.nvidia.com/blog/how-nvidia-extreme-hardware-software-co-design-delivered-a-large-inference-boost-for-sarvam-ais-sovereign-models/) — *NVIDIA Blog*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Build with Kimi K2.5 Multimodal VLM Using NVIDIA GPU-Accelerated Endpoints](https://developer.nvidia.com/blog/build-with-kimi-k2-5-multimodal-vlm-using-nvidia-gpu-accelerated-endpoints/) — *NVIDIA Blog*
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Blog](https://cursor.com/blog) — *Cursor*
+- [Developer tools](https://blog.google/innovation-and-ai/technology/developers-tools/) — *Google AI Blog*
+
 ## 2026-02-20
 - [conference NeurIPS](https://machinelearning.apple.com/research/?event=NeurIPS) — *Apple Research Blog*
 - [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
