@@ -1,3 +1,32 @@
+## 2026-02-25
+- [Research](https://www.anthropic.com/research) — *Anthropic News*
+- [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
+- [Cloud ↗](https://cursor.com/agents) — *Cursor*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+- [conference EACL](https://machinelearning.apple.com/research/?event=EACL) — *Apple Research Blog*
+- [Build with Kimi K2.5 Multimodal VLM Using NVIDIA GPU-Accelerated Endpoints](https://developer.nvidia.com/blog/build-with-kimi-k2-5-multimodal-vlm-using-nvidia-gpu-accelerated-endpoints/) — *NVIDIA Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [How to Build a Document Processing Pipeline for RAG with Nemotron](https://developer.nvidia.com/blog/how-to-build-a-document-processing-pipeline-for-rag-with-nemotron/) — *NVIDIA Blog*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Scaling long-running autonomous coding We've been experimenting with running coding agents autonomously for weeks at a time. research · Jan 14, 2026](https://cursor.com/blog/scaling-agents) — *Cursor*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [Building a better Bugbot How we used a custom AI-driven metric to systematically improve Bugbot. research · Jan 15, 2026](https://cursor.com/blog/building-bugbot) — *Cursor*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Machine Translation](https://research.google/research-areas/machine-translation/) — *Google Research Blog*
+- [Data Management](https://research.google/research-areas/data-management/) — *Google Research Blog*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+- [Demystifying evals for AI agents Jan 09, 2026](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — *Anthropic Engineering Blog*
+- [Circuits Updates — November 2025 A short update on harm pressure.](https://transformer-circuits.pub/2025/november-update/index.html) — *Anthropic Transformer Circuits*
+- [Securely indexing large codebases By securely reusing a teammate's existing index, we cut time-to-first-query from hours to seconds on the largest repos. research · Jan 27, 2026](https://cursor.com/blog/secure-codebase-indexing) — *Cursor*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Jump to Content](https://research.google/blog/) — *Google Research Blog*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Towards self-driving codebases We're making a part of our multi-agent research harness available to try today in preview. research · Feb 5, 2026](https://cursor.com/blog/self-driving-codebases) — *Cursor*
+
 ## 2026-02-24
 - [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
 - [3 Ways NVFP4 Accelerates AI Training and Inference](https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/) — *NVIDIA Blog*
