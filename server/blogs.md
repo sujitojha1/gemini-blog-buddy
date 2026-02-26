@@ -1,3 +1,33 @@
+## 2026-02-26
+- [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Blog](https://developer.nvidia.com/blog) — *NVIDIA Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Effective harnesses for long-running agents Nov 26, 2025](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Google Research](https://blog.google/innovation-and-ai/models-and-research/google-research/) — *Google AI Blog*
+- [Accelerating Data Processing with NVIDIA Multi-Instance GPU and NUMA Node Localization](https://developer.nvidia.com/blog/accelerating-data-processing-with-nvidia-multi-instance-gpu-and-numa-node-localization/) — *NVIDIA Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic Engineering Blog*
+- [Machine Perception](https://research.google/research-areas/machine-perception/) — *Google Research Blog*
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Closing the Gap Between Text and Speech Understanding in LLMs](https://machinelearning.apple.com/research/closing-the-gap) — *Apple Research Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+- [Alignment](https://www.anthropic.com/research/team/alignment) — *Anthropic Research Blog*
+- [Gemini app](https://blog.google/innovation-and-ai/products/gemini-app/) — *Google AI Blog*
+- [Developer tools](https://blog.google/innovation-and-ai/technology/developers-tools/) — *Google AI Blog*
+- [See all](https://blog.google/innovation-and-ai/models-and-research/) — *Google AI Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [Designing AI-resistant technical evaluations Jan 21, 2026](https://www.anthropic.com/engineering/AI-resistant-technical-evaluations) — *Anthropic Engineering Blog*
+
 ## 2026-02-25
 - [Research](https://www.anthropic.com/research) — *Anthropic News*
 - [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
