@@ -1,3 +1,36 @@
+## 2026-02-28
+- [Feb 25, 2026 Alignment An update on our model deprecation commitments for Claude Opus 3](https://www.anthropic.com/research/deprecation-updates-opus-3) — *Anthropic Research Blog*
+- [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
+- [Google DeepMind](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/) — *Google AI Blog*
+- [Develop Native Multimodal Agents with Qwen3.5 VLM Using NVIDIA GPU-Accelerated Endpoints](https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/) — *NVIDIA Blog*
+- [Google Labs](https://blog.google/innovation-and-ai/models-and-research/google-labs/) — *Google AI Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Emergent Introspective Awareness in Large Language Models Lindsey, 2025 We find evidence that language models can introspect on their internal states.](https://transformer-circuits.pub/2025/introspection/index.html) — *Anthropic Transformer Circuits*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [A.R.I.S.: Automated Recycling Identification System for E-Waste Classification Using Deep Learning](https://machinelearning.apple.com/research/automated-recycling-identification-system) — *Apple Research Blog*
+- [research area Human-Computer Interaction](https://machinelearning.apple.com/research/?domain=Human-Computer%20Interaction) — *Apple Research Blog*
+- [Dynamic context discovery As models improve as agents, we've found success by providing fewer details up front, making it easier for the agent to pull relevant context on its own. research · Jan 6, 2026](https://cursor.com/blog/dynamic-context-discovery) — *Cursor*
+- [Scaling Search Relevance: Augmenting App Store Ranking with LLM-Generated Judgments](https://machinelearning.apple.com/research/augmenting-app) — *Apple Research Blog*
+- [Introducing Composer 1.5 Improved reasoning over challenging coding tasks by scaling RL over 20x. research · Feb 9, 2026](https://cursor.com/blog/composer-1-5) — *Cursor*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
+- [Research](https://www.amazon.science/research-areas) — *Amazon Blog*
+- [Gemini models](https://blog.google/innovation-and-ai/models-and-research/gemini-models/) — *Google AI Blog*
+- [Making Softmax More Efficient with NVIDIA Blackwell Ultra](https://developer.nvidia.com/blog/making-softmax-more-efficient-with-nvidia-blackwell-ultra/) — *NVIDIA Blog*
+- [research area Knowledge Bases and Search](https://machinelearning.apple.com/research/?domain=Knowledge%20Bases%20and%20Search) — *Apple Research Blog*
+- [Quantum technologies](https://www.amazon.science/research-areas/quantum-technologies) — *Amazon Blog*
+- [How we built our multi-agent research system Jun 13, 2025](https://www.anthropic.com/engineering/multi-agent-research-system) — *Anthropic Engineering Blog*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [3 Ways NVFP4 Accelerates AI Training and Inference](https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/) — *NVIDIA Blog*
+- [research area Computer Vision](https://machinelearning.apple.com/research/?domain=Computer%20Vision) — *Apple Research Blog*
+- [Blog](https://cursor.com/blog) — *Cursor*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task Gurnee et al., 2025 We find geometric structure underlying the mechanisms of a fundamental language model behavior.](https://transformer-circuits.pub/2025/linebreaks/index.html) — *Anthropic Transformer Circuits*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [research area Speech and Natural Language Processing](https://machinelearning.apple.com/research/?domain=Speech%20and%20Natural%20Language%20Processing) — *Apple Research Blog*
+- [Algorithms & Theory](https://research.google/research-areas/algorithms-and-theory/) — *Google Research Blog*
+- [How Painkiller RTX Uses Generative AI to Modernize Game Assets at Scale](https://developer.nvidia.com/blog/how-painkiller-rtx-uses-generative-ai-to-modernize-game-assets-at-scale/) — *NVIDIA Blog*
+- [Circuits Updates — August 2025 A small update: How does a persona modify the assistant’s response?](https://transformer-circuits.pub/2025/august-update/index.html) — *Anthropic Transformer Circuits*
+
 ## 2026-02-26
 - [Machine Intelligence](https://research.google/research-areas/machine-intelligence/) — *Google Research Blog*
 - [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
