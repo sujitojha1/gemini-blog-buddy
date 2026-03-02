@@ -1,3 +1,32 @@
+## 2026-03-02
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
+- [Towards self-driving codebases We're making a part of our multi-agent research harness available to try today in preview. research · Feb 5, 2026](https://cursor.com/blog/self-driving-codebases) — *Cursor*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [Feb 23, 2026 Alignment The persona selection model](https://www.anthropic.com/research/persona-selection-model) — *Anthropic Research Blog*
+- [Writing effective tools for agents — with agents Sep 11, 2025](https://www.anthropic.com/engineering/writing-tools-for-agents) — *Anthropic Engineering Blog*
+- [Google Cloud](https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/) — *Google AI Blog*
+- [Maximizing GPU Utilization with NVIDIA Run:ai and NVIDIA NIM](https://developer.nvidia.com/blog/maximizing-gpu-utilization-with-nvidia-runai-and-nvidia-nim/) — *NVIDIA Blog*
+- [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
+- [Build with Kimi K2.5 Multimodal VLM Using NVIDIA GPU-Accelerated Endpoints](https://developer.nvidia.com/blog/build-with-kimi-k2-5-multimodal-vlm-using-nvidia-gpu-accelerated-endpoints/) — *NVIDIA Blog*
+- [Implementing a secure sandbox for local agents How we built agent sandboxing on macOS, Linux, and Windows to reduce interruptions while improving security. research · Feb 18, 2026](https://cursor.com/blog/agent-sandboxing) — *Cursor*
+- [Machine learning](https://www.amazon.science/research-areas/machine-learning) — *Amazon Blog*
+- [Societal Impacts](https://www.anthropic.com/research/team/societal-impacts) — *Anthropic Research Blog*
+- [Improving agent with semantic search Semantic search significantly improves coding agent performance with 12.5% higher accuracy, improves code retention and decreases dissatisfied user requests. research · Nov 6, 2025](https://cursor.com/blog/semsearch) — *Cursor*
+- [Cloud ↗](https://cursor.com/agents) — *Cursor*
+- [research area Data Science and Annotation](https://machinelearning.apple.com/research/?domain=Data%20Science%20and%20Annotation) — *Apple Research Blog*
+- [Published year 2026](https://machinelearning.apple.com/research/?year=2026) — *Apple Research Blog*
+- [Tracing Attention Computation Through Feature Interactions Kamath et al., 2025 We describe and apply a method to explain attention patterns in terms of feature interactions, and integrate this information into attribution graphs.](https://transformer-circuits.pub/2025/attention-qk/index.html) — *Anthropic Transformer Circuits*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Data Mining & Modeling](https://research.google/research-areas/data-mining-and-modeling/) — *Google Research Blog*
+- [conference CHI](https://machinelearning.apple.com/research/?event=CHI) — *Apple Research Blog*
+- [Economic Research](https://www.anthropic.com/research/team/economic-research) — *Anthropic Research Blog*
+- [Computer vision](https://www.amazon.science/research-areas/computer-vision) — *Amazon Blog*
+- [See all](https://blog.google/innovation-and-ai/products/) — *Google AI Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Building a better Bugbot How we used a custom AI-driven metric to systematically improve Bugbot. research · Jan 15, 2026](https://cursor.com/blog/building-bugbot) — *Cursor*
+- [Securely indexing large codebases By securely reusing a teammate's existing index, we cut time-to-first-query from hours to seconds on the largest repos. research · Jan 27, 2026](https://cursor.com/blog/secure-codebase-indexing) — *Cursor*
+
 ## 2026-02-28
 - [Feb 25, 2026 Alignment An update on our model deprecation commitments for Claude Opus 3](https://www.anthropic.com/research/deprecation-updates-opus-3) — *Anthropic Research Blog*
 - [Robotics](https://www.amazon.science/research-areas/robotics) — *Amazon Blog*
