@@ -1,3 +1,36 @@
+## 2026-03-03
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [Subscribe](https://developer.nvidia.com/email-signup) — *NVIDIA Blog*
+- [research area Methods and Algorithms](https://machinelearning.apple.com/research/?domain=Methods%20and%20Algorithms) — *Apple Research Blog*
+- [On the Impossibility of Separating Intelligence from Judgment: The Computational Intractability of Filtering for AI Alignment](https://machinelearning.apple.com/research/separating-intelligence) — *Apple Research Blog*
+- [Distributed Systems & Parallel Computing](https://research.google/research-areas/distributed-systems-and-parallel-computing/) — *Google Research Blog*
+- [How to Build a Document Processing Pipeline for RAG with Nemotron](https://developer.nvidia.com/blog/how-to-build-a-document-processing-pipeline-for-rag-with-nemotron/) — *NVIDIA Blog*
+- [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
+- [Alignment Feb 3, 2025 Constitutional Classifiers: Defending against universal jailbreaks These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.](https://www.anthropic.com/research/constitutional-classifiers) — *Anthropic Research Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [See all](https://blog.google/innovation-and-ai/models-and-research/) — *Google AI Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic News*
+- [Skip to main content](https://www.anthropic.com/research) — *Anthropic Research Blog*
+- [Composer: Building a fast frontier model with RL Composer is our new agent model designed for software engineering intelligence and speed. research · Oct 29, 2025](https://cursor.com/blog/composer) — *Cursor*
+- [Demystifying evals for AI agents Jan 09, 2026](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) — *Anthropic Engineering Blog*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Natural Language Processing](https://research.google/research-areas/natural-language-processing/) — *Google Research Blog*
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [Circuits Updates — November 2025 A short update on harm pressure.](https://transformer-circuits.pub/2025/november-update/index.html) — *Anthropic Transformer Circuits*
+- [Effective harnesses for long-running agents Nov 26, 2025](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — *Anthropic Engineering Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Speech Processing](https://research.google/research-areas/speech-processing/) — *Google Research Blog*
+- [Information and knowledge management](https://www.amazon.science/research-areas/information-and-knowledge-management) — *Amazon Blog*
+- [Building Telco Reasoning Models for Autonomous Networks with NVIDIA NeMo](https://developer.nvidia.com/blog/building-telco-reasoning-models-for-autonomous-networks-with-nvidia-nemo/) — *NVIDIA Blog*
+- [conference ICLR](https://machinelearning.apple.com/research/?event=ICLR) — *Apple Research Blog*
+- [5 New Digital Twin Products Developers Can Use to Build 6G Networks](https://developer.nvidia.com/blog/5-new-digital-twin-products-developers-can-use-to-build-6g-networks/) — *NVIDIA Blog*
+- [The Way We Notice, That's What Really Matters: Instantiating UI Components with Distinguishing Variations](https://machinelearning.apple.com/research/we-notice) — *Apple Research Blog*
+- [Circuits Updates — October 2025 Small updates on visual features and dictionary initialization.](https://transformer-circuits.pub/2025/october-update/index.html) — *Anthropic Transformer Circuits*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+
 ## 2026-03-02
 - [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
 - [The productivity impact of coding agents A new study from the University of Chicago finds that companies merge 39% more PRs after Cursor's agent became the default. research · Nov 11, 2025](https://cursor.com/blog/productivity) — *Cursor*
