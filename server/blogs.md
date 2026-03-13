@@ -1,3 +1,39 @@
+## 2026-03-13
+- [Improving agent with semantic search Semantic search significantly improves coding agent performance with 12.5% higher accuracy, improves code retention and decreases dissatisfied user requests. research · Nov 6, 2025](https://cursor.com/blog/semsearch) — *Cursor*
+- [Automated reasoning](https://www.amazon.science/research-areas/automated-reasoning) — *Amazon Blog*
+- [Skip to main content](https://www.anthropic.com/research) — *Anthropic Research Blog*
+- [Google Research](https://blog.google/innovation-and-ai/models-and-research/google-research/) — *Google AI Blog*
+- [Alignment Dec 18, 2024 Alignment faking in large language models This paper provides the first empirical example of a model engaging in alignment faking without being trained to do so—selectively complying with training objectives while strategically preserving existing preferences.](https://www.anthropic.com/research/alignment-faking) — *Anthropic Research Blog*
+- [Global network](https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/) — *Google AI Blog*
+- [Building effective agents Dec 19, 2024](https://www.anthropic.com/engineering/building-effective-agents) — *Anthropic Engineering Blog*
+- [Flow Matching with Semidiscrete Couplings](https://machinelearning.apple.com/research/semidiscrete-couplings) — *Apple Research Blog*
+- [EMBridge: Enhancing Gesture Generalization from EMG Signals through Cross-Modal Representation Learning](https://machinelearning.apple.com/research/embridge) — *Apple Research Blog*
+- [Interpretability](https://www.anthropic.com/research/team/interpretability) — *Anthropic Research Blog*
+- [A Toy Model of Mechanistic (Un)Faithfulness When transcoders go awry.](https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html) — *Anthropic Transformer Circuits*
+- [Build Accelerated, Differentiable Computational Physics Code for AI with NVIDIA Warp](https://developer.nvidia.com/blog/build-accelerated-differentiable-computational-physics-code-for-ai-with-nvidia-warp/) — *NVIDIA Blog*
+- [Search and information retrieval](https://www.amazon.science/research-areas/search-and-information-retrieval) — *Amazon Blog*
+- [See all](https://blog.google/innovation-and-ai/infrastructure-and-cloud/) — *Google AI Blog*
+- [Scale Synthetic Data and Physical AI Reasoning with NVIDIA Cosmos World Foundation Models](https://developer.nvidia.com/blog/scale-synthetic-data-and-physical-ai-reasoning-with-nvidia-cosmos-world-foundation-models/) — *NVIDIA Blog*
+- [Explore all research areas](https://research.google/research-areas/) — *Google Research Blog*
+- [Information Retrieval & the Web](https://research.google/research-areas/information-retrieval-and-the-web/) — *Google Research Blog*
+- [A postmortem of three recent issues Sep 17, 2025](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) — *Anthropic Engineering Blog*
+- [Interpretability Mar 27, 2025 Tracing the thoughts of a large language model Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language—suggesting the model can learn something in one language and apply it in another.](https://www.anthropic.com/research/tracing-thoughts-language-model) — *Anthropic Research Blog*
+- [Effective context engineering for AI agents Sep 29, 2025](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — *Anthropic Engineering Blog*
+- [A Toy Model of Interference Weights Unpacking "interference weights" in some more depth.](https://transformer-circuits.pub/2025/interference-weights/index.html) — *Anthropic Transformer Circuits*
+- [cuTile.jl Brings NVIDIA CUDA Tile-Based Programming to Julia](https://developer.nvidia.com/blog/cutile-jl-brings-nvidia-cuda-tile-based-programming-to-julia/) — *NVIDIA Blog*
+- [Circuits Updates — July 2025 A collection of small updates: revisiting A Mathematical Framework and applications of interpretability to biology.](https://transformer-circuits.pub/2025/july-update/index.html) — *Anthropic Transformer Circuits*
+- [Open Menu](https://machinelearning.apple.com/research) — *Apple Research Blog*
+- [Circuits Updates — April 2025 A collection of small updates: jailbreaks, dense features, and spinning up on interpretability.](https://transformer-circuits.pub/2025/april-update/index.html) — *Anthropic Transformer Circuits*
+- [Skip to main content](https://blog.google/technology/ai/) — *Google AI Blog*
+- [Cloud and systems](https://www.amazon.science/research-areas/cloud-and-systems) — *Amazon Blog*
+- [Operations research and optimization](https://www.amazon.science/research-areas/operations-research-and-optimization) — *Amazon Blog*
+- [Sparse mixtures of linear transforms We investigate sparse mixture of linear transforms (MOLT), a new approach to transcoders.](https://transformer-circuits.pub/2025/bulk-update/index.html) — *Anthropic Transformer Circuits*
+- [Interpretability Oct 29, 2025 Signs of introspection in large language models Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect—a step toward understanding what's actually happening inside these models.](https://www.anthropic.com/research/introspection) — *Anthropic Research Blog*
+- [Economics](https://www.amazon.science/research-areas/economics) — *Amazon Blog*
+- [Haiku](https://www.anthropic.com/claude/haiku) — *Anthropic News*
+- [How we compare model quality in Cursor We use a hybrid online-offline eval process to keep our understanding of model quality aligned with what developers actually do. research · Mar 11, 2026](https://cursor.com/blog/cursorbench) — *Cursor*
+- [Validate Kubernetes for GPU Infrastructure with Layered, Reproducible Recipes](https://developer.nvidia.com/blog/validate-kubernetes-for-gpu-infrastructure-with-layered-reproducible-recipes/) — *NVIDIA Blog*
+
 ## 2026-03-11
 - [Conversational AI](https://www.amazon.science/research-areas/conversational-ai-natural-language-processing) — *Amazon Blog*
 - [Circuits Updates — September 2025 A small update on features and in-context learning.](https://transformer-circuits.pub/2025/september-update/index.html) — *Anthropic Transformer Circuits*
