@@ -5,7 +5,8 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 import duckdb
 
-from blog_scraper import ArticleLink, gather_links_from_config
+from blog_scraper import ArticleLink, BlogSource, gather_article_links
+import yaml
 
 BASE_DIR = Path(__file__).parent
 DB_PATH = BASE_DIR / "blogs.duckdb"
@@ -29,7 +30,71 @@ def get_connection() -> duckdb.DuckDBPyConnection:
             published_date DATE
         )
     ''')
+    conn.execute('''
+        CREATE TABLE IF NOT EXISTS blog_sources (
+            name VARCHAR,
+            url VARCHAR PRIMARY KEY
+        )
+    ''')
     return conn
+
+def migrate_sources_if_needed():
+    if not SOURCES_YAML_PATH.exists():
+        return
+    try:
+        with SOURCES_YAML_PATH.open("r", encoding="utf-8") as handle:
+            data = yaml.safe_load(handle) or {}
+            
+        categories = data.get("categories", {})
+        if not categories:
+            categories = {"default": data.get("sources", [])}
+
+        conn = get_connection()
+        for category_name, items in categories.items():
+            if not isinstance(items, list):
+                continue
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                name = item.get("name")
+                url = item.get("url")
+                if name and url:
+                    conn.execute('''
+                        INSERT OR IGNORE INTO blog_sources (name, url) 
+                        VALUES (?, ?)
+                    ''', (name.strip(), url.strip()))
+        conn.close()
+        
+        SOURCES_YAML_PATH.unlink()
+    except Exception as e:
+        print("Migration error:", e)
+
+def get_db_sources() -> List[BlogSource]:
+    migrate_sources_if_needed()
+    conn = get_connection()
+    rows = conn.execute("SELECT name, url FROM blog_sources").fetchall()
+    conn.close()
+    return [BlogSource(name=r[0], url=r[1]) for r in rows]
+
+def add_db_source(name: str, url: str) -> bool:
+    conn = get_connection()
+    try:
+        conn.execute("INSERT OR IGNORE INTO blog_sources (name, url) VALUES (?, ?)", (name, url))
+        return True
+    except Exception:
+        return False
+    finally:
+        conn.close()
+
+def remove_db_source(url: str) -> bool:
+    conn = get_connection()
+    try:
+        conn.execute("DELETE FROM blog_sources WHERE url = ?", (url,))
+        return True
+    except Exception:
+        return False
+    finally:
+        conn.close()
 
 
 def _parse_existing_sections(path: Path) -> List[Tuple[str, List[str]]]:
@@ -128,7 +193,8 @@ def get_recent_articles(max_articles: int = 50) -> tuple[str | None, List[Articl
 
 
 async def collect_articles() -> List[ArticleLink]:
-    articles = await gather_links_from_config(sources_path=SOURCES_YAML_PATH)
+    sources = get_db_sources()
+    articles = await gather_article_links(sources)
     return articles
 
 

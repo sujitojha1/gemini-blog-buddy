@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from blog_scraper import ArticleLink, BlogSource, gather_article_links, load_sources
+from blog_scraper import ArticleLink, BlogSource, gather_article_links
 from fastapi.concurrency import run_in_threadpool
 
 from rag_pipeline import index_url as index_with_trafilatura
@@ -17,6 +17,9 @@ from rag_pipeline import search_index as search_with_faiss
 from blogs_db import (
     get_recent_articles,
     update_blogs_db as refresh_blogs_db,
+    get_db_sources,
+    add_db_source,
+    remove_db_source
 )
 
 
@@ -39,9 +42,8 @@ DEFAULT_RANDOM_RESPONSE = {
 }
 
 
-@lru_cache(maxsize=1)
 def get_blog_sources() -> tuple[BlogSource, ...]:
-    return tuple(load_sources())
+    return tuple(get_db_sources())
 
 
 class SearchRequest(BaseModel):
@@ -49,6 +51,10 @@ class SearchRequest(BaseModel):
     top_k: int | None = None
 
 class IndexRequest(BaseModel):
+    url: str
+
+class SourceRequest(BaseModel):
+    name: str | None = None
     url: str
 
 
@@ -154,6 +160,29 @@ async def force_refresh():
         return {"message": "Database reloaded successfully."}
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
+
+@app.get("/sources")
+async def fetch_sources():
+    sources = get_db_sources()
+    return {"sources": [{"name": s.name, "url": s.url} for s in sources]}
+
+@app.post("/sources")
+async def create_source(req: SourceRequest):
+    if not req.name or not req.url:
+        raise HTTPException(status_code=400, detail="Name and URL required")
+    success = add_db_source(req.name, req.url)
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to add source")
+    return {"message": "Source added."}
+
+@app.post("/sources/delete")
+async def delete_source(req: SourceRequest):
+    if not req.url:
+        raise HTTPException(status_code=400, detail="URL required")
+    success = remove_db_source(req.url)
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to remove source")
+    return {"message": "Source removed."}
 
 
 if __name__ == "__main__":

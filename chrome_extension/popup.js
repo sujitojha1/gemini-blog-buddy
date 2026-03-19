@@ -165,6 +165,134 @@ async function handleRandomBlogClick(event) {
   }
 }
 
+async function handleListSourcesClick(event) {
+  const button = event.currentTarget;
+  button.disabled = true;
+  setStatus("Fetching sources...");
+  renderResults([]);
+
+  try {
+    const data = await callApi("/sources");
+    setStatus(data.message || "Sources loaded.");
+    if (data.sources) {
+      renderSources(data.sources);
+    }
+  } catch (error) {
+    console.error(error);
+    setStatus(`Unable to fetch sources: ${error.message}`);
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function renderSources(sources = []) {
+  const container = document.getElementById("results");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const addForm = document.createElement("div");
+  addForm.style.marginBottom = "14px";
+  addForm.style.display = "flex";
+  addForm.style.gap = "6px";
+  
+  const nameInput = document.createElement("input");
+  nameInput.type = "text";
+  nameInput.placeholder = "Source Name";
+  nameInput.style.flex = "1";
+  nameInput.style.padding = "6px";
+  nameInput.style.fontSize = "12px";
+  nameInput.style.borderRadius = "6px";
+  
+  const urlInput = document.createElement("input");
+  urlInput.type = "text";
+  urlInput.placeholder = "URL";
+  urlInput.style.flex = "2";
+  urlInput.style.padding = "6px";
+  urlInput.style.fontSize = "12px";
+  urlInput.style.borderRadius = "6px";
+
+  const addBtn = document.createElement("button");
+  addBtn.textContent = "Add";
+  addBtn.className = "btn btn-primary";
+  addBtn.style.flex = "none";
+  addBtn.style.padding = "6px 12px";
+  addBtn.style.fontSize = "12px";
+  addBtn.style.borderRadius = "6px";
+  
+  addBtn.addEventListener("click", async () => {
+    if (!nameInput.value || !urlInput.value) return;
+    addBtn.disabled = true;
+    try {
+      await callApi("/sources", {
+        method: "POST",
+        body: JSON.stringify({ name: nameInput.value, url: urlInput.value })
+      });
+      document.getElementById("listSourcesBtn").click();
+    } catch(e) {
+      setStatus(e.message);
+      addBtn.disabled = false;
+    }
+  });
+
+  addForm.appendChild(nameInput);
+  addForm.appendChild(urlInput);
+  addForm.appendChild(addBtn);
+  container.appendChild(addForm);
+
+  sources.forEach((item) => {
+    const result = document.createElement("article");
+    result.className = "result";
+    result.style.display = "flex";
+    result.style.alignItems = "center";
+    result.style.gap = "8px";
+    result.style.padding = "10px";
+
+    const content = document.createElement("div");
+    content.style.flex = "1";
+    
+    const title = document.createElement("h2");
+    title.textContent = item.name;
+    title.style.margin = "0 0 4px";
+    title.style.fontSize = "13px";
+    
+    const link = document.createElement("a");
+    link.href = item.url;
+    link.textContent = item.url;
+    link.style.fontSize = "11px";
+    link.style.display = "block";
+    link.style.wordBreak = "break-all";
+
+    content.appendChild(title);
+    content.appendChild(link);
+    result.appendChild(content);
+
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remove";
+    removeBtn.className = "btn btn-secondary";
+    removeBtn.style.flex = "none";
+    removeBtn.style.padding = "6px 10px";
+    removeBtn.style.fontSize = "11px";
+    removeBtn.style.borderRadius = "6px";
+    
+    removeBtn.addEventListener("click", async () => {
+      removeBtn.disabled = true;
+      try {
+        await callApi("/sources/delete", {
+          method: "POST",
+          body: JSON.stringify({ url: item.url })
+        });
+        document.getElementById("listSourcesBtn").click();
+      } catch(e) {
+        setStatus(e.message);
+        removeBtn.disabled = false;
+      }
+    });
+
+    result.appendChild(removeBtn);
+    container.appendChild(result);
+  });
+}
+
 async function handleListTodayClick(event) {
   const button = event.currentTarget;
   button.disabled = true;
@@ -284,6 +412,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const indexBtn = document.getElementById("indexBtn");
   const randomBlogBtn = document.getElementById("randomBlogBtn");
   const listTodayBtn = document.getElementById("listTodayBtn");
+  const listSourcesBtn = document.getElementById("listSourcesBtn");
   const refreshDbBtn = document.getElementById("refreshDbBtn");
   const searchBtn = document.getElementById("searchBtn");
   const queryInput = document.getElementById("query");
@@ -291,6 +420,7 @@ document.addEventListener("DOMContentLoaded", () => {
   indexBtn.addEventListener("click", handleIndexClick);
   randomBlogBtn.addEventListener("click", handleRandomBlogClick);
   listTodayBtn.addEventListener("click", handleListTodayClick);
+  listSourcesBtn.addEventListener("click", handleListSourcesClick);
   refreshDbBtn.addEventListener("click", handleRefreshDbClick);
   searchBtn.addEventListener("click", handleSearchClick);
 
@@ -304,6 +434,7 @@ document.addEventListener("DOMContentLoaded", () => {
     indexBtn,
     randomBlogBtn,
     listTodayBtn,
+    listSourcesBtn,
     refreshDbBtn,
     searchBtn,
     queryInput
