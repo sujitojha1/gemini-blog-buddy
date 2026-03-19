@@ -12,7 +12,7 @@ from pydantic import BaseModel
 from blog_scraper import ArticleLink, BlogSource, gather_article_links, load_sources
 from fastapi.concurrency import run_in_threadpool
 
-from rag_pipeline import index_url as index_with_docling
+from rag_pipeline import index_url as index_with_trafilatura
 from rag_pipeline import search_index as search_with_faiss
 from blogs_db import (
     get_recent_articles,
@@ -86,12 +86,12 @@ async def healthcheck():
 @app.post("/index")
 async def index_current_page(request: IndexRequest):
     try:
-        result = await run_in_threadpool(index_with_docling, request.url)
+        result = await run_in_threadpool(index_with_trafilatura, request.url)
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
     return {
-        "message": "Indexed document via Docling and FAISS.",
+        "message": "Indexed document via Trafilatura and FAISS.",
         "doc_name": result["doc_name"],
         "chunks_indexed": result["chunks_indexed"],
     }
