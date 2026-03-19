@@ -329,12 +329,17 @@ function renderSources(sources = []) {
     result.appendChild(metricsContainer);
 
     const removeBtn = document.createElement("button");
-    removeBtn.textContent = "Remove";
-    removeBtn.className = "btn btn-secondary";
+    removeBtn.className = "btn-icon-only btn-secondary";
+    removeBtn.title = "Remove source";
     removeBtn.style.flex = "none";
-    removeBtn.style.padding = "6px 10px";
-    removeBtn.style.fontSize = "11px";
-    removeBtn.style.borderRadius = "6px";
+    removeBtn.style.width = "28px";
+    removeBtn.style.height = "28px";
+    removeBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
+      <polyline points="3 6 5 6 21 6"></polyline>
+      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+      <line x1="10" y1="11" x2="10" y2="17"></line>
+      <line x1="14" y1="11" x2="14" y2="17"></line>
+    </svg>`;
     
     removeBtn.addEventListener("click", async () => {
       removeBtn.disabled = true;
