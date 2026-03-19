@@ -193,31 +193,34 @@ function renderSources(sources = []) {
   const addForm = document.createElement("div");
   addForm.style.marginBottom = "14px";
   addForm.style.display = "flex";
-  addForm.style.gap = "6px";
+  addForm.style.flexDirection = "column";
+  addForm.style.gap = "8px";
   
   const nameInput = document.createElement("input");
   nameInput.type = "text";
   nameInput.placeholder = "Source Name";
-  nameInput.style.flex = "1";
-  nameInput.style.padding = "6px";
-  nameInput.style.fontSize = "12px";
+  nameInput.style.padding = "8px";
+  nameInput.style.fontSize = "13px";
   nameInput.style.borderRadius = "6px";
+  nameInput.style.border = "1px solid #cbd5e1";
+  nameInput.style.boxSizing = "border-box";
   
   const urlInput = document.createElement("input");
   urlInput.type = "text";
   urlInput.placeholder = "URL";
-  urlInput.style.flex = "2";
-  urlInput.style.padding = "6px";
-  urlInput.style.fontSize = "12px";
+  urlInput.style.padding = "8px";
+  urlInput.style.fontSize = "13px";
   urlInput.style.borderRadius = "6px";
+  urlInput.style.border = "1px solid #cbd5e1";
+  urlInput.style.boxSizing = "border-box";
 
   const addBtn = document.createElement("button");
-  addBtn.textContent = "Add";
+  addBtn.textContent = "Add Source";
   addBtn.className = "btn btn-primary";
-  addBtn.style.flex = "none";
-  addBtn.style.padding = "6px 12px";
-  addBtn.style.fontSize = "12px";
+  addBtn.style.padding = "8px 14px";
+  addBtn.style.fontSize = "13px";
   addBtn.style.borderRadius = "6px";
+  addBtn.style.justifyContent = "center";
   
   addBtn.addEventListener("click", async () => {
     if (!nameInput.value || !urlInput.value) return;
