@@ -77,6 +77,7 @@ USER_AGENT = "GeminiBlogBuddy/0.1 (+https://github.com/)"
 class BlogSource:
     name: str
     url: str
+    category: str = "default"
 
 
 @dataclass(frozen=True)
@@ -85,6 +86,7 @@ class ArticleLink:
     source_name: str
     source_url: str
     anchor_text: str
+    category: str = "default"
 
 
 def load_sources(path: Path | None = None) -> List[BlogSource]:
@@ -96,17 +98,23 @@ def load_sources(path: Path | None = None) -> List[BlogSource]:
     with sources_path.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle) or {}
 
-    items = data.get("sources", [])
     sources: List[BlogSource] = []
+    
+    categories = data.get("categories", {})
+    if not categories:
+        categories = {"default": data.get("sources", [])}
 
-    for item in items:
-        if not isinstance(item, dict):
+    for category_name, items in categories.items():
+        if not isinstance(items, list):
             continue
-        name = item.get("name")
-        url = item.get("url")
-        if not name or not url:
-            continue
-        sources.append(BlogSource(name=name.strip(), url=url.strip()))
+        for item in items:
+            if not isinstance(item, dict):
+                continue
+            name = item.get("name")
+            url = item.get("url")
+            if not name or not url:
+                continue
+            sources.append(BlogSource(name=name.strip(), url=url.strip(), category=category_name))
 
     if not sources:
         raise ValueError(f"No sources configured in {sources_path}")
@@ -178,7 +186,8 @@ async def _fetch_article_links_from_source(
                 url=normalized,
                 source_name=source.name,
                 source_url=source.url,
-                anchor_text=anchor_text or source.name
+                anchor_text=anchor_text or source.name,
+                category=source.category
             )
         )
 

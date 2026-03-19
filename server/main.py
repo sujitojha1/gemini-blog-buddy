@@ -17,6 +17,7 @@ from rag_pipeline import search_index as search_with_faiss
 from blogs_db import (
     get_recent_articles,
     update_blogs_db as refresh_blogs_db,
+    update_feedback
 )
 
 
@@ -47,6 +48,11 @@ def get_blog_sources() -> tuple[BlogSource, ...]:
 class SearchRequest(BaseModel):
     query: str
     top_k: int | None = None
+
+
+class FeedbackRequest(BaseModel):
+    url: str
+    is_like: bool | None = None
 
 
 class IndexRequest(BaseModel):
@@ -107,8 +113,6 @@ async def random_blog():
         latest_date, recent_articles = _load_recent_articles()
 
     links = recent_articles
-    pulled_from_history = bool(links)
-
     if not links:
         sources = get_blog_sources()
         links = await gather_article_links(sources)
@@ -117,12 +121,19 @@ async def random_blog():
         return DEFAULT_RANDOM_RESPONSE
 
     selected = random.choice(links)
-    host = urlparse(selected.source_url or selected.url).netloc or selected.source_name
-    prefix = "Surfaced a recently saved article" if pulled_from_history else "Surfaced an article"
+    
     return {
-        "message": f"{prefix} from {host}.",
-        "url": selected.url
+        "message": f"Surfaced a recently saved article from {selected.source_name}.",
+        "url": selected.url,
+        "category": getattr(selected, 'category', 'default')
     }
+
+@app.post("/feedback")
+def submit_feedback(request: FeedbackRequest):
+    success = update_feedback(request.url, request.is_like)
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to record preference.")
+    return {"message": "Preference logged."}
 
 
 @app.post("/search")

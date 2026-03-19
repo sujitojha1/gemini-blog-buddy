@@ -1,21 +1,84 @@
-sources:
-  - name: Anthropic News
-    url: https://www.anthropic.com/news
-  - name: Cursor
-    url: https://cursor.com/blog/topic/research
-  - name: Google AI Blog
-    url: https://blog.google/technology/ai/
-  - name: Google Research Blog
-    url: https://research.google/blog/
-  - name: NVIDIA Blog
-    url: https://developer.nvidia.com/blog
-  - name: Amazon Blog
-    url: https://www.amazon.science/blog
-  - name: Apple Research Blog
-    url: https://machinelearning.apple.com/research
-  - name: Anthropic Engineering Blog
-    url: https://www.anthropic.com/engineering
-  - name: Anthropic Research Blog
-    url: https://www.anthropic.com/research
-  - name: Anthropic Transformer Circuits
-    url: https://transformer-circuits.pub/
+categories:
+  deep_synthesis_blogs:
+    - name: Lilian Weng (Lil'Log)
+      url: https://lilianweng.github.io/
+    - name: Eugene Yan
+      url: https://eugeneyan.com/
+    - name: Chip Huyen
+      url: https://huyenchip.com/blog/
+
+  frontier_lab_research_hubs:
+    - name: Anthropic Research
+      url: https://www.anthropic.com/research
+    - name: OpenAI Research
+      url: https://openai.com/research
+    - name: OpenAI Alignment Research Blog
+      url: https://alignment.openai.com/
+    - name: Google DeepMind Research
+      url: https://deepmind.google/research/
+    - name: Google Research Blog
+      url: https://research.google/blog/
+    - name: AI at Meta Blog
+      url: https://ai.meta.com/blog/
+    - name: Microsoft Research Blog
+      url: https://www.microsoft.com/en-us/research/blog/
+    - name: Apple Machine Learning Research
+      url: https://machinelearning.apple.com/research
+
+  mechanistic_interpretability_and_alignment:
+    - name: Transformer Circuits Thread
+      url: https://transformer-circuits.pub/
+    - name: Distill (archive; on hiatus)
+      url: https://distill.pub/
+    - name: Neel Nanda (Mechanistic Interpretability Glossary)
+      url: https://www.neelnanda.io/mechanistic-interpretability/glossary
+    - name: Redwood Research blog
+      url: https://blog.redwoodresearch.org/
+    - name: Apollo Research blog
+      url: https://www.apolloresearch.ai/blog/
+    - name: METR Updates
+      url: https://metr.org/blog/
+
+  agent_engineering_and_evaluations:
+    - name: Cursor Research
+      url: https://cursor.com/blog/topic/research
+    - name: LangChain Blog
+      url: https://blog.langchain.com/
+    - name: LlamaIndex Blog
+      url: https://www.llamaindex.ai/blog
+
+  ml_systems_training_and_inference:
+    - name: Hugging Face Blog
+      url: https://huggingface.co/blog
+    - name: PyTorch Blog
+      url: https://pytorch.org/blog/
+    - name: Engineering at Meta
+      url: https://engineering.fb.com/
+    - name: vLLM Blog
+      url: https://blog.vllm.ai/
+    - name: vLLM Docs
+      url: https://docs.vllm.ai/
+    - name: llama.cpp docs (Transformers integration)
+      url: https://huggingface.co/docs/transformers/community_integrations/llama_cpp
+    - name: NVIDIA Developer Blog (LLM techniques)
+      url: https://developer.nvidia.com/blog/
+
+  production_ml_case_studies:
+    - name: Berkeley AI Research (BAIR) Blog
+      url: https://bair.berkeley.edu/blog/
+    - name: Netflix TechBlog
+      url: https://netflixtechblog.com/
+    - name: Uber Engineering (Data / ML)
+      url: https://www.uber.com/blog/data
+    - name: DoorDash Engineering Blog (AI & ML)
+      url: https://careersatdoordash.com/blog/category/engineering/data-science-and-machine-learning/
+    - name: Airbnb Engineering & Data Science Blog
+      url: https://airbnb.tech/blog/
+
+  papers_and_peer_review_backstops:
+    - name: arXiv (preprints)
+      url: https://arxiv.org/
+    - name: OpenReview
+      url: https://openreview.net/
+    - name: Hugging Face Daily Papers
+      url: https://huggingface.co/papers

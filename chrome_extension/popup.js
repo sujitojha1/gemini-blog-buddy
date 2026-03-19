@@ -1,4 +1,27 @@
 const API_BASE_URL = "http://localhost:8000";
+const STORAGE_KEY = "lastBlogInteraction";
+
+async function submitFeedbackIfPending() {
+  try {
+    const data = await chrome.storage.local.get(STORAGE_KEY);
+    const interaction = data[STORAGE_KEY];
+    
+    if (interaction && interaction.url) {
+      const timeElapsed = Date.now() - interaction.timestamp;
+      const isLike = timeElapsed > 20000;
+      
+      await callApi("/feedback", {
+        method: "POST",
+        body: JSON.stringify({ url: interaction.url, is_like: isLike })
+      }).catch(console.error);
+      
+      await chrome.storage.local.remove(STORAGE_KEY);
+    }
+  } catch (e) {
+    console.error("Feedback error", e);
+  }
+}
+
 
 function setStatus(message) {
   const status = document.getElementById("status");
@@ -108,6 +131,8 @@ async function handleIndexClick(event) {
   const button = event.currentTarget;
   button.disabled = true;
   setStatus("Sending page to be indexed...");
+  
+  await submitFeedbackIfPending();
 
   try {
     const tabUrl = await getActiveTabUrl();
@@ -136,12 +161,19 @@ async function handleRandomBlogClick(event) {
   const button = event.currentTarget;
   button.disabled = true;
   setStatus("Fetching a random blog...");
+  
+  await submitFeedbackIfPending();
 
   try {
     const data = await callApi("/random-blog");
     setStatus(data.message || "Random blog retrieved.");
 
     if (data.url) {
+      // track this surfacing for the next cycle
+      await chrome.storage.local.set({
+        [STORAGE_KEY]: { url: data.url, timestamp: Date.now() }
+      });
+
       const openInCurrent = await chrome.storage.local.get("openBlogsInCurrent");
       const shouldOpenInCurrent =
         typeof openInCurrent.openBlogsInCurrent === "boolean"

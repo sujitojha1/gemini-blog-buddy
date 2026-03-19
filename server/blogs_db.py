@@ -26,9 +26,18 @@ def get_connection() -> duckdb.DuckDBPyConnection:
             title VARCHAR,
             source_name VARCHAR,
             source_url VARCHAR,
-            published_date DATE
+            published_date DATE,
+            category VARCHAR DEFAULT 'default',
+            likes INTEGER DEFAULT 0,
+            dislikes INTEGER DEFAULT 0
         )
     ''')
+    try:
+        conn.execute("ALTER TABLE articles ADD COLUMN category VARCHAR DEFAULT 'default'")
+        conn.execute("ALTER TABLE articles ADD COLUMN likes INTEGER DEFAULT 0")
+        conn.execute("ALTER TABLE articles ADD COLUMN dislikes INTEGER DEFAULT 0")
+    except Exception:
+        pass
     return conn
 
 
@@ -143,10 +152,10 @@ def save_articles(articles: List[ArticleLink], date_str: str) -> dict:
         title = article.anchor_text.strip() or article.url
         try:
             res = conn.execute('''
-                INSERT INTO articles (url, title, source_name, source_url, published_date)
-                VALUES (?, ?, ?, ?, ?)
+                INSERT INTO articles (url, title, source_name, source_url, published_date, category)
+                VALUES (?, ?, ?, ?, ?, ?)
                 ON CONFLICT (url) DO NOTHING
-            ''', (article.url, title, article.source_name, article.source_url, date_str))
+            ''', (article.url, title, article.source_name, article.source_url, date_str, getattr(article, "category", "default")))
         except Exception:
             pass
 
@@ -167,6 +176,20 @@ def update_blogs_db(*args, **kwargs) -> Dict[str, int]:
     today = dt.datetime.now(dt.timezone.utc).date().isoformat()
     articles = asyncio.run(collect_articles())
     return save_articles(articles, today)
+
+def update_feedback(url: str, is_like: bool) -> bool:
+    conn = get_connection()
+    try:
+        if is_like:
+            conn.execute("UPDATE articles SET likes = likes + 1 WHERE url = ?", (url,))
+        else:
+            conn.execute("UPDATE articles SET dislikes = dislikes + 1 WHERE url = ?", (url,))
+        return True
+    except Exception as e:
+        print(f"Feedback update error: {e}")
+        return False
+    finally:
+        conn.close()
 
 if __name__ == "__main__":
     stats = update_blogs_db()
