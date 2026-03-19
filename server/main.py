@@ -137,6 +137,24 @@ async def search_index(request: SearchRequest):
 
     return {"query": request.query, "top_k": top_k, "results": results}
 
+@app.get("/today")
+async def get_todays_pages():
+    latest_date, recent_articles = _load_recent_articles()
+    if not recent_articles:
+        return {"message": "No articles loaded today.", "articles": []}
+    return {
+        "message": f"Found {len(recent_articles)} articles.",
+        "articles": [{"title": a.anchor_text, "url": a.url, "source": a.source_name} for a in recent_articles]
+    }
+
+@app.post("/refresh")
+async def force_refresh():
+    try:
+        await run_in_threadpool(refresh_blogs_db)
+        return {"message": "Database reloaded successfully."}
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+
 
 if __name__ == "__main__":
     import uvicorn

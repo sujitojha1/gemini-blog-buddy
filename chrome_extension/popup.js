@@ -165,6 +165,48 @@ async function handleRandomBlogClick(event) {
   }
 }
 
+async function handleListTodayClick(event) {
+  const button = event.currentTarget;
+  button.disabled = true;
+  setStatus("Fetching today's articles...");
+  renderResults([]);
+
+  try {
+    const data = await callApi("/today");
+    setStatus(data.message || "Today's articles loaded.");
+    if (data.articles) {
+      const mapped = data.articles.map((a) => ({
+        title: a.title,
+        snippet: `Source: ${a.source}`,
+        url: a.url
+      }));
+      renderResults(mapped);
+    }
+  } catch (error) {
+    console.error(error);
+    setStatus(`Unable to fetch today's articles: ${error.message}`);
+  } finally {
+    button.disabled = false;
+  }
+}
+
+async function handleRefreshDbClick(event) {
+  const button = event.currentTarget;
+  button.disabled = true;
+  setStatus("Reloading database...");
+  renderResults([]);
+
+  try {
+    const data = await callApi("/refresh", { method: "POST" });
+    setStatus(data.message || "Database reloaded.");
+  } catch (error) {
+    console.error(error);
+    setStatus(`Unable to reload database: ${error.message}`);
+  } finally {
+    button.disabled = false;
+  }
+}
+
 function renderResults(results = []) {
   const container = document.getElementById("results");
   if (!container) {
@@ -241,11 +283,15 @@ async function handleSearchClick() {
 document.addEventListener("DOMContentLoaded", () => {
   const indexBtn = document.getElementById("indexBtn");
   const randomBlogBtn = document.getElementById("randomBlogBtn");
+  const listTodayBtn = document.getElementById("listTodayBtn");
+  const refreshDbBtn = document.getElementById("refreshDbBtn");
   const searchBtn = document.getElementById("searchBtn");
   const queryInput = document.getElementById("query");
 
   indexBtn.addEventListener("click", handleIndexClick);
   randomBlogBtn.addEventListener("click", handleRandomBlogClick);
+  listTodayBtn.addEventListener("click", handleListTodayClick);
+  refreshDbBtn.addEventListener("click", handleRefreshDbClick);
   searchBtn.addEventListener("click", handleSearchClick);
 
   queryInput.addEventListener("keydown", (event) => {
@@ -257,6 +303,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const controlsWithTooltips = [
     indexBtn,
     randomBlogBtn,
+    listTodayBtn,
+    refreshDbBtn,
     searchBtn,
     queryInput
   ];
