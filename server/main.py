@@ -89,6 +89,13 @@ async def index_current_page(request: IndexRequest):
     except Exception as exc:  # noqa: BLE001
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
+    if result.get("already_exists"):
+        return {
+            "message": "Already existing.",
+            "doc_name": result["doc_name"],
+            "chunks_indexed": 0,
+        }
+
     return {
         "message": "Indexed document via Trafilatura and FAISS.",
         "doc_name": result["doc_name"],

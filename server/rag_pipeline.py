@@ -197,11 +197,26 @@ class FaissStore:
             )
         return results
 
+    def get_doc_name(self, url: str) -> str:
+        for entry in self.metadata:
+            if entry.get("source_url") == url:
+                return entry.get("doc_name", "Unknown")
+        return "Unknown"
+
+    def has_url(self, url: str) -> bool:
+        return any(entry.get("source_url") == url for entry in self.metadata)
+
 
 FAISS_STORE = FaissStore()
 
 
 def index_url(url: str) -> dict[str, Any]:
+    if FAISS_STORE.has_url(url):
+        return {
+            "doc_name": FAISS_STORE.get_doc_name(url),
+            "chunks_indexed": 0,
+            "already_exists": True,
+        }
     markdown_path = run_trafilatura(url)
     return FAISS_STORE.add_document(markdown_path, source_url=url)
 
