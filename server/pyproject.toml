@@ -16,4 +16,5 @@ dependencies = [
     "faiss-cpu>=1.8.0",
     "duckdb>=1.5.0",
     "trafilatura>=2.0.0",
+    "networkx>=3.6.1",
 ]
