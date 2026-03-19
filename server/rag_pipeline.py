@@ -10,7 +10,6 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import faiss  # type: ignore
 import numpy as np
 import requests
-import networkx as nx
 
 import trafilatura
 
@@ -25,7 +24,6 @@ DOCUMENTS_DIR = BASE_DIR / "documents"
 INDEX_DIR = BASE_DIR / "faiss_index"
 INDEX_FILE = INDEX_DIR / "index.faiss"
 METADATA_FILE = INDEX_DIR / "metadata.json"
-GRAPH_FILE = INDEX_DIR / "knowledge_graph.graphml"
 
 
 def ensure_directories() -> None:
@@ -109,33 +107,22 @@ class FaissStore:
             entry["chunk_id"]: entry for entry in self.metadata if "chunk_id" in entry
         }
         self.index = self._load_index()
-        self.graph = self._load_graph()
 
     def _load_index(self) -> faiss.Index | None:
         if INDEX_FILE.exists():
             return faiss.read_index(str(INDEX_FILE))
         return None
 
-    def _load_graph(self) -> nx.DiGraph:
-        if GRAPH_FILE.exists():
-            return nx.read_graphml(str(GRAPH_FILE))
-        return nx.DiGraph()
-
     def _persist(self) -> None:
         if self.index is None or self.index.ntotal == 0:
             if INDEX_FILE.exists():
                 INDEX_FILE.unlink()
-            if GRAPH_FILE.exists():
-                GRAPH_FILE.unlink()
             self.metadata = []
             self._chunk_lookup = {}
-            self.graph = nx.DiGraph()
             write_metadata([])
             return
         faiss.write_index(self.index, str(INDEX_FILE))
         write_metadata(self.metadata)
-        if self.graph is not None:
-            nx.write_graphml(self.graph, str(GRAPH_FILE))
         self._chunk_lookup = {
             entry["chunk_id"]: entry for entry in self.metadata if "chunk_id" in entry
         }
@@ -165,26 +152,13 @@ class FaissStore:
         except ValueError:
             doc_path = str(markdown_path)
             
-        doc_node_id = f"doc_{markdown_path.stem}"
-        if not self.graph.has_node(doc_node_id):
-            self.graph.add_node(doc_node_id, type="Document", url=source_url, name=doc_name)
-
         new_metadata = []
-        prev_chunk_id = None
         for idx, chunk in enumerate(chunks):
-            chunk_id = f"{markdown_path.stem}_{idx}"
-            
-            self.graph.add_node(chunk_id, type="Chunk", text=chunk)
-            self.graph.add_edge(doc_node_id, chunk_id, relation="HAS_CHUNK")
-            if prev_chunk_id is not None:
-                self.graph.add_edge(prev_chunk_id, chunk_id, relation="NEXT_CHUNK")
-            prev_chunk_id = chunk_id
-
             new_metadata.append(
                 {
                     "doc_name": doc_name,
                     "chunk": chunk,
-                    "chunk_id": chunk_id,
+                    "chunk_id": f"{markdown_path.stem}_{idx}",
                     "source_url": source_url,
                     "doc_path": doc_path,
                 }
@@ -210,24 +184,15 @@ class FaissStore:
             if idx < 0 or idx >= len(self.metadata):
                 continue
             match = self.metadata[idx]
-            chunk_id = match["chunk_id"]
-
-            graph_neighbors = []
-            if self.graph.has_node(chunk_id):
-                preds = [str(n) for n in self.graph.predecessors(chunk_id)]
-                succs = [str(n) for n in self.graph.successors(chunk_id)]
-                graph_neighbors = preds + succs
-
             results.append(
                 {
                     "rank": rank + 1,
                     "score": float(distances[0][rank]),
-                    "chunk_id": chunk_id,
+                    "chunk_id": match["chunk_id"],
                     "title": match.get("doc_name"),
                     "snippet": match.get("chunk"),
                     "url": match.get("source_url"),
                     "doc_path": match.get("doc_path"),
-                    "graph_neighbors": graph_neighbors,
                 }
             )
         return results
