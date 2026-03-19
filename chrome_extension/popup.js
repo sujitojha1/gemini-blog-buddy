@@ -272,6 +272,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  setStatus("No results yet. Not indexed yet.");
+  setStatus("Ready.");
   renderResults([]);
 });

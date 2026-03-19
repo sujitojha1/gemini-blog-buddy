@@ -2,13 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>gemini-blog-buddy</title>
+    <title>Gemini Blog Buddy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
     <main class="card">
       <header class="card__header">
-        <div class="badge">gemini-blog-buddy</div>
+        <div class="badge">
+          <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+          </svg>
+          Gemini Blog Buddy
+        </div>
       </header>
 
       <div class="actions">
@@ -20,38 +26,44 @@
             title="Index the current page to your processed blogs"
           >
             <span class="btn-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false">
-                <path
-                  d="M12 2a1 1 0 0 1 1 1v8.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L11 11.586V3a1 1 0 0 1 1-1Zm-7 14a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H5Z"
-                />
+              <!-- Upload/Plus Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" x2="12" y1="3" y2="15"/>
               </svg>
             </span>
-            <span class="btn-text">Index</span>
+            <span class="btn-text">Index Page</span>
           </button>
+
           <button
             id="randomBlogBtn"
             type="button"
-            class="btn btn-ghost btn-with-icon"
+            class="btn btn-secondary btn-with-icon"
             title="Randomly open one of your recent blogs"
           >
             <span class="btn-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" focusable="false">
-                <path
-                  d="M7.05 5.636a8 8 0 0 1 13.284 3.924 1 1 0 1 1-1.94.485 6 6 0 0 0-9.802-2.945l1.423 1.423a1 1 0 0 1-1.414 1.414L5.343 7.414a1 1 0 0 1 0-1.414l2.121-2.121a1 1 0 0 1 1.414 1.414L7.05 5.636Zm9.9 12.728a8 8 0 0 1-13.284-3.924 1 1 0 1 1 1.94-.485 6 6 0 0 0 9.802 2.945l-1.423-1.423a1 1 0 1 1 1.414-1.414l3.758 3.758a1 1 0 0 1 0 1.414l-2.121 2.121a1 1 0 1 1-1.414-1.414l1.328-1.328Z"
-                />
+              <!-- Shuffle Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 3 21 3 21 8"/>
+                <line x1="4" x2="21" y1="20" y2="3"/>
+                <polyline points="21 16 21 21 16 21"/>
+                <line x1="15" x2="21" y1="15" y2="21"/>
+                <line x1="4" x2="9" y1="4" y2="9"/>
               </svg>
             </span>
-            <span class="btn-text">Blog</span>
+            <span class="btn-text">Surprise Me</span>
           </button>
         </div>
       </div>
 
-      <section class="search">
+      <section class="search-section">
+        <h3 class="section-title">Knowledge Base</h3>
         <div class="search-row">
           <input
             id="query"
             type="text"
-            placeholder="Retrieve from your index"
+            placeholder="Type a concept or keyword..."
             autocomplete="off"
           />
           <button
@@ -60,10 +72,9 @@
             class="btn btn-ghost btn-icon-only"
             title="Search your indexed content"
           >
-            <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
-              <path
-                d="M11 4a7 7 0 1 1-4.95 11.95l-1.8 1.8a1 1 0 0 1-1.414-1.414l1.8-1.8A7 7 0 0 1 11 4Zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"
-              />
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" x2="16.65" y1="21" y2="16.65"/>
             </svg>
           </button>
         </div>
@@ -71,7 +82,10 @@
 
       <section id="results" class="results" aria-live="polite"></section>
 
-      <p id="status" role="status" class="status">No results yet. Not indexed yet.</p>
+      <!-- Status footer is used by JS for feedback -->
+      <div class="status-footer">
+        <p id="status" role="status" class="status">Waiting for action...</p>
+      </div>
     </main>
 
     <script src="popup.js"></script>
