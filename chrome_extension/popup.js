@@ -1,4 +1,26 @@
 const API_BASE_URL = "http://localhost:8000";
+const STORAGE_KEY = "lastBlogInteraction";
+
+async function submitFeedbackIfPending() {
+  try {
+    const data = await chrome.storage.local.get(STORAGE_KEY);
+    const interaction = data[STORAGE_KEY];
+    
+    if (interaction && interaction.source_url) {
+      const timeElapsed = Date.now() - interaction.timestamp;
+      const isLike = timeElapsed > 20000;
+      
+      await callApi("/feedback", {
+        method: "POST",
+        body: JSON.stringify({ url: interaction.source_url, is_like: isLike })
+      }).catch(console.error);
+      
+      await chrome.storage.local.remove(STORAGE_KEY);
+    }
+  } catch (e) {
+    console.error("Feedback error", e);
+  }
+}
 
 
 function setStatus(message) {
@@ -139,12 +161,20 @@ async function handleRandomBlogClick(event) {
   button.disabled = true;
   setStatus("Fetching a random blog...");
   renderResults([]);
+  
+  await submitFeedbackIfPending();
 
   try {
     const data = await callApi("/random-blog");
     setStatus(data.message || "Random blog retrieved.");
 
     if (data.url) {
+      if (data.source_url) {
+        await chrome.storage.local.set({
+          [STORAGE_KEY]: { source_url: data.source_url, timestamp: Date.now() }
+        });
+      }
+
       const openInCurrent = await chrome.storage.local.get("openBlogsInCurrent");
       const shouldOpenInCurrent =
         typeof openInCurrent.openBlogsInCurrent === "boolean"
@@ -254,7 +284,7 @@ function renderSources(sources = []) {
     content.style.flex = "1";
     
     const title = document.createElement("h2");
-    title.textContent = item.name;
+    title.textContent = `${item.name} (${item.page_count}, ${item.likes}, ${item.dislikes})`;
     title.style.margin = "0 0 4px";
     title.style.fontSize = "13px";
     

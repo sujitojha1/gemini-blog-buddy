@@ -18,8 +18,10 @@ from blogs_db import (
     get_recent_articles,
     update_blogs_db as refresh_blogs_db,
     get_db_sources,
+    get_source_stats,
     add_db_source,
-    remove_db_source
+    remove_db_source,
+    record_source_feedback
 )
 
 
@@ -56,6 +58,10 @@ class IndexRequest(BaseModel):
 class SourceRequest(BaseModel):
     name: str | None = None
     url: str
+
+class FeedbackRequest(BaseModel):
+    url: str
+    is_like: bool
 
 
 def _load_recent_articles(max_articles: int = 50) -> tuple[str | None, list[ArticleLink]]:
@@ -130,7 +136,8 @@ async def random_blog():
     
     return {
         "message": f"Surfaced a recently saved article from {selected.source_name}.",
-        "url": selected.url
+        "url": selected.url,
+        "source_url": selected.source_url
     }
 
 @app.post("/search")
@@ -163,8 +170,13 @@ async def force_refresh():
 
 @app.get("/sources")
 async def fetch_sources():
-    sources = get_db_sources()
-    return {"sources": [{"name": s.name, "url": s.url} for s in sources]}
+    sources = get_source_stats()
+    return {"sources": sources}
+
+@app.post("/feedback")
+async def receive_feedback(req: FeedbackRequest):
+    success = record_source_feedback(req.url, req.is_like)
+    return {"message": "Feedback recorded." if success else "Failed."}
 
 @app.post("/sources")
 async def create_source(req: SourceRequest):

@@ -33,9 +33,16 @@ def get_connection() -> duckdb.DuckDBPyConnection:
     conn.execute('''
         CREATE TABLE IF NOT EXISTS blog_sources (
             name VARCHAR,
-            url VARCHAR PRIMARY KEY
+            url VARCHAR PRIMARY KEY,
+            likes INTEGER DEFAULT 0,
+            dislikes INTEGER DEFAULT 0
         )
     ''')
+    try:
+        conn.execute('ALTER TABLE blog_sources ADD COLUMN likes INTEGER DEFAULT 0')
+        conn.execute('ALTER TABLE blog_sources ADD COLUMN dislikes INTEGER DEFAULT 0')
+    except Exception:
+        pass
     return conn
 
 def migrate_sources_if_needed():
@@ -75,6 +82,45 @@ def get_db_sources() -> List[BlogSource]:
     rows = conn.execute("SELECT name, url FROM blog_sources").fetchall()
     conn.close()
     return [BlogSource(name=r[0], url=r[1]) for r in rows]
+
+def get_source_stats() -> List[dict]:
+    migrate_sources_if_needed()
+    conn = get_connection()
+    rows = conn.execute('''
+        SELECT 
+            bs.name, 
+            bs.url,
+            COUNT(a.url) as page_count,
+            COALESCE(bs.likes, 0) as likes,
+            COALESCE(bs.dislikes, 0) as dislikes
+        FROM blog_sources bs
+        LEFT JOIN articles a ON (a.source_url = bs.url OR a.source_name = bs.name)
+        GROUP BY bs.name, bs.url, bs.likes, bs.dislikes
+    ''').fetchall()
+    conn.close()
+    return [
+        {
+            "name": r[0],
+            "url": r[1],
+            "page_count": r[2],
+            "likes": r[3],
+            "dislikes": r[4]
+        }
+        for r in rows
+    ]
+
+def record_source_feedback(url: str, is_like: bool) -> bool:
+    conn = get_connection()
+    try:
+        if is_like:
+            conn.execute("UPDATE blog_sources SET likes = likes + 1 WHERE url = ?", (url,))
+        else:
+            conn.execute("UPDATE blog_sources SET dislikes = dislikes + 1 WHERE url = ?", (url,))
+        return True
+    except Exception:
+        return False
+    finally:
+        conn.close()
 
 def add_db_source(name: str, url: str) -> bool:
     conn = get_connection()
