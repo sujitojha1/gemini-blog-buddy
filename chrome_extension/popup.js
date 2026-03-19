@@ -1,27 +1,11 @@
-const API_BASE_URL = "http://localhost:8000";
-const STORAGE_KEY = "lastBlogInteraction";
+let API_BASE_URL = "http://localhost:8000";
 
-async function submitFeedbackIfPending() {
-  try {
-    const data = await chrome.storage.local.get(STORAGE_KEY);
-    const interaction = data[STORAGE_KEY];
-    
-    if (interaction && interaction.source_url) {
-      const timeElapsed = Date.now() - interaction.timestamp;
-      const isLike = timeElapsed > 20000;
-      
-      await callApi("/feedback", {
-        method: "POST",
-        body: JSON.stringify({ url: interaction.source_url, is_like: isLike })
-      }).catch(console.error);
-      
-      await chrome.storage.local.remove(STORAGE_KEY);
-    }
-  } catch (e) {
-    console.error("Feedback error", e);
-  }
-}
-
+chrome.storage.local.get("apiBaseUrl", (res) => {
+  if (res.apiBaseUrl) API_BASE_URL = res.apiBaseUrl;
+});
+chrome.storage.onChanged.addListener((changes) => {
+  if (changes.apiBaseUrl) API_BASE_URL = changes.apiBaseUrl.newValue;
+});
 
 function setStatus(message) {
   const status = document.getElementById("status");
@@ -161,18 +145,20 @@ async function handleRandomBlogClick(event) {
   button.disabled = true;
   setStatus("Fetching a random blog...");
   renderResults([]);
-  
-  await submitFeedbackIfPending();
 
   try {
     const data = await callApi("/random-blog");
     setStatus(data.message || "Random blog retrieved.");
 
     if (data.url) {
-      if (data.source_url) {
-        await chrome.storage.local.set({
-          [STORAGE_KEY]: { source_url: data.source_url, timestamp: Date.now() }
-        });
+      function trackTab(tabId) {
+        if (data.source_url && tabId) {
+          chrome.runtime.sendMessage({
+            action: "track_tab",
+            tabId: tabId,
+            sourceUrl: data.source_url
+          }).catch(() => {});
+        }
       }
 
       const openInCurrent = await chrome.storage.local.get("openBlogsInCurrent");
@@ -181,10 +167,14 @@ async function handleRandomBlogClick(event) {
           ? openInCurrent.openBlogsInCurrent
           : true;
 
-      if (shouldOpenInCurrent) {
-        await openTab(data.url);
-      } else {
-        await createTab(data.url);
+      if (shouldOpenInCurrent && chrome.tabs.update) {
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+           if (tabs[0] && tabs[0].id) {
+             chrome.tabs.update(tabs[0].id, { url: data.url }, (tab) => trackTab(tab?.id || tabs[0].id));
+           }
+        });
+      } else if (chrome.tabs.create) {
+        chrome.tabs.create({ url: data.url }, (tab) => trackTab(tab?.id));
       }
     }
   } catch (error) {
@@ -215,42 +205,64 @@ async function handleListSourcesClick(event) {
   }
 }
 
+function renderResults(results = []) {
+  const container = document.getElementById("results");
+  if (!container) return;
+
+  container.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+
+  results.forEach((item) => {
+    const result = document.createElement("article");
+    result.className = "result";
+
+    const title = document.createElement("h2");
+    title.textContent = item.title || "Result";
+    result.appendChild(title);
+
+    const snippet = document.createElement("p");
+    snippet.className = "snippet";
+    snippet.textContent = item.snippet || item.chunk || "No snippet available for this match.";
+    result.appendChild(snippet);
+
+    const resultUrl = item.url;
+    if (resultUrl) {
+      const link = document.createElement("a");
+      link.href = resultUrl;
+      link.textContent = "Open source";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      result.appendChild(link);
+    }
+    fragment.appendChild(result);
+  });
+  
+  container.appendChild(fragment);
+}
+
 function renderSources(sources = []) {
   const container = document.getElementById("results");
   if (!container) return;
   container.innerHTML = "";
 
+  const fragment = document.createDocumentFragment();
+
   const addForm = document.createElement("div");
-  addForm.style.marginBottom = "14px";
-  addForm.style.display = "flex";
-  addForm.style.flexDirection = "column";
-  addForm.style.gap = "8px";
+  addForm.className = "source-form";
   
   const nameInput = document.createElement("input");
   nameInput.type = "text";
   nameInput.placeholder = "Source Name";
-  nameInput.style.padding = "8px";
-  nameInput.style.fontSize = "13px";
-  nameInput.style.borderRadius = "6px";
-  nameInput.style.border = "1px solid #cbd5e1";
-  nameInput.style.boxSizing = "border-box";
+  nameInput.className = "source-input";
   
   const urlInput = document.createElement("input");
   urlInput.type = "text";
   urlInput.placeholder = "URL";
-  urlInput.style.padding = "8px";
-  urlInput.style.fontSize = "13px";
-  urlInput.style.borderRadius = "6px";
-  urlInput.style.border = "1px solid #cbd5e1";
-  urlInput.style.boxSizing = "border-box";
+  urlInput.className = "source-input";
 
   const addBtn = document.createElement("button");
   addBtn.textContent = "Add Source";
-  addBtn.className = "btn btn-primary";
-  addBtn.style.padding = "8px 14px";
-  addBtn.style.fontSize = "13px";
-  addBtn.style.borderRadius = "6px";
-  addBtn.style.justifyContent = "center";
+  addBtn.className = "btn btn-primary source-add-btn";
   
   addBtn.addEventListener("click", async () => {
     if (!nameInput.value || !urlInput.value) return;
@@ -270,76 +282,50 @@ function renderSources(sources = []) {
   addForm.appendChild(nameInput);
   addForm.appendChild(urlInput);
   addForm.appendChild(addBtn);
-  container.appendChild(addForm);
+  fragment.appendChild(addForm);
 
   sources.forEach((item) => {
     const result = document.createElement("article");
-    result.className = "result";
-    result.style.display = "flex";
-    result.style.alignItems = "center";
-    result.style.gap = "8px";
-    result.style.padding = "10px";
+    result.className = "result result-source";
 
     const content = document.createElement("div");
-    content.style.flex = "1";
+    content.className = "source-content";
     
     const title = document.createElement("h2");
     title.textContent = item.name;
-    title.style.margin = "0 0 4px";
-    title.style.fontSize = "13px";
+    title.className = "source-title";
     
     const link = document.createElement("a");
     link.href = item.url;
     link.textContent = item.url;
-    link.style.fontSize = "11px";
-    link.style.display = "block";
-    link.style.wordBreak = "break-all";
+    link.className = "source-link";
+    link.target = "_blank";
 
     content.appendChild(title);
     content.appendChild(link);
     result.appendChild(content);
 
     const metricsContainer = document.createElement("div");
-    metricsContainer.style.display = "flex";
-    metricsContainer.style.gap = "4px";
-    metricsContainer.style.marginRight = "6px";
+    metricsContainer.className = "metrics-container";
     
-    const createMetricCircle = (value, color, titleText) => {
+    const createMetricCircle = (value, colorClass, titleText) => {
       const circle = document.createElement("div");
       circle.textContent = value;
       circle.title = titleText;
-      circle.style.display = "flex";
-      circle.style.alignItems = "center";
-      circle.style.justifyContent = "center";
-      circle.style.width = "22px";
-      circle.style.height = "22px";
-      circle.style.borderRadius = "50%";
-      circle.style.fontSize = "10px";
-      circle.style.fontWeight = "bold";
-      circle.style.backgroundColor = color;
-      circle.style.color = "#fff";
-      circle.style.flex = "none";
+      circle.className = `metric-circle ${colorClass}`;
       return circle;
     };
     
-    metricsContainer.appendChild(createMetricCircle(item.page_count || 0, "#3b82f6", "Pages Extracted"));
-    metricsContainer.appendChild(createMetricCircle(item.likes || 0, "#10b981", "Thumbs Up"));
-    metricsContainer.appendChild(createMetricCircle(item.dislikes || 0, "#ef4444", "Thumbs Down"));
+    metricsContainer.appendChild(createMetricCircle(item.page_count || 0, "metric-pages", "Pages Extracted"));
+    metricsContainer.appendChild(createMetricCircle(item.likes || 0, "metric-likes", "Thumbs Up"));
+    metricsContainer.appendChild(createMetricCircle(item.dislikes || 0, "metric-dislikes", "Thumbs Down"));
     
     result.appendChild(metricsContainer);
 
     const removeBtn = document.createElement("button");
-    removeBtn.className = "btn-icon-only btn-secondary";
+    removeBtn.className = "btn-icon-only btn-secondary remove-btn";
     removeBtn.title = "Remove source";
-    removeBtn.style.flex = "none";
-    removeBtn.style.width = "28px";
-    removeBtn.style.height = "28px";
-    removeBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;">
-      <polyline points="3 6 5 6 21 6"></polyline>
-      <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-      <line x1="10" y1="11" x2="10" y2="17"></line>
-      <line x1="14" y1="11" x2="14" y2="17"></line>
-    </svg>`;
+    removeBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>`;
     
     removeBtn.addEventListener("click", async () => {
       removeBtn.disabled = true;
@@ -348,7 +334,7 @@ function renderSources(sources = []) {
           method: "POST",
           body: JSON.stringify({ url: item.url })
         });
-        document.getElementById("listSourcesBtn").click();
+        result.remove();
       } catch(e) {
         setStatus(e.message);
         removeBtn.disabled = false;
@@ -356,8 +342,10 @@ function renderSources(sources = []) {
     });
 
     result.appendChild(removeBtn);
-    container.appendChild(result);
+    fragment.appendChild(result);
   });
+  
+  container.appendChild(fragment);
 }
 
 async function handleListTodayClick(event) {
@@ -491,9 +479,43 @@ document.addEventListener("DOMContentLoaded", () => {
   refreshDbBtn.addEventListener("click", handleRefreshDbClick);
   searchBtn.addEventListener("click", handleSearchClick);
 
+  let searchTimeout = null;
+  queryInput.addEventListener("input", (event) => {
+    if (searchTimeout) clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      if (queryInput.value.trim()) {
+        handleSearchClick();
+      } else {
+        renderResults([]);
+        setStatus("Ready.");
+      }
+    }, 300);
+  });
+
   queryInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-      handleSearchClick();
+      if (searchTimeout) clearTimeout(searchTimeout);
+      if (queryInput.value.trim()) handleSearchClick();
+    }
+  });
+
+  const settingsToggleBtn = document.getElementById("settingsToggleBtn");
+  const settingsPane = document.getElementById("settingsPane");
+  const saveSettingsBtn = document.getElementById("saveSettingsBtn");
+  const apiHostnameInput = document.getElementById("apiHostnameInput");
+
+  settingsToggleBtn.addEventListener("click", () => {
+    const isHidden = settingsPane.style.display === "none";
+    settingsPane.style.display = isHidden ? "flex" : "none";
+    if (isHidden) apiHostnameInput.value = API_BASE_URL;
+  });
+
+  saveSettingsBtn.addEventListener("click", () => {
+    const newUrl = apiHostnameInput.value.trim();
+    if (newUrl) {
+      chrome.storage.local.set({ apiBaseUrl: newUrl });
+      settingsPane.style.display = "none";
+      setStatus("Settings saved.");
     }
   });
 
