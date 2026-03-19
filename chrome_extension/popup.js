@@ -284,7 +284,7 @@ function renderSources(sources = []) {
     content.style.flex = "1";
     
     const title = document.createElement("h2");
-    title.textContent = `${item.name} (${item.page_count}, ${item.likes}, ${item.dislikes})`;
+    title.textContent = item.name;
     title.style.margin = "0 0 4px";
     title.style.fontSize = "13px";
     
@@ -298,6 +298,35 @@ function renderSources(sources = []) {
     content.appendChild(title);
     content.appendChild(link);
     result.appendChild(content);
+
+    const metricsContainer = document.createElement("div");
+    metricsContainer.style.display = "flex";
+    metricsContainer.style.gap = "4px";
+    metricsContainer.style.marginRight = "6px";
+    
+    const createMetricCircle = (value, color, titleText) => {
+      const circle = document.createElement("div");
+      circle.textContent = value;
+      circle.title = titleText;
+      circle.style.display = "flex";
+      circle.style.alignItems = "center";
+      circle.style.justifyContent = "center";
+      circle.style.width = "22px";
+      circle.style.height = "22px";
+      circle.style.borderRadius = "50%";
+      circle.style.fontSize = "10px";
+      circle.style.fontWeight = "bold";
+      circle.style.backgroundColor = color;
+      circle.style.color = "#fff";
+      circle.style.flex = "none";
+      return circle;
+    };
+    
+    metricsContainer.appendChild(createMetricCircle(item.page_count || 0, "#3b82f6", "Pages Extracted"));
+    metricsContainer.appendChild(createMetricCircle(item.likes || 0, "#10b981", "Thumbs Up"));
+    metricsContainer.appendChild(createMetricCircle(item.dislikes || 0, "#ef4444", "Thumbs Down"));
+    
+    result.appendChild(metricsContainer);
 
     const removeBtn = document.createElement("button");
     removeBtn.textContent = "Remove";
