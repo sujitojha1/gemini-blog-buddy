@@ -14,10 +14,9 @@ from fastapi.concurrency import run_in_threadpool
 
 from rag_pipeline import index_url as index_with_docling
 from rag_pipeline import search_index as search_with_faiss
-from update_blogs_md import (
-    BLOGS_MD_PATH,
-    parse_existing_sections,
-    update_blogs_md as refresh_blogs_md,
+from blogs_db import (
+    get_recent_articles,
+    update_blogs_db as refresh_blogs_db,
 )
 
 
@@ -54,45 +53,8 @@ class IndexRequest(BaseModel):
     url: str
 
 
-ARTICLE_PATTERN = re.compile(
-    r"^- \[(?P<title>.+?)\]\((?P<url>https?://[^\s)]+)\)\s+[—-]\s+\*(?P<source>.+?)\*\s*$"
-)
-
-
 def _load_recent_articles(max_articles: int = 50) -> tuple[str | None, list[ArticleLink]]:
-    sections = parse_existing_sections(BLOGS_MD_PATH)
-    if not sections:
-        return None, []
-
-    latest_date, lines = sections[0]
-    articles: list[ArticleLink] = []
-
-    for raw_line in lines:
-        stripped = raw_line.strip()
-        if not stripped or stripped.startswith("- _("):
-            continue
-
-        match = ARTICLE_PATTERN.match(stripped)
-        if not match:
-            continue
-
-        title = match.group("title").replace("\\[", "[").replace("\\]", "]").strip()
-        url = match.group("url")
-        source = match.group("source").strip()
-
-        articles.append(
-            ArticleLink(
-                url=url,
-                source_name=source,
-                source_url="",
-                anchor_text=title or url
-            )
-        )
-
-        if len(articles) >= max_articles:
-            break
-
-    return latest_date, articles
+    return get_recent_articles(max_articles)
 
 
 def _is_section_stale(date_str: str | None) -> bool:
@@ -107,13 +69,13 @@ def _is_section_stale(date_str: str | None) -> bool:
     return section_date < today
 
 
-async def _ensure_fresh_markdown(needs_refresh: bool) -> None:
+async def _ensure_fresh_data(needs_refresh: bool) -> None:
     if not needs_refresh:
         return
     try:
-        await run_in_threadpool(refresh_blogs_md, BLOGS_MD_PATH)
+        await run_in_threadpool(refresh_blogs_db)
     except Exception as exc:  # noqa: BLE001
-        LOGGER.warning("blogs.md refresh failed: %s", exc)
+        LOGGER.warning("blogs db refresh failed: %s", exc)
 
 
 @app.get("/")
@@ -139,7 +101,7 @@ async def index_current_page(request: IndexRequest):
 async def random_blog():
     latest_date, recent_articles = _load_recent_articles()
     needs_refresh = _is_section_stale(latest_date) or not recent_articles
-    await _ensure_fresh_markdown(needs_refresh)
+    await _ensure_fresh_data(needs_refresh)
 
     if needs_refresh:
         latest_date, recent_articles = _load_recent_articles()
