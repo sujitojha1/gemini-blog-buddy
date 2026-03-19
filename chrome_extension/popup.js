@@ -109,6 +109,7 @@ async function handleIndexClick(event) {
   const button = event.currentTarget;
   button.disabled = true;
   setStatus("Sending page to be indexed...");
+  renderResults([]);
 
   try {
     const tabUrl = await getActiveTabUrl();
@@ -137,6 +138,7 @@ async function handleRandomBlogClick(event) {
   const button = event.currentTarget;
   button.disabled = true;
   setStatus("Fetching a random blog...");
+  renderResults([]);
 
   try {
     const data = await callApi("/random-blog");
