@@ -51,8 +51,8 @@ chrome.tabs.onActivated.addListener((activeInfo) => {
   }
 });
 
-// Dispatch tracking API analytics once tab is closed explicitly
-chrome.tabs.onRemoved.addListener((tabId) => {
+// Dispatch tracking API analytics once tab is closed explicitly or navigated away
+function dispatchFeedback(tabId) {
   if (trackedTabs[tabId]) {
     updateTimeState();
     const entry = trackedTabs[tabId];
@@ -70,5 +70,25 @@ chrome.tabs.onRemoved.addListener((tabId) => {
     .catch(console.error);
     
     delete trackedTabs[tabId];
+  }
+}
+
+chrome.tabs.onRemoved.addListener((tabId) => {
+  dispatchFeedback(tabId);
+});
+
+// Guard data integrity if the user navigates away from the source article inside the tracking tab
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (trackedTabs[tabId] && changeInfo.url) {
+    // If the URL changed noticeably away from the root source domain/link, end tracking
+    const oldSource = new URL(trackedTabs[tabId].sourceUrl).hostname;
+    try {
+      const newUrl = new URL(changeInfo.url);
+      if (newUrl.hostname !== oldSource && changeInfo.url !== trackedTabs[tabId].url) {
+         dispatchFeedback(tabId);
+      }
+    } catch(e) {
+      dispatchFeedback(tabId);
+    }
   }
 });
