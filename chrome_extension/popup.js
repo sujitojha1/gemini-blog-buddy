@@ -7,10 +7,15 @@ chrome.storage.onChanged.addListener((changes) => {
   if (changes.apiBaseUrl) API_BASE_URL = changes.apiBaseUrl.newValue;
 });
 
-function setStatus(message) {
+function setStatus(message, isError = false) {
   const status = document.getElementById("status");
   if (status) {
     status.textContent = message;
+    if (isError) {
+      status.classList.add("error");
+    } else {
+      status.classList.remove("error");
+    }
   }
 }
 
@@ -28,8 +33,15 @@ async function callApi(path, options = {}) {
   const response = await fetch(`${API_BASE_URL}${path}`, config);
 
   if (!response.ok) {
-    const text = await response.text();
-    throw new Error(text || `Request failed with status ${response.status}`);
+    let errorMessage = `Request failed with status ${response.status}`;
+    try {
+      const errorData = await response.json();
+      errorMessage = errorData.detail || errorData.message || errorMessage;
+    } catch (e) {
+      const text = await response.text();
+      if (text) errorMessage = text;
+    }
+    throw new Error(errorMessage);
   }
 
   return response.json();
@@ -134,7 +146,7 @@ async function handleIndexClick(event) {
     setStatus(`${message}${docName}`);
   } catch (error) {
     console.error(error);
-    setStatus(`Index request failed: ${error.message}`);
+    setStatus(`Index request failed: ${error.message}`, true);
   } finally {
     button.disabled = false;
   }
@@ -179,7 +191,7 @@ async function handleRandomBlogClick(event) {
     }
   } catch (error) {
     console.error(error);
-    setStatus(`Unable to fetch a random blog: ${error.message}`);
+    setStatus(`Unable to fetch a random blog: ${error.message}`, true);
   } finally {
     button.disabled = false;
   }
@@ -199,7 +211,7 @@ async function handleListSourcesClick(event) {
     }
   } catch (error) {
     console.error(error);
-    setStatus(`Unable to fetch sources: ${error.message}`);
+    setStatus(`Unable to fetch sources: ${error.message}`, true);
   } finally {
     button.disabled = false;
   }
@@ -265,7 +277,20 @@ function renderSources(sources = []) {
   addBtn.className = "btn btn-primary source-add-btn";
   
   addBtn.addEventListener("click", async () => {
-    if (!nameInput.value || !urlInput.value) return;
+    nameInput.style.borderColor = "#cbd5e1";
+    urlInput.style.borderColor = "#cbd5e1";
+    
+    if (!nameInput.value.trim()) {
+      nameInput.style.borderColor = "#ef4444";
+    }
+    if (!urlInput.value.trim()) {
+      urlInput.style.borderColor = "#ef4444";
+    }
+    if (!nameInput.value.trim() || !urlInput.value.trim()) {
+      setStatus("Please provide both name and URL.", true);
+      return;
+    }
+
     addBtn.disabled = true;
     try {
       await callApi("/sources", {
@@ -274,7 +299,7 @@ function renderSources(sources = []) {
       });
       document.getElementById("listSourcesBtn").click();
     } catch(e) {
-      setStatus(e.message);
+      setStatus(e.message, true);
       addBtn.disabled = false;
     }
   });
@@ -336,7 +361,7 @@ function renderSources(sources = []) {
         });
         result.remove();
       } catch(e) {
-        setStatus(e.message);
+        setStatus(e.message, true);
         removeBtn.disabled = false;
       }
     });
@@ -367,7 +392,7 @@ async function handleListTodayClick(event) {
     }
   } catch (error) {
     console.error(error);
-    setStatus(`Unable to fetch today's articles: ${error.message}`);
+    setStatus(`Unable to fetch today's articles: ${error.message}`, true);
   } finally {
     button.disabled = false;
   }
@@ -384,7 +409,7 @@ async function handleRefreshDbClick(event) {
     setStatus(data.message || "Database reloaded.");
   } catch (error) {
     console.error(error);
-    setStatus(`Unable to reload database: ${error.message}`);
+    setStatus(`Unable to reload database: ${error.message}`, true);
   } finally {
     button.disabled = false;
   }
@@ -457,7 +482,7 @@ async function handleSearchClick() {
     renderResults(data.results || []);
   } catch (error) {
     console.error(error);
-    setStatus(`Search request failed: ${error.message}`);
+    setStatus(`Search request failed: ${error.message}`, true);
   } finally {
     button.disabled = false;
   }
