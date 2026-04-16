@@ -1,0 +1,53 @@
+NVIDIA Ising is the world’s first family of open AI models for building quantum processors, launching with two model domains: Ising Calibration and Ising Decoding.
+Both target the fundamental challenge in quantum computing—qubits are inherently noisy. The best quantum processors make an error roughly once in every thousand operations. To become useful accelerators for scientific and enterprise problems, error rates must drop to one in a trillion or better. AI is the most promising path to closing that gap at scale.
+Calibration is the process of understanding the noise in each quantum processor and tuning it to achieve the best possible performance. Calibration minimizes error, but because of noise in quantum systems, errors must be corrected in real time by a classical computer, faster than they accumulate. This process is called quantum error correction decoding. Both calibration and decoding are computationally intensive and need improved methods to drive progress. Ising delivers advanced performance on calibration and error correction decoding, using techniques for scaling to millions of qubits.
+NVIDIA Ising provides open base models, a training framework, and workflows for fine-tuning, quantization, and deployment. The pre-trained models deliver top performance out of the box, and because everything is open, users can also specialize for their own hardware and noise characteristics while keeping proprietary QPU data on-site.
+In this post, we dive into how NVIDIA Ising delivers starting points for users to select base models, train their own, fine-tune, quantize, and deploy optimized inference workflows wherever needed, improving QPU performance and providing a path to scale to Quantum-GPU Supercomputers capable of solving useful problems.
+The NVIDIA Ising family launches with two breakthrough models:
+- NVIDIA Ising Calibration: A vision-language model (VLM) model for automating QPU calibration tasks.
+- NVIDIA Ising Decoding: Consists of two 3D CNN models for demanding decoding needed during quantum error correction.
+NVIDIA Ising Calibration
+NVIDIA Ising Calibration is a VLM capable of understanding quantum computing scientific experiment output and how it compares to expected trends.
+This VLM can be used in an agentic workflow that responds to measurement results and actively calibrates a quantum processor until its operation falls within desired specifications.
+The Ising-Calibration-1 model was trained on data generated from information provided by partners spanning multiple qubit modalities, including superconducting qubits, quantum dots, ions, neutral atoms, electrons on Helium, and others specializing in calibration and control.
+In the absence of a standard benchmark for evaluating quantum calibration models, NVIDIA collaborated with quantum partners to develop QCalEval, the world’s first benchmark for agentic quantum computer calibration, containing real quantum computer outputs.
+This benchmark is a six-part semantic scoring test that assesses any model’s effectiveness at relevant calibration tasks. QCalEval measures a model’s ability to interpret experimental results, classify outcomes, evaluate their significance, assess fit quality and key features, and generate actionable next-step recommendations. Learn more about the QCalEval benchmark, along with model architecture and evaluation results
+Ising-Calibration-1 repeatedly outperforms state-of-the-art open and closed models of a range of parameters. As shown in Figure 1, Ising Calibration 1 scores 3.27% better on average than Gemini 3.1 Pro, 9.68% better than Claude Opus 4.6, and 14.5% better than GPT 5.4. The 35B parameter VLM is suited for data center GPUs such as NVIDIA Grace Blackwell and NVIDIA Vera Rubin, and consumer cards like NVIDIA DGX Spark.
+With the NVIDIA NeMo Agent Toolkit, developers can build agents that integrate with a wide range of models to automate the calibration process. Using this approach with the Ising-Calibration-1 model, developers can effectively automate calibration workflows with minimal human oversight.
+NVIDIA partners have demonstrated integration of this agentic workflow within a wide range of calibration and control software stacks, and through popular coding agents, like Coda, Cursor, or Claude Code.
+Learn more about deploying Ising-Calibration-1 with an agent by checking out the blueprint on GitHub.
+NVIDIA Ising Decoding
+Using the NVIDIA Ising Decoding training framework, QPU builders, operators, and decoder developers can train small 3D CNN AI decoders. Real-time operations that scale in both space and time help improve latency and logical error rates. These pre-decoders accelerate and improve decoder accuracy by handling a large quantity of localized syndrome errors. They can also scale to arbitrary code distances, helping teams deploy quantum error correction decoders that will scale with their QPUs all the way to lattice surgery.
+Users need only define their noise model, the orientation of the rotated surface code, and model depth (deeper is more accurate). The training framework then uses the cuStabilizer library within NVIDIA cuQuantum and PyTorch to generate synthetic training data and train a 3D CNN that optimizes decoding performance for the task. Users can also opt for more or fewer layers, which creates a runtime and accuracy trade-off. The best CNN model depends on the code distance, physical error rate, global decoder effectiveness, and round-trip latency budget.
+Accuracy or speed: selecting the right base model
+Two base-model examples, optimized for either accuracy or speed, are available on HuggingFace.
+Ising-Decoder-SurfaceCode-1-Fast has fewer layers, a receptive field of 9, and is trained on input volumes of size 9x9x9 (although arbitrary input volumes can be used during inference). This model has roughly 912,000 parameters. Due to its small size, it runs efficiently on a GPU but provides less improvement to the logical error rate (LER) compared to a larger model. The Fast pre-decoder plus PyMatching is 2.5x faster than PyMatching and 1.11x more accurate at d=13 for p=0.003.
+Ising-Decoder-SurfaceCode-1-Accurate has more layers, a receptive field of 13, and is trained on input volumes of size 13x13x13. This model has roughly 1.79 million parameters. Given its larger size, it can correct larger error chains compared to the Fast decoder, but takes longer to run. As long as this end-to-end speed is in the desired range for the target QPU, the large improvement in LER may be worth the added runtime cost. The Accurate pre-decoder plus PyMatching is 2.25x faster than PyMatching and 1.53x more accurate than PyMatching for d=13 at p=0.003
+Figure 2 shows the trade-off between fast and accurate models, compared to the minimum weight perfect matching (MWPM) baseline. It shows the ideal regime for deploying the pre-decoder model given some physical error rate and code distance. For example, the accurate model can deliver 3x improvement in LER at d=31 for p=0.003, when trained on d=13 data.
+This approach improves LER and latency across a range of noise models and supports Union Find, correlated matching, and machine-learning decoders as global decoders, enabling more scalable quantum error correction strategies.
+We have also developed a real-time API built on NVIDIA CUDA-Q QEC, CUDAQ-Realtime, and NVIDIA NVQLink, designed to deliver the low latency needed for quantum computing. We have shown that for the Accurate model + PyMatching, GB300, FP16 Precision, physical error rate of 0.003, 104 rounds, surface code d=13, we can achieve 2.33 μs / round, providing a 2.25x speedup, and 1.53x improvement in LER.
+We projected that, given 13 GB300 GPUs, FP8 precision, physical error rate of 0.003, 1000 rounds, Surface code d=13, the fast model can achieve 0.11 μs / round. This pre-decoder model architecture is designed to accelerate and improve the accuracy of decoders, bringing us closer to useful fault-tolerant quantum computing. Read more in our CUDA-Q QEC blog post.
+Learn more about NVIDIA Ising Decoder model architecture and explore a wide range of analysis and results.
+Start building with NVIDIA Ising open resources
+The NVIDIA Ising model family is fully open. Weights, training frameworks, data, benchmarks, and recipes are provided to enable others to modify, deploy, train, and fine-tune their own models and variants for their specific QPUs.
+Model weights
+Full parameter checkpoints for Ising Calibration 1 and Ising Decoder SurfaceCode 1 are available on Hugging Face, with Ising Calibration 1 also available through NVIDIA NIM and NVIDIA Build. The NVIDIA Open Model License gives QPU builders and operators the flexibility to maintain data control and deploy anywhere.
+Training framework
+NVIDIA is releasing a complete training framework for Ising Decoder SurfaceCode 1 that enables users to generate synthetic data with the NVIDIA cuQuantum library, NVIDIA cuStabilizer on the fly, while training with PyTorch. This framework enables developers to produce decoder models tailored to their specific QPU noise characteristics.
+Deployment recipes
+Ready-to-use cookbook and examples are available for major inference engines, each with configuration templates, performance tuning guidance, and reference scripts:
+- Real-time decoding is an example of running real-time pre-decoding with Decoder SurfaceCode 1 and PyMatching using NVIDIA TensorRT in CUDA-Q QEC.
+- Training a decoder with Ising-Decoding, cuStabilizer, and PyTorch, and quantizing it.
+- Quantum calibration agent is a script for deploying an agentic workflow using Ising Calibration 1 with the NVIDIA Nemo Agent Toolkit to quickly set up quantum calibration experiment automation.
+Fine-tuning and quantization recipes
+Explore NVIDIA Ising customization cookbooks to quantize or fine-tune for a specific domain (LoRA/SFT) or advance its agentic reasoning capabilities (GRPO/DAPO):
+- Quantization to FP8 for Ising-Decoder-SurfaceCode-1.
+Open datasets and QCalEval benchmark
+NVIDIA Ising Calibration 1 is built on real QPU data provided by partners and collaborators. A semantic quantum calibration benchmark has also been released to evaluate model effectiveness for this task.
+- The details on QCalEval are available in this research paper, with a script to run this on GitHub.
+- Review the data set on HuggingFace.
+Get started
+NVIDIA Ising is available with the following resources for getting started:
+- Ising Decoding training framework and cookbook GitHub under Apache 2.0.
+- Ising Calibration NIM: available on build.nvidia.com and the NVIDIA NGC Catalog.
+- Ising Calibration agentic workflow and cookbook GitHub under Apache 2.0.
